@@ -1,0 +1,6 @@
+r alu4.blif; resyn; print_stats; if -K 6; print_stats;
+r frisc.blif; resyn; print_stats; if -K 6; print_stats;
+r s298.blif; resyn; print_stats; if -K 6; print_stats;
+r spla.blif; resyn; print_stats; if -K 6; print_stats;
+r tseng.blif; resyn; print_stats; if -K 6; print_stats;
+time

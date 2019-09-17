@@ -1,0 +1,108 @@
+[rendongx@p82 abc70930]$ ./abc
+UC Berkeley, ABC 1.01 (compiled Dec 15 2018 14:02:41)
+abc 01> so fourth.script
+abc - > r alu4.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates; write_blif alu4.mapped.sc.blif
+The number of gates read = 5.                                                  
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 1 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec       
+Maximum level: Original = 13. Reduced due to choices = 13.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   2390.  Total 5-feasible cuts =      26236.  Per node = 11.0. Time =   0.01 sec
+Delay    : Switch =   595.03  Flow =      4752.0  Area =      6039.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =   595.03  Flow =      4723.5  Area =      6039.0   0.0 %   Time =   0.01 sec
+Area     : Switch =   595.03  Flow =         0.0  Area =      6039.0   0.0 %   Time =   0.00 sec
+Area     : Switch =   595.03  Flow =         0.0  Area =      6039.0   0.0 %   Time =   0.00 sec
+Output  o_7_    : Delay = (23.80, 23.80)  NEG
+Output  o_4_    : Delay = (23.80, 23.80)  NEG
+Output  o_5_    : Delay = (21.90, 21.90)  NEG
+Output  o_6_    : Delay = (20.00, 20.00)  NEG
+Output  o_3_    : Delay = (20.00, 20.00)  NEG
+top          : i/o =   14/   8  lat =    0  nd =  3641  net =  6006  area = 6006.00  delay = 23.80  lev =  25
+nand2        =     2365      4730.00     78.75 %
+inv1         =     1276      1276.00     21.25 %
+TOTAL        =     3641      6006.00    100.00 %
+abc - > r frisc.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates; write_blif frisc.mapped.sc.blif
+The number of gates read = 5.                                                  
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 1 unique 5-input supergates from "mcnc.super".  Time =   0.01 sec       
+Maximum level: Original = 64. Reduced due to choices = 64.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   6928.  Total 5-feasible cuts =      76814.  Per node = 11.1. Time =   0.03 sec
+Delay    : Switch =  2134.48  Flow =     12260.8  Area =     14393.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =  2134.48  Flow =     11410.0  Area =     14393.0   0.0 %   Time =   0.01 sec
+Area     : Switch =  2134.48  Flow =         0.0  Area =     14393.0   0.0 %   Time =   0.00 sec
+Area     : Switch =  2134.48  Flow =         0.0  Area =     14393.0   0.0 %   Time =   0.01 sec
+Output  n3486    : Delay = (89.20, 89.20)  POS
+Output  n478     : Delay = (87.40, 87.40)  NEG
+Output  n944     : Delay = (87.40, 87.40)  NEG
+Output  n959     : Delay = (87.40, 87.40)  NEG
+Output  n1164    : Delay = (87.40, 87.40)  NEG
+top          : i/o =   20/ 116  lat =  886  nd =  8241  net = 14244  area = 14244.00  delay = 89.20  lev =  92
+nand2        =     6003     12006.00     84.29 %
+inv1         =     2238      2238.00     15.71 %
+TOTAL        =     8241     14244.00    100.00 %
+abc - > r s298.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates; write_blif s298.mapped.sc.blif
+The number of gates read = 5.                                                  
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 1 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec       
+Maximum level: Original = 25. Reduced due to choices = 25.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   1913.  Total 5-feasible cuts =      25231.  Per node = 13.2. Time =   0.01 sec
+Delay    : Switch =   461.74  Flow =      4906.1  Area =      4823.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =   461.74  Flow =      4435.6  Area =      4823.0   0.0 %   Time =   0.00 sec
+Area     : Switch =   461.74  Flow =         0.0  Area =      4823.0   0.0 %   Time =   0.00 sec
+Area     : Switch =   461.74  Flow =         0.0  Area =      4823.0   0.0 %   Time =   0.01 sec
+Output  n21    : Delay = (41.90, 41.90)  NEG
+Output  n36    : Delay = (41.90, 41.90)  NEG
+Output  n31    : Delay = (41.20, 41.20)  NEG
+Output  n26    : Delay = (41.00, 41.00)  NEG
+Output  n41    : Delay = (37.10, 37.10)  NEG
+top          : i/o =    4/   6  lat =    8  nd =  2914  net =  4811  area = 4811.00  delay = 41.90  lev =  44
+nand2        =     1897      3794.00     78.86 %
+inv1         =     1017      1017.00     21.14 %
+TOTAL        =     2914      4811.00    100.00 %
+abc - > r spla.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates; write_blif spla.mapped.sc.blif
+The number of gates read = 5.                                                  
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 1 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec       
+Maximum level: Original = 17. Reduced due to choices = 17.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   5456.  Total 5-feasible cuts =     111629.  Per node = 20.5. Time =   0.04 sec
+Delay    : Switch =   729.51  Flow =     10879.4  Area =     13880.0   0.0 %   Time =   0.01 sec
+AreaFlow : Switch =   729.51  Flow =     10787.4  Area =     13880.0   0.0 %   Time =   0.00 sec
+Area     : Switch =   729.51  Flow =         0.0  Area =     13880.0   0.0 %   Time =   0.01 sec
+Area     : Switch =   729.51  Flow =         0.0  Area =     13880.0   0.0 %   Time =   0.01 sec
+Output  o_9_     : Delay = (31.40, 31.40)  NEG
+Output  o_38_    : Delay = (29.50, 29.50)  NEG
+Output  o_37_    : Delay = (29.50, 29.50)  NEG
+Output  o_36_    : Delay = (29.50, 29.50)  NEG
+Output  o_35_    : Delay = (29.50, 29.50)  NEG
+top          : i/o =   16/  46  lat =    0  nd =  8252  net = 13581  area = 13581.00  delay = 31.40  lev =  33
+nand2        =     5329     10658.00     78.48 %
+inv1         =     2923      2923.00     21.52 %
+TOTAL        =     8252     13581.00    100.00 %
+abc - > r tseng.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates; write_blif tseng.mapped.sc.blif
+The number of gates read = 5.                                                  
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 1 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec       
+Maximum level: Original = 36. Reduced due to choices = 36.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   2304.  Total 5-feasible cuts =      18136.  Per node = 7.9. Time =   0.01 sec
+Delay    : Switch =  1000.51  Flow =      4030.1  Area =      4665.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =  1000.51  Flow =      3669.7  Area =      4665.0   0.0 %   Time =   0.00 sec
+Area     : Switch =  1000.51  Flow =         0.0  Area =      4665.0   0.0 %   Time =   0.00 sec
+Area     : Switch =  1000.51  Flow =         0.0  Area =      4665.0   0.0 %   Time =   0.00 sec
+Output  n1448    : Delay = (49.40, 49.40)  NEG
+Output  n1148    : Delay = (47.50, 47.50)  NEG
+Output  n1393    : Delay = (47.50, 47.50)  NEG
+Output  n2078    : Delay = (47.50, 47.50)  NEG
+Output  n359     : Delay = (46.40, 46.40)  NEG
+top          : i/o =   52/ 122  lat =  385  nd =  2786  net =  4646  area = 4646.00  delay = 49.40  lev =  51
+nand2        =     1861      3722.00     80.11 %
+zero         =        1         0.00      0.00 %
+inv1         =      924       924.00     19.89 %
+TOTAL        =     2786      4646.00    100.00 %
+abc - > time                                                                   
+elapse: 1.61 seconds, total: 1.61 seconds
+abc 61> 
+

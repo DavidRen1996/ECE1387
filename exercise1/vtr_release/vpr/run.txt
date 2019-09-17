@@ -1,0 +1,148 @@
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv2
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv3
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv4
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv5
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv1
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv2
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv3
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv4
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv5
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv1
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv2
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv3
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv4
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv5
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv1
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv2
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 65 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv3
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 150 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv4
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 50 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.05 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv5
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 0.8 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 10 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 150 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv
+./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --place --pack --place_algorithm bounding_box --nodisp --seed 17 --init_t 900 | grep "bbcost" vpr_stdout.log >> A2data/or_6005.csv

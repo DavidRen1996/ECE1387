@@ -1,0 +1,6 @@
+r alu4.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif alu4.mapped.sc.blif
+r frisc.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif frisc.mapped.sc.blif
+r s298.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif s298.mapped.sc.blif
+r spla.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif spla.mapped.sc.blif
+r tseng.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif tseng.mapped.sc.blif
+time

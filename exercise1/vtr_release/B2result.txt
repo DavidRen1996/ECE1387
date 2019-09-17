@@ -1,0 +1,31 @@
+diffeq1.blif initial_pres_fac 0.1
+Final critical path: 22.8238 ns
+diffeq1.blif initial_pres_fac 0.5
+Final critical path: 22.4823 ns
+diffeq1.blif initial_pres_fac 1
+diffeq1.blif initial_pres_fac 1.5
+Final critical path: 22.5199 ns
+sha.blif initial_pres_fac 0.1
+Final critical path: 13.551 ns
+sha.blif initial_pres_fac 0.5
+Final critical path: 13.5499 ns
+sha.blif initial_pres_fac 1
+Final critical path: 13.5532 ns
+sha.blif initial_pres_fac 1.5
+Final critical path: 13.551 ns
+raygentop.blif initial_pres_fac 0.1
+Final critical path: 5.23679 ns
+raygentop.blif initial_pres_fac 0.5
+Final critical path: 5.2379 ns
+raygentop.blif initial_pres_fac 1
+Final critical path: 5.23568 ns
+raygentop.blif initial_pres_fac 1.5
+Final critical path: 5.2379 ns
+or1200.blif initial_pres_fac 0.1
+Final critical path: 13.3995 ns
+or1200.blif initial_pres_fac 0.5
+Final critical path: 13.3995 ns
+or1200.blif initial_pres_fac 1
+Final critical path: 13.3984 ns
+or1200.blif initial_pres_fac 1.5
+Final critical path: 13.3995 ns

@@ -1,0 +1,10 @@
+# The genlib library "mcnc.genlib".
+GATE         inv1       1.00   O=!a;
+    PIN         a        INV      1    999   0.90   0.30   0.90   0.30
+GATE        nand2       2.00   O=!(a*b);
+    PIN         a        INV      1    999   1.00   0.20   1.00   0.20
+    PIN         b        INV      1    999   1.00   0.20   1.00   0.20
+GATE          buf       1.00   O=a;
+    PIN         a     NONINV      1    999   1.00   0.00   1.00   0.00
+GATE         zero       0.00   O=CONST0;
+GATE          one       0.00   O=CONST1;

@@ -1,0 +1,170 @@
+[rendongx@p82 abc70930]$ ./abc
+UC Berkeley, ABC 1.01 (compiled Dec 15 2018 14:02:41)
+abc 01> so fourth.script
+abc - > r alu4.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif alu4.mapped.sc.blif
+The number of gates read = 23.                                                 
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 22 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec      
+Maximum level: Original = 13. Reduced due to choices = 13.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   2390.  Total 5-feasible cuts =      26236.  Per node = 11.0. Time =   0.01 sec
+Delay    : Switch =   350.59  Flow =      4736.5  Area =      5604.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =   339.66  Flow =      4257.9  Area =      4885.0  12.8 %   Time =   0.00 sec
+Area     : Switch =   317.48  Flow =         0.0  Area =      4694.0  16.2 %   Time =   0.01 sec
+Area     : Switch =   314.50  Flow =         0.0  Area =      4584.0  18.2 %   Time =   0.01 sec
+Output  o_4_    : Delay = (12.90, 12.90)  NEG
+Output  o_5_    : Delay = (12.90, 12.90)  NEG
+Output  o_7_    : Delay = (12.90, 12.90)  NEG
+Output  o_2_    : Delay = (12.70, 12.70)  NEG
+Output  o_3_    : Delay = (12.60, 12.60)  NEG
+top          : i/o =   14/   8  lat =    0  nd =  1821  net =  4557  area = 4573.00  delay = 12.90  lev =  11
+aoi21        =      103       309.00      6.76 %
+aoi22        =       55       220.00      4.81 %
+nand4        =      151       604.00     13.21 %
+nand3        =      320       960.00     20.99 %
+nand2        =      430       860.00     18.81 %
+xnor2a       =        1         5.00      0.11 %
+nor2         =      300       600.00     13.12 %
+or2          =        5        15.00      0.33 %
+nor3         =       40       120.00      2.62 %
+xor2a        =        1         5.00      0.11 %
+nor4         =        5        20.00      0.44 %
+oai22        =       63       252.00      5.51 %
+and2         =        5        15.00      0.33 %
+oai21        =      123       369.00      8.07 %
+inv1         =      219       219.00      4.79 %
+TOTAL        =     1821      4573.00    100.00 %
+abc - > r frisc.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif frisc.mapped.sc.blif
+The number of gates read = 23.                                                 
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 22 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec      
+Maximum level: Original = 64. Reduced due to choices = 64.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   6928.  Total 5-feasible cuts =      76814.  Per node = 11.1. Time =   0.02 sec
+Delay    : Switch =  1519.89  Flow =    254387.2  Area =     15552.0   0.0 %   Time =   0.01 sec
+AreaFlow : Switch =  1466.35  Flow =      9232.1  Area =     11585.0  25.5 %   Time =   0.01 sec
+Area     : Switch =  1306.89  Flow =         0.0  Area =     10790.0  30.6 %   Time =   0.01 sec
+Area     : Switch =  1291.26  Flow =         0.0  Area =     10617.0  31.7 %   Time =   0.01 sec
+Output  n478     : Delay = (48.60, 48.60)  NEG
+Output  n944     : Delay = (48.60, 48.60)  NEG
+Output  n959     : Delay = (48.60, 48.60)  NEG
+Output  n1164    : Delay = (48.60, 48.60)  NEG
+Output  n1543    : Delay = (48.60, 48.60)  NEG
+top          : i/o =   20/ 116  lat =  886  nd =  4259  net = 10345  area = 10477.00  delay = 48.60  lev =  43
+aoi21        =      347      1041.00      9.94 %
+aoi22        =      192       768.00      7.33 %
+nand4        =      162       648.00      6.18 %
+nand3        =      272       816.00      7.79 %
+nand2        =     1363      2726.00     26.02 %
+xnor2a       =        9        45.00      0.43 %
+nor2         =      235       470.00      4.49 %
+or2          =        5        15.00      0.14 %
+nor3         =       46       138.00      1.32 %
+xor2a        =       26       130.00      1.24 %
+nor4         =        9        36.00      0.34 %
+and2         =       22        66.00      0.63 %
+oai22        =      317      1268.00     12.10 %
+oai21        =      528      1584.00     15.12 %
+inv1         =      726       726.00      6.93 %
+TOTAL        =     4259     10477.00    100.00 %
+abc - > r s298.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif s298.mapped.sc.blif
+The number of gates read = 23.                                                 
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 22 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec      
+Maximum level: Original = 25. Reduced due to choices = 25.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   1913.  Total 5-feasible cuts =      25231.  Per node = 13.2. Time =   0.01 sec
+Delay    : Switch =   300.67  Flow =    116671.2  Area =      4995.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =   276.22  Flow =      4132.2  Area =      3853.0  22.9 %   Time =   0.00 sec
+Area     : Switch =   257.51  Flow =         0.0  Area =      3663.0  26.7 %   Time =   0.01 sec
+Area     : Switch =   253.40  Flow =         0.0  Area =      3602.0  27.9 %   Time =   0.01 sec
+Output  n31    : Delay = (22.30, 22.30)  NEG
+Output  n21    : Delay = (22.30, 22.30)  NEG
+Output  n26    : Delay = (22.30, 22.30)  NEG
+Output  n36    : Delay = (21.70, 21.70)  NEG
+Output  n41    : Delay = (20.10, 20.10)  NEG
+top          : i/o =    4/   6  lat =    8  nd =  1500  net =  3595  area = 3597.00  delay = 22.30  lev =  20
+aoi21        =       93       279.00      7.76 %
+aoi22        =       35       140.00      3.89 %
+nand4        =      120       480.00     13.34 %
+nand3        =      224       672.00     18.68 %
+nand2        =      445       890.00     24.74 %
+nor2         =      193       386.00     10.73 %
+or2          =        1         3.00      0.08 %
+nor3         =       22        66.00      1.83 %
+nor4         =        5        20.00      0.56 %
+and2         =        1         3.00      0.08 %
+oai22        =       39       156.00      4.34 %
+oai21        =       90       270.00      7.51 %
+inv1         =      232       232.00      6.45 %
+TOTAL        =     1500      3597.00    100.00 %
+abc - > r spla.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif spla.mapped.sc.blif
+The number of gates read = 23.                                                 
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 22 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec      
+Maximum level: Original = 17. Reduced due to choices = 17.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   5456.  Total 5-feasible cuts =     111629.  Per node = 20.5. Time =   0.04 sec
+Delay    : Switch =   391.52  Flow =     13291.2  Area =     13126.0   0.0 %   Time =   0.01 sec
+AreaFlow : Switch =   394.39  Flow =     10072.1  Area =     11419.0  13.0 %   Time =   0.01 sec
+Area     : Switch =   363.85  Flow =         0.0  Area =     10751.0  18.1 %   Time =   0.02 sec
+Area     : Switch =   353.86  Flow =         0.0  Area =     10381.0  20.9 %   Time =   0.03 sec
+Output  o_12_    : Delay = (15.30, 15.30)  NEG
+Output  o_35_    : Delay = (15.30, 15.30)  NEG
+Output  o_37_    : Delay = (15.30, 15.30)  NEG
+Output  o_36_    : Delay = (15.30, 15.30)  NEG
+Output  o_34_    : Delay = (15.30, 15.30)  NEG
+top          : i/o =   16/  46  lat =    0  nd =  4016  net = 10147  area = 10209.00  delay = 15.30  lev =  13
+aoi21        =      253       759.00      7.43 %
+aoi22        =      126       504.00      4.94 %
+nand4        =      460      1840.00     18.02 %
+nand3        =      571      1713.00     16.78 %
+nand2        =     1090      2180.00     21.35 %
+xnor2a       =        3        15.00      0.15 %
+nor2         =      493       986.00      9.66 %
+or2          =        7        21.00      0.21 %
+nor3         =       63       189.00      1.85 %
+xor2a        =        1         5.00      0.05 %
+nor4         =        6        24.00      0.24 %
+oai22        =       48       192.00      1.88 %
+and2         =       43       129.00      1.26 %
+oai21        =      400      1200.00     11.75 %
+inv1         =      452       452.00      4.43 %
+TOTAL        =     4016     10209.00    100.00 %
+abc - > r tseng.blif; resyn2; read_library mcnc.genlib; map -v; print_stats; print_gates write_blif tseng.mapped.sc.blif
+The number of gates read = 23.                                                 
+A simple supergate library is derived from gate library "mcnc.genlib".
+Loaded 22 unique 5-input supergates from "mcnc.super".  Time =   0.00 sec      
+Maximum level: Original = 36. Reduced due to choices = 36.                     
+Choice stats:  Choice nodes = 0. Total choices = 0.
+Nodes =   2304.  Total 5-feasible cuts =      18136.  Per node = 7.9. Time =   0.00 sec
+Delay    : Switch =   762.39  Flow =     17347.5  Area =      5242.0   0.0 %   Time =   0.00 sec
+AreaFlow : Switch =   697.31  Flow =      3357.3  Area =      4188.0  20.1 %   Time =   0.00 sec
+Area     : Switch =   642.97  Flow =         0.0  Area =      3745.0  28.6 %   Time =   0.00 sec
+Area     : Switch =   635.80  Flow =         0.0  Area =      3689.0  29.6 %   Time =   0.00 sec
+Output  n1448    : Delay = (29.60, 29.60)  NEG
+Output  n1548    : Delay = (29.60, 29.60)  NEG
+Output  n1668    : Delay = (29.60, 29.60)  NEG
+Output  n1983    : Delay = (29.60, 29.60)  NEG
+Output  n2088    : Delay = (29.60, 29.60)  NEG
+top          : i/o =   52/ 122  lat =  385  nd =  1629  net =  3575  area = 3684.00  delay = 29.60  lev =  26
+aoi21        =      228       684.00     18.57 %
+aoi22        =       13        52.00      1.41 %
+nand4        =       13        52.00      1.41 %
+nand3        =      105       315.00      8.55 %
+nand2        =      271       542.00     14.71 %
+xnor2a       =        6        30.00      0.81 %
+nor2         =      177       354.00      9.61 %
+zero         =        1         0.00      0.00 %
+or2          =        9        27.00      0.73 %
+nor3         =        8        24.00      0.65 %
+xor2a        =       25       125.00      3.39 %
+oai22        =      144       576.00     15.64 %
+and2         =        7        21.00      0.57 %
+oai21        =      130       390.00     10.59 %
+inv1         =      492       492.00     13.36 %
+TOTAL        =     1629      3684.00    100.00 %
+abc - > time
+elapse: 1.70 seconds, total: 1.70 seconds
+abc 61> 
+

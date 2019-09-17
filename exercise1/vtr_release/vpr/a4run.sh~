@@ -1,0 +1,10 @@
+./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --place --pack --place_algorithm bounding_box --nodisp --seed 2 
+grep "          0" vpr_stdout.log >> r4.txt
+./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --place --pack --place_algorithm bounding_box --nodisp --seed 6 
+grep "          0" vpr_stdout.log >> r4.txt
+./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --place --pack --place_algorithm bounding_box --nodisp --seed 12 
+grep "          0" vpr_stdout.log >> r4.txt
+./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --place --pack --place_algorithm bounding_box --nodisp --seed 13 
+grep "          0" vpr_stdout.log >> r4.txt
+./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --place --pack --place_algorithm bounding_box --nodisp --seed 15 
+grep "          0" vpr_stdout.log >> r4.txt

@@ -1,0 +1,2 @@
+grep "0.000000" deviation.txt >>s/deviation.txt 
+grep "0.000000" mean.txt >>s/mean.txt 

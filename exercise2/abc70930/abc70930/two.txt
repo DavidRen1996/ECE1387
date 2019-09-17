@@ -1,0 +1,22 @@
+[rendongx@p82 abc70930]$ ./abc
+UC Berkeley, ABC 1.01 (compiled Dec 15 2018 14:02:41)
+abc 01> so two.script
+abc - > r alu4.blif; resyn; print_stats; if -K 6; print_stats;
+top          : i/o =   14/   8  lat =    0  and =  2469 (exor = 3)  lev =  14  
+top          : i/o =   14/   8  lat =    0  nd =   859  net =  4470  aig  =  4266  lev =   6
+abc - > r frisc.blif; resyn; print_stats; if -K 6; print_stats;
+top          : i/o =   20/ 116  lat =  886  and =  6151 (exor = 67)  lev =  60 
+top          : i/o =   20/ 116  lat =  886  nd =  1817  net =  9415  aig  =  9696  lev =  13
+abc - > r s298.blif; resyn; print_stats; if -K 6; print_stats;
+top          : i/o =    4/   6  lat =    8  and =  2065  lev =  29             
+top          : i/o =    4/   6  lat =    8  nd =   736  net =  3858  aig  =  3553  lev =  10
+abc - > r spla.blif; resyn; print_stats; if -K 6; print_stats;
+top          : i/o =   16/  46  lat =    0  and =  5852 (exor = 8)  lev =  17  
+top          : i/o =   16/  46  lat =    0  nd =  2103  net = 12062  aig  = 15321  lev =   6
+abc - > r tseng.blif; resyn; print_stats; if -K 6; print_stats;
+top          : i/o =   52/ 122  lat =  385  and =  1898 (exor = 63)  lev =  37 
+top          : i/o =   52/ 122  lat =  385  nd =   695  net =  3041  aig  =  3130  lev =   8
+abc - > time
+elapse: 0.96 seconds, total: 0.96 seconds
+abc 41> 
+

@@ -1,0 +1,1347 @@
+________________________________________________________________________
+                       VPR - The Next Generation                        
+                     Version 0.A15.0 (Linux X86/64)                     
+            This is free open source code under MIT license.            
+________________________________________________________________________
+
+VPR FPGA Placement and Routing.
+Version: Version 7.0
+Compiled: Nov  7 2018.
+University of Toronto
+vpr@eecg.utoronto.ca
+This is free open source code under MIT license.
+
+Architecture file: k6_frac_N10_mem32K_40nm.xml
+Circuit name: sha.blif
+
+Building complex block graph.
+WARNING(1): io[0].clock[0] unconnected pin in architecture.
+Loop for doall = 0, init_parse took 0 seconds.
+Loop for doall = 0 took 0.01 seconds.
+Loop for doall = 1, init_parse took 0 seconds.
+Loop for doall = 1 took 0.01 seconds.
+Swept away 0 nets with no fanout.
+Net is a constant generator: n4589.
+WARNING(2): logical_block #3280 with output n4589 has only 0 pin.
+WARNING(3): Block contains output -- may be a constant generator.
+0 unconnected blocks in input netlist.
+Removed 36 LUT buffers.
+Sweeped away 36 nodes.
+BLIF circuit stats:
+	1 LUTs of size 0
+	3 LUTs of size 1
+	80 LUTs of size 2
+	169 LUTs of size 3
+	606 LUTs of size 4
+	663 LUTs of size 5
+	755 LUTs of size 6
+	38 of type input
+	36 of type output
+	911 of type latch
+	2277 of type names
+	0 of type dual_port_ram
+	0 of type single_port_ram
+	0 of type multiply
+Timing analysis: ON
+Circuit netlist file: sha.net
+Circuit placement file: sha.place
+Circuit routing file: sha.route
+Circuit SDC file: sha.sdc
+Operation: RUN_FLOW
+
+Packer: ENABLED
+Placer: ENABLED
+Router: ENABLED
+PackerOpts.allow_early_exit: FALSE
+PackerOpts.allow_unrelated_clustering: TRUE
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.aspect: 1.000000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.block_delay: 0.000000
+PackerOpts.cluster_seed_type: TIMING
+PackerOpts.connection_driven: TRUE
+PackerOpts.global_clocks: TRUE
+PackerOpts.hill_climbing_flag: FALSE
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.intra_cluster_net_delay: 0.000000
+PackerOpts.recompute_timing_after: 32767
+PackerOpts.sweep_hanging_nets_and_inputs: TRUE
+PackerOpts.timing_driven: TRUE
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: PATH_TIMING_DRIVEN_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlacerOpts.inner_loop_recompute_divider: 0
+PlacerOpts.recompute_crit_iter: 1
+PlacerOpts.timing_tradeoff: 0.500000
+PlacerOpts.td_place_exp_first: 1.000000
+PlacerOpts.td_place_exp_last: 8.000000
+PlaceOpts.seed: 1
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RouterOpts.route_type: DETAILED
+RouterOpts.router_algorithm: TIMING_DRIVEN
+RouterOpts.base_cost_type: DELAY_NORMALIZED
+RouterOpts.fixed_channel_width: 54
+RouterOpts.acc_fac: 1.000000
+RouterOpts.bb_factor: 3
+RouterOpts.bend_cost: 0.000000
+RouterOpts.first_iter_pres_fac: 0.500000
+RouterOpts.initial_pres_fac: 0.500000
+RouterOpts.pres_fac_mult: 1.300000
+RouterOpts.max_router_iterations: 50
+RouterOpts.astar_fac: 1.200000
+RouterOpts.criticality_exp: 1.000000
+RouterOpts.max_criticality: 0.990000
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+Initialize packing.
+Begin packing 'sha.blif'.
+
+After removing unused inputs...
+	total blocks: 3262, total nets: 3226, total inputs: 38, total outputs: 36
+Begin prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.33777e-09
+
+SDC file 'sha.sdc' blank or not found.
+
+Defaulting to: constrain all 0 inputs and 0 outputs on the netlist clock.
+Optimize this clock to run as fast as possible.
+Not enough resources expand FPGA size to x = 2 y = 2.
+Complex block 0: cb.n429, type: clb
+	......................................
+Passed route at end.
+Complex block 1: cb.n2913, type: clb
+	..........................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 3 y = 3.
+Complex block 2: cb.n489, type: clb
+	.......................................................
+Passed route at end.
+Complex block 3: cb.n364, type: clb
+	...................................................
+Passed route at end.
+Complex block 4: cb.n3149_1, type: clb
+	..................................................................
+Passed route at end.
+Complex block 5: cb.n3153, type: clb
+	.............................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 4 y = 4.
+Complex block 6: cb.n3156, type: clb
+	.................................................................
+Passed route at end.
+Complex block 7: cb.n3092, type: clb
+	..................................................
+Passed route at end.
+Complex block 8: cb.n3248, type: clb
+	..................................................................................
+Passed route at end.
+Complex block 9: cb.n3256, type: clb
+	.........................................
+Passed route at end.
+Complex block 10: cb.n3196, type: clb
+	........................................
+Passed route at end.
+Complex block 11: cb.n3202, type: clb
+	...........................
+Passed route at end.
+Not enough resources expand FPGA size to x = 5 y = 5.
+Complex block 12: cb.n2994_1, type: clb
+	..............................................
+Passed route at end.
+Complex block 13: cb.n3257, type: clb
+	...........................................................
+Passed route at end.
+Complex block 14: cb.n2951, type: clb
+	.....................................................................................
+Passed route at end.
+Complex block 15: cb.n3188, type: clb
+	...............................................................................
+Passed route at end.
+Complex block 16: cb.n3197, type: clb
+	........................
+Passed route at end.
+Complex block 17: cb.n3123, type: clb
+	..........................................................
+Passed route at end.
+Complex block 18: cb.n3260, type: clb
+	................................................................................
+Passed route at end.
+Complex block 19: cb.n3051, type: clb
+	................................................................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 6 y = 6.
+Complex block 20: cb.n3274_1, type: clb
+	..............................................................
+Passed route at end.
+Complex block 21: cb.n459, type: clb
+	..............................................................................
+Passed route at end.
+Complex block 22: cb.n3145, type: clb
+	..................................................
+Passed route at end.
+Complex block 23: cb.n3304_1, type: clb
+	.............................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 7 y = 7.
+Complex block 24: cb.n3006, type: clb
+	..........................................................
+Passed route at end.
+Complex block 25: cb.n2953, type: clb
+	..................................................................................
+Passed route at end.
+Complex block 26: cb.n3277, type: clb
+	........................................................
+Passed route at end.
+Complex block 27: cb.n3028, type: clb
+	.............................................................
+Passed route at end.
+Complex block 28: cb.n3120, type: clb
+	...............................................................................................................
+Passed route at end.
+Complex block 29: cb.n3117, type: clb
+	................................................
+Passed route at end.
+Complex block 30: cb.n3143, type: clb
+	..............................................
+Passed route at end.
+Complex block 31: cb.n2961, type: clb
+	.................................................................
+Passed route at end.
+Complex block 32: cb.n2948, type: clb
+	...........................................................................................................................................
+Passed route at end.
+Complex block 33: cb.n3012, type: clb
+	...............................................................................
+Passed route at end.
+Complex block 34: cb.n589, type: clb
+	...................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 8 y = 8.
+Complex block 35: cb.n579, type: clb
+	.........................................................
+Passed route at end.
+Complex block 36: cb.n569, type: clb
+	................................................
+Passed route at end.
+Complex block 37: cb.n3430, type: clb
+	......................................................................
+Passed route at end.
+Complex block 38: cb.n3464_1, type: clb
+	...............................................................................................
+Passed route at end.
+Complex block 39: cb.n3491, type: clb
+	.........................................................................................
+Passed route at end.
+Complex block 40: cb.n3433, type: clb
+	..............................................................
+Passed route at end.
+Complex block 41: cb.n3475, type: clb
+	..........................................................................................................................................
+Passed route at end.
+Complex block 42: cb.n3445, type: clb
+	...........................
+Passed route at end.
+Complex block 43: cb.n3506, type: clb
+	................................................
+Passed route at end.
+Complex block 44: cb.n1739, type: clb
+	.................................................
+Passed route at end.
+Complex block 45: cb.n629, type: clb
+	.........................................................................
+Passed route at end.
+Complex block 46: cb.n539, type: clb
+	.................
+Passed route at end.
+Complex block 47: cb.n3374_1, type: clb
+	.................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 9 y = 9.
+Complex block 48: cb.n3378, type: clb
+	............................................................................
+Passed route at end.
+Complex block 49: cb.n1589, type: clb
+	..................................................................
+Passed route at end.
+Complex block 50: cb.n3259_1, type: clb
+	............
+Passed route at end.
+Complex block 51: cb.n3137, type: clb
+	................................................
+Passed route at end.
+Complex block 52: cb.n3059_1, type: clb
+	................................................
+Passed route at end.
+Complex block 53: cb.n2946, type: clb
+	................................................
+Passed route at end.
+Complex block 54: cb.n3159_1, type: clb
+	..............................................................................
+Passed route at end.
+Complex block 55: cb.n2997, type: clb
+	................................................
+Passed route at end.
+Complex block 56: cb.n659, type: clb
+	.......................................................
+Passed route at end.
+Complex block 57: cb.n1689, type: clb
+	................................................
+Passed route at end.
+Complex block 58: cb.n1659, type: clb
+	................................................
+Passed route at end.
+Complex block 59: cb.n1609, type: clb
+	.........
+Passed route at end.
+Complex block 60: cb.n719, type: clb
+	................................................
+Passed route at end.
+Complex block 61: cb.n499, type: clb
+	..................................................
+Passed route at end.
+Complex block 62: cb.n2996, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 10 y = 10.
+Complex block 63: cb.n3343, type: clb
+	................................................
+Passed route at end.
+Complex block 64: cb.n389, type: clb
+	..................................................
+Passed route at end.
+Complex block 65: cb.n1574, type: clb
+	....................................................
+Passed route at end.
+Complex block 66: cb.n1544, type: clb
+	..................................................
+Passed route at end.
+Complex block 67: cb.n739, type: clb
+	.................................................
+Passed route at end.
+Complex block 68: cb.n824, type: clb
+	..........................................................
+Passed route at end.
+Complex block 69: cb.n1469, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 11 y = 11.
+Complex block 70: cb.n419, type: clb
+	................................................
+Passed route at end.
+Complex block 71: cb.n4544, type: clb
+	.........
+Passed route at end.
+Complex block 72: cb.n2404, type: clb
+	................................................
+Passed route at end.
+Complex block 73: cb.n1504, type: clb
+	................................................
+Passed route at end.
+Complex block 74: cb.n749, type: clb
+	.........
+Passed route at end.
+Complex block 75: cb.n4599, type: clb
+	............................
+Passed route at end.
+Complex block 76: cb.n3043, type: clb
+	................................................
+Passed route at end.
+Complex block 77: cb.n1429, type: clb
+	................................................
+Passed route at end.
+Complex block 78: cb.n1939, type: clb
+	................................................
+Passed route at end.
+Complex block 79: cb.n1474, type: clb
+	................................................
+Passed route at end.
+Complex block 80: cb.n894, type: clb
+	................................................
+Passed route at end.
+Complex block 81: cb.n3341, type: clb
+	.........
+Passed route at end.
+Complex block 82: cb.n3044_1, type: clb
+	................................................
+Passed route at end.
+Complex block 83: cb.n1254, type: clb
+	................................................
+Passed route at end.
+Complex block 84: cb.n1294, type: clb
+	................................................
+Passed route at end.
+Complex block 85: cb.n1579, type: clb
+	................................................
+Passed route at end.
+Complex block 86: cb.n349, type: clb
+	.............
+Passed route at end.
+Complex block 87: cb.n1984, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 12 y = 12.
+Complex block 88: cb.n1999, type: clb
+	................................................
+Passed route at end.
+Complex block 89: cb.n1369, type: clb
+	...............................................
+Passed route at end.
+Complex block 90: cb.n1414, type: clb
+	.....................................................
+Passed route at end.
+Complex block 91: cb.n944, type: clb
+	................................................
+Passed route at end.
+Complex block 92: cb.n1039, type: clb
+	...........
+Passed route at end.
+Complex block 93: cb.n1334, type: clb
+	...............................
+Passed route at end.
+Complex block 94: cb.n2014, type: clb
+	................................................
+Passed route at end.
+Complex block 95: cb.n2029, type: clb
+	....................................................................................
+Passed route at end.
+Complex block 96: cb.n1069, type: clb
+	............................................
+Passed route at end.
+Complex block 97: cb.n1159, type: clb
+	................................................
+Passed route at end.
+Complex block 98: cb.n474, type: clb
+	.............................
+Passed route at end.
+Complex block 99: cb.n2044, type: clb
+	................................................
+Passed route at end.
+Complex block 100: cb.n3167, type: clb
+	...........
+Passed route at end.
+Complex block 101: cb.n2059, type: clb
+	..................................................................................
+Passed route at end.
+Complex block 102: cb.n2074, type: clb
+	.......................................................
+Passed route at end.
+Complex block 103: cb.n2089, type: clb
+	.......................................................
+Passed route at end.
+Complex block 104: cb.n4574, type: clb
+	................................................
+Passed route at end.
+Complex block 105: cb.n2104, type: clb
+	.......................................................
+Passed route at end.
+Complex block 106: cb.n3230, type: clb
+	.............................
+Passed route at end.
+Complex block 107: cb.n2134, type: clb
+	........................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 13 y = 13.
+Complex block 108: cb.n3228, type: clb
+	.......................
+Passed route at end.
+Complex block 109: cb.n3310, type: clb
+	...................................................
+Passed route at end.
+Complex block 110: cb.n1114, type: clb
+	...............................................
+Passed route at end.
+Complex block 111: cb.n2179, type: clb
+	..............................................................
+Passed route at end.
+Complex block 112: cb.n3398, type: clb
+	................................................
+Passed route at end.
+Complex block 113: cb.n3849_1, type: clb
+	.................................
+Passed route at end.
+Complex block 114: cb.n3698, type: clb
+	.........
+Passed route at end.
+Complex block 115: cb.n3667, type: clb
+	................................................
+Passed route at end.
+Complex block 116: cb.n2194, type: clb
+	.......................................................
+Passed route at end.
+Complex block 117: cb.n2224, type: clb
+	..............................................................
+Passed route at end.
+Complex block 118: cb.n2239, type: clb
+	.......................................................
+Passed route at end.
+Complex block 119: cb.n4639, type: clb
+	.................................................
+Passed route at end.
+Complex block 120: cb.n2254, type: clb
+	.......................................................
+Passed route at end.
+Complex block 121: cb.n4200, type: clb
+	................................................
+Passed route at end.
+Complex block 122: cb.n4196, type: clb
+	................................................
+Passed route at end.
+Complex block 123: cb.n4190, type: clb
+	................................................
+Passed route at end.
+Complex block 124: cb.n4203, type: clb
+	................................................
+Passed route at end.
+Complex block 125: cb.n3634, type: clb
+	................................................
+Passed route at end.
+Complex block 126: cb.n3374, type: clb
+	................................................
+Passed route at end.
+Complex block 127: cb.n3444, type: clb
+	................................................
+Passed route at end.
+Complex block 128: cb.n3809, type: clb
+	................................................
+Passed route at end.
+Complex block 129: cb.n3554, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 14 y = 14.
+Complex block 130: cb.n3434, type: clb
+	................................................
+Passed route at end.
+Complex block 131: cb.n4484, type: clb
+	................................................
+Passed route at end.
+Complex block 132: cb.n4419, type: clb
+	................................................
+Passed route at end.
+Complex block 133: cb.n4394, type: clb
+	................................................
+Passed route at end.
+Complex block 134: cb.n4354, type: clb
+	................................................
+Passed route at end.
+Complex block 135: cb.n3739, type: clb
+	................................................
+Passed route at end.
+Complex block 136: cb.n4319, type: clb
+	................................................
+Passed route at end.
+Complex block 137: cb.n4254, type: clb
+	................................................
+Passed route at end.
+Complex block 138: cb.n4189, type: clb
+	................................................
+Passed route at end.
+Complex block 139: cb.n4159, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 15 y = 15.
+Complex block 140: cb.n4134, type: clb
+	................................................
+Passed route at end.
+Complex block 141: cb.n2509, type: clb
+	................................................
+Passed route at end.
+Complex block 142: cb.n4024, type: clb
+	................................................
+Passed route at end.
+Complex block 143: cb.n3899, type: clb
+	................................................
+Passed route at end.
+Complex block 144: cb.n3884, type: clb
+	................................................
+Passed route at end.
+Complex block 145: cb.n3639, type: clb
+	................................................
+Passed route at end.
+Complex block 146: cb.n3764, type: clb
+	................................................
+Passed route at end.
+Complex block 147: cb.n3744, type: clb
+	................................................
+Passed route at end.
+Complex block 148: cb.n3489, type: clb
+	................................................
+Passed route at end.
+Complex block 149: cb.n3249, type: clb
+	................................................
+Passed route at end.
+Complex block 150: cb.n3694, type: clb
+	................................................
+Passed route at end.
+Complex block 151: cb.n3564, type: clb
+	................................................
+Passed route at end.
+Complex block 152: cb.n2439, type: clb
+	................................................
+Passed route at end.
+Complex block 153: cb.n3184, type: clb
+	................................................
+Passed route at end.
+Complex block 154: cb.n3379, type: clb
+	................................................
+Passed route at end.
+Complex block 155: cb.n3314, type: clb
+	................................................
+Passed route at end.
+Complex block 156: cb.n3299, type: clb
+	................................................
+Passed route at end.
+Complex block 157: cb.n3154, type: clb
+	................................................
+Passed route at end.
+Complex block 158: cb.n3224, type: clb
+	................................................
+Passed route at end.
+Complex block 159: cb.n2664, type: clb
+	................................................
+Passed route at end.
+Complex block 160: cb.n3119, type: clb
+	...................................................
+Passed route at end.
+Complex block 161: cb.n3099, type: clb
+	................................................
+Passed route at end.
+Complex block 162: cb.n3509, type: clb
+	................................................
+Passed route at end.
+Complex block 163: cb.n3054, type: clb
+	................................................
+Passed route at end.
+Complex block 164: cb.n3039, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 16 y = 16.
+Complex block 165: cb.n2649, type: clb
+	................................................
+Passed route at end.
+Complex block 166: cb.n2989, type: clb
+	....................................................
+Passed route at end.
+Complex block 167: cb.n2954, type: clb
+	................................................
+Passed route at end.
+Complex block 168: cb.n2924, type: clb
+	................................................
+Passed route at end.
+Complex block 169: cb.n2894, type: clb
+	................................................
+Passed route at end.
+Complex block 170: cb.n2899, type: clb
+	................................................
+Passed route at end.
+Complex block 171: cb.n2859, type: clb
+	....................................................
+Passed route at end.
+Complex block 172: cb.n2839, type: clb
+	................................................
+Passed route at end.
+Complex block 173: cb.n2709, type: clb
+	................................................
+Passed route at end.
+Complex block 174: cb.n2794, type: clb
+	................................................
+Passed route at end.
+Complex block 175: cb.n2729, type: clb
+	................................................
+Passed route at end.
+Complex block 176: cb.n2589, type: clb
+	................................................
+Passed route at end.
+Complex block 177: cb.n2564, type: clb
+	................................................
+Passed route at end.
+Complex block 178: cb.n2524, type: clb
+	................................................
+Passed route at end.
+Complex block 179: cb.n2459, type: clb
+	................................................
+Passed route at end.
+Complex block 180: cb.n3917, type: clb
+	....................
+Passed route at end.
+Complex block 181: cb.n2309, type: clb
+	................................................
+Passed route at end.
+Complex block 182: cb.n2294, type: clb
+	................................................
+Passed route at end.
+Complex block 183: cb.n3719, type: clb
+	................................................
+Passed route at end.
+Complex block 184: cb.n2264, type: clb
+	................................................
+Passed route at end.
+Complex block 185: cb.n2109, type: clb
+	................................................
+Passed route at end.
+Complex block 186: cb.n3844, type: clb
+	................................................
+Passed route at end.
+Complex block 187: cb.n4364, type: clb
+	................................................
+Passed route at end.
+Complex block 188: cb.n1974, type: clb
+	................................................
+Passed route at end.
+Complex block 189: cb.n4044, type: clb
+	................................................
+Passed route at end.
+Complex block 190: cb.n3974, type: clb
+	................................................
+Passed route at end.
+Complex block 191: cb.n3784, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 17 y = 17.
+Complex block 192: cb.n3649, type: clb
+	................................................
+Passed route at end.
+Complex block 193: cb.n3524, type: clb
+	................................................
+Passed route at end.
+Complex block 194: cb.n3394, type: clb
+	................................................
+Passed route at end.
+Complex block 195: cb.n3329, type: clb
+	................................................
+Passed route at end.
+Complex block 196: cb.n3194, type: clb
+	................................................
+Passed route at end.
+Complex block 197: cb.n3129, type: clb
+	................................................
+Passed route at end.
+Complex block 198: cb.n3004, type: clb
+	................................................
+Passed route at end.
+Complex block 199: cb.n2744, type: clb
+	................................................
+Passed route at end.
+Complex block 200: cb.n2679, type: clb
+	...........................................
+Passed route at end.
+Complex block 201: cb.n2614, type: clb
+	.................................
+Passed route at end.
+Complex block 202: cb.n3469, type: clb
+	...........
+Passed route at end.
+Complex block 203: cb.n2734, type: clb
+	..............
+Passed route at end.
+Complex block 204: cb.n3392, type: clb
+	...........
+Passed route at end.
+Complex block 205: cb.n5009, type: clb
+	...............................
+Passed route at end.
+Complex block 206: cb.n4927, type: clb
+	....................
+Passed route at end.
+Complex block 207: cb.n4797, type: clb
+	..........
+Passed route at end.
+Complex block 208: cb.n4161, type: clb
+	..
+Passed route at end.
+Complex block 209: cb.top^text_i~1, type: io
+	
+Passed route at end.
+Complex block 210: cb.top^rst_i, type: io
+	
+Passed route at end.
+Complex block 211: cb.top^text_i~28, type: io
+	
+Passed route at end.
+Complex block 212: cb.top^text_i~12, type: io
+	
+Passed route at end.
+Complex block 213: cb.top^text_i~27, type: io
+	
+Passed route at end.
+Complex block 214: cb.top^text_i~26, type: io
+	
+Passed route at end.
+Complex block 215: cb.top^text_i~11, type: io
+	
+Passed route at end.
+Complex block 216: cb.top^text_i~25, type: io
+	
+Passed route at end.
+Complex block 217: cb.top^text_i~4, type: io
+	
+Passed route at end.
+Complex block 218: cb.top^text_i~24, type: io
+	
+Passed route at end.
+Complex block 219: cb.top^text_i~10, type: io
+	
+Passed route at end.
+Complex block 220: cb.top^text_i~23, type: io
+	
+Passed route at end.
+Complex block 221: cb.top^text_i~0, type: io
+	
+Passed route at end.
+Complex block 222: cb.top^text_i~22, type: io
+	
+Passed route at end.
+Complex block 223: cb.top^text_i~9, type: io
+	
+Passed route at end.
+Complex block 224: cb.top^text_i~21, type: io
+	
+Passed route at end.
+Complex block 225: cb.top^text_i~3, type: io
+	
+Passed route at end.
+Complex block 226: cb.top^text_i~20, type: io
+	
+Passed route at end.
+Complex block 227: cb.top^text_i~8, type: io
+	
+Passed route at end.
+Complex block 228: cb.top^text_i~19, type: io
+	
+Passed route at end.
+Complex block 229: cb.top^text_i~18, type: io
+	
+Passed route at end.
+Complex block 230: cb.top^text_i~17, type: io
+	
+Passed route at end.
+Complex block 231: cb.top^text_i~7, type: io
+	
+Passed route at end.
+Complex block 232: cb.top^text_i~16, type: io
+	
+Passed route at end.
+Complex block 233: cb.top^text_i~6, type: io
+	
+Passed route at end.
+Complex block 234: cb.top^text_i~2, type: io
+	
+Passed route at end.
+Complex block 235: cb.top^text_i~15, type: io
+	
+Passed route at end.
+Complex block 236: cb.top^text_i~14, type: io
+	
+Passed route at end.
+Complex block 237: cb.top^text_i~13, type: io
+	
+Passed route at end.
+Complex block 238: cb.top^text_i~31, type: io
+	
+Passed route at end.
+Complex block 239: cb.top^text_i~30, type: io
+	
+Passed route at end.
+Complex block 240: cb.top^text_i~29, type: io
+	
+Passed route at end.
+Complex block 241: cb.top^text_i~5, type: io
+	
+Passed route at end.
+Complex block 242: cb.top^cmd_w_i, type: io
+	
+Passed route at end.
+Complex block 243: cb.top^cmd_i~2, type: io
+	
+Passed route at end.
+Complex block 244: cb.top^cmd_i~1, type: io
+	
+Passed route at end.
+Complex block 245: cb.top^cmd_i~0, type: io
+	
+Passed route at end.
+Complex block 246: cb.out:top^text_o~24, type: io
+	
+Passed route at end.
+Complex block 247: cb.out:top^text_o~23, type: io
+	
+Passed route at end.
+Complex block 248: cb.out:top^text_o~22, type: io
+	
+Passed route at end.
+Complex block 249: cb.out:top^text_o~21, type: io
+	
+Passed route at end.
+Complex block 250: cb.out:top^text_o~20, type: io
+	
+Passed route at end.
+Complex block 251: cb.out:top^text_o~19, type: io
+	
+Passed route at end.
+Complex block 252: cb.out:top^text_o~18, type: io
+	
+Passed route at end.
+Complex block 253: cb.out:top^text_o~17, type: io
+	
+Passed route at end.
+Complex block 254: cb.out:top^text_o~16, type: io
+	
+Passed route at end.
+Complex block 255: cb.out:top^text_o~15, type: io
+	
+Passed route at end.
+Complex block 256: cb.out:top^text_o~14, type: io
+	
+Passed route at end.
+Complex block 257: cb.out:top^text_o~13, type: io
+	
+Passed route at end.
+Complex block 258: cb.out:top^text_o~12, type: io
+	
+Passed route at end.
+Complex block 259: cb.out:top^text_o~11, type: io
+	
+Passed route at end.
+Complex block 260: cb.out:top^text_o~10, type: io
+	
+Passed route at end.
+Complex block 261: cb.out:top^text_o~9, type: io
+	
+Passed route at end.
+Complex block 262: cb.out:top^text_o~8, type: io
+	
+Passed route at end.
+Complex block 263: cb.out:top^text_o~7, type: io
+	
+Passed route at end.
+Complex block 264: cb.out:top^text_o~6, type: io
+	
+Passed route at end.
+Complex block 265: cb.out:top^text_o~5, type: io
+	
+Passed route at end.
+Complex block 266: cb.out:top^text_o~4, type: io
+	
+Passed route at end.
+Complex block 267: cb.out:top^text_o~3, type: io
+	
+Passed route at end.
+Complex block 268: cb.out:top^text_o~2, type: io
+	
+Passed route at end.
+Complex block 269: cb.out:top^text_o~1, type: io
+	
+Passed route at end.
+Complex block 270: cb.out:top^cmd_o~3, type: io
+	
+Passed route at end.
+Complex block 271: cb.out:top^cmd_o~2, type: io
+	
+Passed route at end.
+Complex block 272: cb.out:top^cmd_o~1, type: io
+	
+Passed route at end.
+Complex block 273: cb.out:top^cmd_o~0, type: io
+	
+Passed route at end.
+Complex block 274: cb.out:top^text_o~31, type: io
+	
+Passed route at end.
+Complex block 275: cb.out:top^text_o~30, type: io
+	
+Passed route at end.
+Complex block 276: cb.out:top^text_o~29, type: io
+	
+Passed route at end.
+Complex block 277: cb.out:top^text_o~28, type: io
+	
+Passed route at end.
+Complex block 278: cb.out:top^text_o~27, type: io
+	
+Passed route at end.
+Complex block 279: cb.out:top^text_o~26, type: io
+	
+Passed route at end.
+Complex block 280: cb.out:top^text_o~25, type: io
+	
+Passed route at end.
+Complex block 281: cb.out:top^text_o~0, type: io
+	
+Passed route at end.
+Complex block 282: cb.top^clk_i, type: io
+	
+Passed route at end.
+	<EMPTY>: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	io: # blocks: 74, average # input + clock pins used: 0.486486, average # output pins used: 0.513514
+	clb: # blocks: 209, average # input + clock pins used: 21.3445, average # output pins used: 6.05742
+	mult_36: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	memory: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+Absorbed logical nets 1922 out of 3226 nets, 1304 nets not absorbed.
+
+Netlist conversion complete.
+
+Packing took 5.08 seconds.
+Packing completed.
+Begin parsing packed FPGA netlist file.
+Finished parsing packed FPGA netlist file.
+Netlist generated from file 'sha.net'.
+n4589 is a constant generator.
+
+Netlist num_nets: 1304
+Netlist num_blocks: 283
+Netlist <EMPTY> blocks: 0.
+Netlist clb blocks: 209.
+Netlist mult_36 blocks: 0.
+Netlist memory blocks: 0.
+Netlist inputs pins: 38
+Netlist output pins: 36
+
+Auto-sizing FPGA at x = 17 y = 17
+Auto-sizing FPGA at x = 9 y = 9
+Auto-sizing FPGA at x = 13 y = 13
+Auto-sizing FPGA at x = 15 y = 15
+Auto-sizing FPGA at x = 16 y = 16
+Auto-sizing FPGA at x = 16 y = 16
+FPGA auto-sized to x = 17 y = 17
+The circuit will be mapped into a 17 x 17 array of clbs.
+
+Resource usage...
+	Netlist      0	blocks of type: <EMPTY>
+	Architecture 16	blocks of type: <EMPTY>
+	Netlist      74	blocks of type: io
+	Architecture 544	blocks of type: io
+	Netlist      209	blocks of type: clb
+	Architecture 221	blocks of type: clb
+	Netlist      0	blocks of type: mult_36
+	Architecture 8	blocks of type: mult_36
+	Netlist      0	blocks of type: memory
+	Architecture 4	blocks of type: memory
+
+Computing delta_io_to_io lookup matrix, may take a few seconds, please wait...
+Computing delta_io_to_clb lookup matrix, may take a few seconds, please wait...
+Computing delta_clb_to_io lookup matrix, may take a few seconds, please wait...
+Computing delta_clb_to_clb lookup matrix, may take a few seconds, please wait...
+
+There are 4308 point to point connections in this circuit.
+
+Initial placement cost: 0.995174 bb_cost: 266.057 td_cost: 7.38933e-07 delay_cost: 2.3973e-06
+
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+        T      Cost  Av BB Cost  Av TD Cost  Av Tot Del  P to P Del    d_max  Ac Rate Std Dev R limit     Exp Tot Moves   Alpha
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+  0.17249   0.99609      264.44 6.72201e-07 2.41143e-06 5.56476e-10  17.8825   0.9957  0.0125 18.0000  1.0000      1857  0.5000
+  0.08625    1.0031     264.898 6.43643e-07 2.40025e-06 5.52083e-10  18.8815   0.9941  0.0129 18.0000  1.0000      3714  0.5000
+  0.04312    1.0171     264.649 6.32125e-07 2.42175e-06 5.52272e-10  20.3605   0.9844  0.0106 18.0000  1.0000      5571  0.5000
+  0.02156   0.97335     261.681 6.55867e-07   2.393e-06 5.66315e-10  18.1258   0.9763  0.0153 18.0000  1.0000      7428  0.5000
+  0.01078   0.97956     261.525 6.44877e-07 2.39512e-06 5.53931e-10  18.6939   0.9580  0.0110 18.0000  1.0000      9285  0.9000
+  0.00970    1.0269     260.599 6.43041e-07 2.39212e-06  5.4378e-10  18.1258   0.9391  0.0118 18.0000  1.0000     11142  0.9000
+  0.00873   0.97463     259.178 6.69565e-07 2.36471e-06 5.61863e-10  18.0888   0.9295  0.0143 18.0000  1.0000     12999  0.9000
+  0.00786    1.0061     262.579 6.10327e-07  2.4068e-06 5.52068e-10  20.0292   0.9338  0.0116 18.0000  1.0000     14856  0.9000
+  0.00707   0.98462     260.449 6.41996e-07 2.39033e-06 5.67207e-10  18.3568   0.9160  0.0108 18.0000  1.0000     16713  0.9000
+  0.00637   0.97425     257.729 6.22702e-07 2.36144e-06 5.58454e-10  18.9390   0.9052  0.0109 18.0000  1.0000     18570  0.9000
+  0.00573   0.99619      260.57 6.72417e-07 2.38259e-06 5.48683e-10  17.8967   0.8945  0.0133 18.0000  1.0000     20427  0.9000
+  0.00516   0.99009     253.169 5.90191e-07 2.33912e-06 5.40328e-10  19.6493   0.8783  0.0146 18.0000  1.0000     22284  0.9000
+  0.00464   0.99725     252.842 6.28813e-07 2.33301e-06  5.4061e-10  18.1258   0.8460  0.0144 18.0000  1.0000     24141  0.9000
+  0.00418   0.97699     250.884 6.20861e-07 2.32604e-06 5.48708e-10  18.6220   0.8519  0.0109 18.0000  1.0000     25998  0.9000
+  0.00376   0.98657      250.97 6.31935e-07  2.3238e-06 5.33479e-10  17.1980   0.8401  0.0150 18.0000  1.0000     27855  0.9000
+  0.00338    1.0109     247.551 6.38808e-07 2.30615e-06 5.32854e-10  16.3640   0.8191  0.0136 18.0000  1.0000     29712  0.9000
+  0.00304   0.99633     247.868 6.16778e-07 2.27757e-06 5.32152e-10  17.3407   0.7991  0.0097 18.0000  1.0000     31569  0.9500
+  0.00289   0.98593     245.356 6.03392e-07  2.2932e-06 5.31001e-10  17.3455   0.7921  0.0092 18.0000  1.0000     33426  0.9500
+  0.00275   0.99827      244.63  6.0208e-07 2.28292e-06 5.24134e-10  17.2291   0.7701  0.0157 18.0000  1.0000     35283  0.9500
+  0.00261    1.0139     245.379  6.3513e-07 2.28226e-06 5.27581e-10  16.6589   0.7754  0.0084 18.0000  1.0000     37140  0.9500
+  0.00248   0.98578     242.786 5.79897e-07 2.27134e-06 5.21749e-10  17.8403   0.7361  0.0121 18.0000  1.0000     38997  0.9500
+  0.00236    1.0039      241.05 5.98187e-07 2.25379e-06 5.17958e-10  17.3387   0.7404  0.0086 18.0000  1.0000     40854  0.9500
+  0.00224    1.0156     239.978 6.03877e-07 2.24448e-06   5.146e-10  17.1115   0.7124  0.0104 18.0000  1.0000     42711  0.9500
+  0.00213   0.99149     240.333 6.18175e-07 2.23121e-06 5.22242e-10  16.2544   0.7081  0.0101 18.0000  1.0000     44568  0.9500
+  0.00202   0.99659     236.335 6.00422e-07 2.23243e-06 5.17332e-10  16.5255   0.6807  0.0096 18.0000  1.0000     46425  0.9500
+  0.00192   0.97418     236.997 5.95347e-07 2.24312e-06 5.28387e-10  16.6444   0.6995  0.0131 18.0000  1.0000     48282  0.9500
+  0.00182   0.99462     233.314 5.89891e-07 2.21981e-06  5.1398e-10  16.1999   0.6527  0.0097 18.0000  1.0000     50139  0.9500
+  0.00173   0.98887     228.268 5.99002e-07 2.16478e-06 5.08675e-10  16.0814   0.6274  0.0103 18.0000  1.0000     51996  0.9500
+  0.00165   0.99019     226.127 5.72211e-07 2.15642e-06 4.99427e-10  16.5200   0.5918  0.0111 18.0000  1.0000     53853  0.9500
+  0.00156   0.99901     228.081 5.89314e-07 2.17501e-06  5.0118e-10  15.7098   0.6123  0.0079 18.0000  1.0000     55710  0.9500
+  0.00148   0.96334     217.595 5.99922e-07 2.09039e-06 4.98906e-10  15.2563   0.5547  0.0142 18.0000  1.0000     57567  0.9500
+  0.00141    1.0044     217.682 5.88309e-07 2.10058e-06 4.84394e-10  15.4114   0.5401  0.0094 18.0000  1.0000     59424  0.9500
+  0.00134    1.0009     219.514 5.79839e-07 2.13676e-06 4.95614e-10  15.4008   0.5417  0.0103 18.0000  1.0000     61281  0.9500
+  0.00127   0.99747     220.202 5.74177e-07 2.13188e-06 4.94792e-10  15.6863   0.5633  0.0082 18.0000  1.0000     63138  0.9500
+  0.00121   0.97598     213.273 5.71465e-07 2.07469e-06 4.91151e-10  15.4152   0.5132  0.0088 18.0000  1.0000     64995  0.9500
+  0.00115    0.9952     212.007 5.37827e-07 2.05568e-06  4.7648e-10  16.8978   0.4803  0.0114 18.0000  1.0000     66852  0.9500
+  0.00109    1.0087     211.531 5.50866e-07 2.05715e-06 4.71009e-10  15.4412   0.4873  0.0130 18.0000  1.0000     68709  0.9500
+  0.00104   0.96095     203.628 5.50102e-07 2.00461e-06 4.73993e-10  15.5772   0.4637  0.0174 18.0000  1.0000     70566  0.9500
+  0.00099   0.99535     195.537 5.39643e-07 1.96002e-06 4.56405e-10  14.9682   0.4405  0.0055 18.0000  1.0000     72423  0.9500
+  0.00094   0.99996     192.202 5.36632e-07 1.95114e-06 4.44887e-10  14.6567   0.3974  0.0042 18.0000  1.0000     74280  0.9500
+  0.00089   0.98579     191.785 3.88477e-07 1.96692e-06 4.58205e-10  15.2133   0.3963  0.0065 17.2335  1.3156     76137  0.9500
+  0.00084   0.99011     190.394 3.12114e-07 1.94934e-06  4.5045e-10  14.7636   0.4006  0.0070 16.4810  1.6255     77994  0.9500
+  0.00080   0.98511     186.723 2.76399e-07 1.95632e-06 4.51865e-10  14.1081   0.3753  0.0107 15.8324  1.8925     79851  0.9500
+  0.00076   0.96816     179.078 1.92295e-07 1.89556e-06 4.52501e-10  14.5041   0.3770  0.0124 14.8087  2.3141     81708  0.9500
+  0.00072   0.99587     178.611 1.57281e-07 1.89384e-06 4.37133e-10  14.0715   0.3721  0.0039 13.8750  2.6985     83565  0.9500
+  0.00069   0.99904     181.319 1.38405e-07 1.91931e-06 4.41209e-10  14.0455   0.3796  0.0053 12.9330  3.0864     85422  0.9500
+  0.00065   0.99472     179.981 1.26938e-07 1.91023e-06 4.42501e-10  13.6129   0.3603  0.0043 12.1524  3.4078     87279  0.9500
+  0.00062   0.98863     183.234  1.0943e-07  1.9124e-06 4.41201e-10  13.7744   0.4109  0.0066 11.1833  3.8069     89136  0.9500
+  0.00059   0.98352     177.035  1.0311e-07 1.88985e-06 4.39475e-10  13.5609   0.3931  0.0082 10.8577  3.9410     90993  0.9500
+  0.00056   0.98729     170.496 1.03037e-07 1.87862e-06 4.40616e-10  13.2638   0.3608  0.0061 10.3485  4.1506     92850  0.9500
+  0.00053    1.0005     169.513 9.52102e-08 1.86789e-06 4.33838e-10  13.2638   0.3759  0.0014  9.5289  4.4881     94707  0.9500
+  0.00051   0.99564     168.293 9.05282e-08 1.85891e-06 4.31629e-10  13.2638   0.3796  0.0021  8.9178  4.7397     96564  0.9500
+  0.00048   0.99271     166.916 8.75266e-08  1.8665e-06 4.29105e-10  13.2638   0.3888  0.0031  8.3796  4.9613     98421  0.9500
+  0.00046     1.001     167.583 8.35686e-08 1.86185e-06 4.30759e-10  13.1113   0.4017  0.0027  7.9506  5.1380    100278  0.9500
+  0.00043   0.99278     165.175 8.03201e-08 1.83915e-06 4.26641e-10  13.1113   0.3651  0.0028  7.6462  5.2633    102135  0.9500
+  0.00041   0.99264     163.148 7.63475e-08 1.84037e-06 4.26346e-10  13.2468   0.3726  0.0036  7.0736  5.4991    103992  0.9500
+  0.00039   0.98865      159.79 7.49441e-08 1.81794e-06  4.2639e-10  13.1113   0.3737  0.0054  6.5971  5.6953    105849  0.9500
+  0.00037    1.0005     160.381 7.25383e-08 1.82889e-06 4.23462e-10  13.0827   0.3753  0.0025  6.1599  5.8753    107706  0.9500
+  0.00035   0.99309     159.716 7.05545e-08 1.81529e-06 4.24359e-10  13.0827   0.3845  0.0064  5.7616  6.0394    109563  0.9500
+  0.00034   0.99722     156.818 7.54854e-08 1.82687e-06 4.19661e-10  12.6186   0.3910  0.0032  5.4417  6.1710    111420  0.9500
+  0.00032   0.99642     156.068  7.3854e-08 1.83509e-06 4.19947e-10  12.6186   0.3775  0.0014  5.1748  6.2809    113277  0.9500
+  0.00030   0.99425     153.416 7.29525e-08 1.83074e-06 4.24109e-10  12.6186   0.3845  0.0030  4.8514  6.4141    115134  0.9500
+  0.00029   0.99859     153.714 6.83717e-08 1.83332e-06 4.22472e-10  12.7281   0.3796  0.0021  4.5821  6.5250    116991  0.9500
+  0.00027   0.99663     152.858 6.75544e-08 1.81536e-06 4.24408e-10  12.5926   0.3673  0.0028  4.3055  6.6389    118848  0.9500
+  0.00026         1     151.711 7.01789e-08 1.81981e-06 4.21188e-10  12.3476   0.4093  0.0011  3.9923  6.7679    120705  0.9500
+  0.00025   0.99219     150.115 6.97842e-08  1.8159e-06 4.23004e-10  12.2956   0.4206  0.0031  3.8696  6.8184    122562  0.9500
+  0.00023   0.99932     149.081 6.95157e-08 1.81153e-06 4.21381e-10  12.2956   0.3883  0.0009  3.7944  6.8494    124419  0.9500
+  0.00022   0.99765     148.645 6.57987e-08 1.81733e-06 4.18571e-10  12.4051   0.3866  0.0012  3.5981  6.9302    126276  0.9500
+  0.00021     1.001     148.638 6.56823e-08 1.81127e-06 4.20047e-10  12.4051   0.3813  0.0016  3.4061  7.0092    128133  0.9500
+  0.00020   0.99831     147.469 6.55246e-08 1.81362e-06    4.23e-10  12.4051   0.3716  0.0021  3.2061  7.0916    129990  0.9500
+  0.00019   0.99832     145.824  6.4517e-08 1.79907e-06  4.2071e-10  12.4051   0.4249  0.0020  2.9867  7.1820    131847  0.9500
+  0.00018   0.99522     144.183 6.42266e-08 1.81764e-06 4.16017e-10  12.4051   0.3942  0.0019  2.9415  7.2006    133704  0.9500
+  0.00017   0.99826     143.814 6.73795e-08 1.81112e-06 4.22768e-10  12.2956   0.3856  0.0022  2.8067  7.2561    135561  0.9500
+  0.00016   0.99649     141.353 6.68329e-08 1.79061e-06 4.18395e-10  12.2956   0.3963  0.0022  2.6540  7.3190    137418  0.9500
+  0.00016   0.99895     140.459 6.68155e-08 1.79179e-06 4.12818e-10  12.2956   0.3651  0.0014  2.5381  7.3667    139275  0.9500
+  0.00015   0.99703     139.741 6.59628e-08 1.78853e-06 4.15345e-10  12.2956   0.3479  0.0012  2.3480  7.4449    141132  0.9500
+  0.00014   0.99854     140.001 6.49254e-08  1.7875e-06 4.13639e-10  12.2956   0.3576  0.0009  2.1317  7.5340    142989  0.9500
+  0.00013   0.99562     138.923 6.51898e-08  1.7897e-06 4.13311e-10  12.2956   0.4346  0.0029  1.9560  7.6064    144846  0.9500
+  0.00013   0.99876     138.092 6.37363e-08 1.77723e-06 4.15179e-10  12.2956   0.4200  0.0006  1.9453  7.6107    146703  0.9500
+  0.00012   0.99942     137.812 6.37495e-08  1.7783e-06 4.12848e-10  12.2956   0.3985  0.0007  1.9065  7.6267    148560  0.9500
+  0.00011   0.99924     137.875 6.33923e-08 1.78171e-06  4.1331e-10  12.2956   0.3936  0.0008  1.8274  7.6593    150417  0.9500
+  0.00011   0.99742     137.351 6.32665e-08 1.78892e-06  4.1642e-10  12.2956   0.3683  0.0009  1.7426  7.6942    152274  0.9500
+  0.00010   0.99828     137.236   6.302e-08 1.77864e-06 4.12895e-10  12.2956   0.3780  0.0009  1.6178  7.7456    154131  0.9500
+  0.00010    0.9983     136.776 6.27539e-08 1.77217e-06 4.11278e-10  12.2956   0.3592  0.0012  1.5175  7.7869    155988  0.9500
+  0.00009     1.001     136.402 6.22325e-08 1.76161e-06 4.10548e-10  12.2956   0.3430  0.0004  1.3949  7.8374    157845  0.9500
+  0.00009    1.0006     136.443 6.18786e-08 1.75728e-06 4.07691e-10  12.2956   0.3635  0.0010  1.2596  7.8931    159702  0.9500
+  0.00008   0.99774     136.255 6.16305e-08 1.75627e-06 4.08837e-10  12.2956   0.3387  0.0017  1.1632  7.9328    161559  0.9500
+  0.00008   0.99952     135.494 6.13946e-08 1.74389e-06 4.06059e-10  12.2956   0.3053  0.0006  1.0454  7.9813    163416  0.9500
+  0.00008    1.0004     135.396 6.12923e-08 1.74388e-06   4.052e-10  12.2956   0.3069  0.0003  1.0000  8.0000    165273  0.9500
+  0.00007    0.9983     135.174 6.13287e-08 1.75172e-06 4.05694e-10  12.2956   0.3048  0.0007  1.0000  8.0000    167130  0.9500
+  0.00007   0.99908     134.836 6.13074e-08 1.75916e-06 4.05723e-10  12.2956   0.3037  0.0005  1.0000  8.0000    168987  0.9500
+  0.00006   0.99954     134.609  6.1328e-08 1.76443e-06 4.07847e-10  12.2956   0.2924  0.0004  1.0000  8.0000    170844  0.9500
+  0.00006   0.99888     134.316 6.12899e-08 1.76258e-06 4.07865e-10  12.2956   0.2811  0.0005  1.0000  8.0000    172701  0.9500
+  0.00006    1.0005     134.211 6.13667e-08 1.75857e-06 4.09701e-10  12.2956   0.2741  0.0005  1.0000  8.0000    174558  0.9500
+  0.00006         1     133.888 6.13639e-08 1.75342e-06 4.07748e-10  12.2956   0.2590  0.0003  1.0000  8.0000    176415  0.9500
+  0.00005   0.99968     133.989 6.12988e-08 1.73658e-06 4.07885e-10  12.2956   0.2574  0.0004  1.0000  8.0000    178272  0.9500
+  0.00005   0.99974     133.766 6.12915e-08 1.72863e-06 4.00354e-10  12.2956   0.2569  0.0004  1.0000  8.0000    180129  0.9500
+  0.00005    0.9991     133.519 6.13066e-08  1.7242e-06  4.0016e-10  12.2956   0.2482  0.0006  1.0000  8.0000    181986  0.9500
+  0.00005   0.99996     133.305  6.1357e-08 1.72759e-06 3.99975e-10  12.2956   0.2509  0.0002  1.0000  8.0000    183843  0.9500
+  0.00004   0.99962     133.109 6.12902e-08 1.72656e-06 4.00817e-10  12.2956   0.2342  0.0002  1.0000  8.0000    185700  0.9500
+  0.00004   0.99981     132.951 6.12888e-08 1.72846e-06 4.00528e-10  12.2956   0.2068  0.0001  1.0000  8.0000    187557  0.9500
+  0.00004   0.99937     132.807 6.11977e-08 1.73065e-06 4.01181e-10  12.2956   0.2283  0.0003  1.0000  8.0000    189414  0.9500
+  0.00004         1     132.681 6.13495e-08  1.7332e-06 4.01897e-10  12.2956   0.2084  0.0001  1.0000  8.0000    191271  0.9500
+  0.00004   0.99966     132.686 6.12817e-08 1.73253e-06 4.02973e-10  12.2956   0.2079  0.0002  1.0000  8.0000    193128  0.9500
+  0.00003   0.99983     132.552 6.12706e-08 1.72899e-06 4.01555e-10  12.2956   0.2057  0.0001  1.0000  8.0000    194985  0.9500
+  0.00003   0.99964     132.467 6.14101e-08 1.73164e-06 4.01486e-10  12.2956   0.1944  0.0003  1.0000  8.0000    196842  0.9500
+  0.00003   0.99989     132.415 6.13774e-08  1.7375e-06 4.03513e-10  12.2956   0.1836  0.0001  1.0000  8.0000    198699  0.9500
+  0.00003   0.99955     132.308 6.13791e-08 1.73461e-06 4.02651e-10  12.2956   0.1928  0.0002  1.0000  8.0000    200556  0.9500
+  0.00003   0.99985     132.289 6.13717e-08 1.72775e-06 4.01055e-10  12.2956   0.1842  0.0001  1.0000  8.0000    202413  0.9500
+  0.00003   0.99983     132.318 6.12862e-08 1.73096e-06 4.01335e-10  12.2956   0.1691  0.0001  1.0000  8.0000    204270  0.9500
+  0.00002   0.99976      132.22 6.13022e-08   1.736e-06 4.02577e-10  12.2956   0.1847  0.0001  1.0000  8.0000    206127  0.9500
+  0.00002   0.99988     132.219 6.13358e-08 1.73223e-06 4.01939e-10  12.2956   0.1718  0.0002  1.0000  8.0000    207984  0.9500
+  0.00002   0.99993     132.155 6.12734e-08 1.73808e-06 4.03181e-10  12.2956   0.1551  0.0001  1.0000  8.0000    209841  0.9500
+  0.00002   0.99994     132.156 6.12775e-08 1.73865e-06 4.05101e-10  12.2956   0.1599  0.0000  1.0000  8.0000    211698  0.9500
+  0.00002   0.99982     132.084 6.12871e-08 1.72887e-06 4.02443e-10  12.2956   0.1540  0.0002  1.0000  8.0000    213555  0.9500
+  0.00002    1.0002     132.077 6.12872e-08 1.72539e-06 4.01567e-10  12.2956   0.1508  0.0001  1.0000  8.0000    215412  0.9500
+  0.00002   0.99992      132.07 6.12887e-08 1.72201e-06 3.99774e-10  12.2956   0.1535  0.0000  1.0000  8.0000    217269  0.9500
+  0.00002   0.99994     132.042 6.12987e-08 1.73222e-06 3.99994e-10  12.2956   0.1465  0.0000  1.0000  8.0000    219126  0.8000
+  0.00001   0.99985     132.009 6.13009e-08 1.74745e-06 4.02772e-10  12.2956   0.1443  0.0000  1.0000  8.0000    220983  0.8000
+  0.00001   0.99997     132.015 6.13011e-08 1.74797e-06 4.06209e-10  12.2956   0.1400  0.0000  1.0000  8.0000    222840  0.8000
+  0.00001   0.99991     131.961    6.13e-08 1.74479e-06 4.03694e-10  12.2956   0.1271  0.0000  1.0000  8.0000    224697  0.8000
+  0.00001   0.99996     131.954 6.12867e-08 1.74403e-06 4.03676e-10  12.2956   0.1169  0.0000  1.0000  8.0000    226554  0.8000
+  0.00001         1     131.952 6.12866e-08 1.72872e-06 4.01794e-10  12.2956   0.1147  0.0000  1.0000  8.0000    228411  0.8000
+  0.00000         1     131.952 6.12866e-08 1.72413e-06 3.99981e-10  12.2956   0.1018  0.0000  1.0000  8.0000    230268  0.8000
+  0.00000         1     131.952 6.12867e-08 1.72262e-06 4.00254e-10            0.0307  0.0000  1.0000  8.0000    232125
+
+BB estimate of min-dist (placement) wirelength: 13126
+bb_cost recomputed from scratch: 131.951
+timing_cost recomputed from scratch: 6.12865e-08
+delay_cost recomputed from scratch: 1.72197e-06
+
+Completed placement consistency check successfully.
+
+Swaps called: 232408
+
+Placement estimated critical path delay: 12.2956 ns
+Placement cost: 0.999993, bb_cost: 131.951, td_cost: 6.12865e-08, delay_cost: 1.72197e-06
+Placement total # of swap attempts: 232408
+	Swap reject rate: 0
+	Swap accept rate: 0
+	Swap abort rate: 0
+Placement took 1.48 seconds.
+Build rr_graph took 0.07 seconds.
+Confirming Router Algorithm: TIMING_DRIVEN.
+
+Routing iteration: 1
+Wire length after first iteration 18399, total available wire length 33048, ratio 0.556736
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 2
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 3
+Critical path: 13.5521 ns
+Routing iteration took 0.01 seconds.
+
+Routing iteration: 4
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 5
+Critical path: 13.5521 ns
+Routing iteration took 0.01 seconds.
+
+Routing iteration: 6
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 7
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 8
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 9
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 10
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 11
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 12
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 13
+Critical path: 13.5521 ns
+Routing iteration took 0.03 seconds.
+
+Routing iteration: 14
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 15
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 16
+Critical path: 13.5521 ns
+Routing iteration took 0.03 seconds.
+
+Routing iteration: 17
+Critical path: 13.5521 ns
+Routing iteration took 0.02 seconds.
+
+Routing iteration: 18
+Critical path: 13.5521 ns
+Routing iteration took 0.03 seconds.
+
+Routing iteration: 19
+Successfully routed after 19 routing iterations.
+Completed net delay value cross check successfully.
+
+Checking to ensure routing is legal...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -1467926039
+Circuit successfully routed with a channel width factor of 54.
+
+
+Average number of bends per net: 2.35303  Maximum # of bends: 69
+
+Number of routed nets (nonglobal): 1303
+Wirelength results (in units of 1 clb segments)...
+	Total wirelength: 20120, average net length: 15.4413
+	Maximum net length: 302
+
+Wirelength results in terms of physical segments...
+	Total wiring segments used: 5400, average wire segments per net: 4.14428
+	Maximum segments used by a net: 86
+	Total local nets with reserved CLB opins: 0
+
+X - Directed channels: j	max occ	av_occ		capacity
+0	14	9.29412  	54
+1	24	17.9412  	54
+2	32	25.2941  	54
+3	30	25.6471  	54
+4	39	28.4118  	54
+5	44	32.8824  	54
+6	45	32.8235  	54
+7	47	35.0588  	54
+8	50	41.6471  	54
+9	53	43.8235  	54
+10	53	42.0588  	54
+11	52	42.4706  	54
+12	53	41.5294  	54
+13	54	42.5294  	54
+14	51	41.0588  	54
+15	49	38.2353  	54
+16	45	31.2353  	54
+17	48	32.9412  	54
+
+Y - Directed channels: i	max occ	av_occ		capacity
+0	29	15.4706  	54
+1	21	13.1765  	54
+2	37	23.8824  	54
+3	46	34.0588  	54
+4	48	36.2353  	54
+5	47	30.8235  	54
+6	46	29.0588  	54
+7	50	38.3529  	54
+8	50	39.8824  	54
+9	48	32.5294  	54
+10	52	35.2353  	54
+11	54	38.7647  	54
+12	52	40.0588  	54
+13	47	33.1765  	54
+14	47	31.9412  	54
+15	52	38.0000  	54
+16	52	37.5294  	54
+17	47	30.4706  	54
+
+Total tracks in x-direction: 972, in y-direction: 972
+
+Logic area (in minimum width transistor areas, excludes I/Os and empty grid tiles)...
+	Total logic block area (Warning, need to add pitch of routing to blocks with height > 3): 1.72706e+07
+	Total used logic block area: 1.12638e+07
+
+Routing area (in minimum width transistor areas)...
+	Total routing area: 1.79306e+06, per logic tile: 6204.36
+
+Segment usage by type (index):
+Segment type       Fractional utilization
+------------       ----------------------
+       0                  0.556
+
+Segment usage by length:
+Segment length       Fractional utilization
+--------------       ----------------------
+        4                   0.556
+
+Nets on critical path: 20 normal, 0 global.
+Total logic delay: 7.64799e-09 (s), total net delay: 5.90193e-09 (s)
+Final critical path: 13.5499 ns
+f_max: 73.8012 MHz
+
+Least slack in design: -13.5499 ns
+
+Routing took 0.49 seconds.
+The entire flow of VPR took 7.29 seconds.

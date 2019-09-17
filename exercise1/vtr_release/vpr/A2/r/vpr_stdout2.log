@@ -1,0 +1,2552 @@
+________________________________________________________________________
+                       VPR - The Next Generation                        
+                     Version 0.A15.0 (Linux X86/64)                     
+            This is free open source code under MIT license.            
+________________________________________________________________________
+
+VPR FPGA Placement and Routing.
+Version: Version 7.0
+Compiled: Nov  7 2018.
+University of Toronto
+vpr@eecg.utoronto.ca
+This is free open source code under MIT license.
+
+Architecture file: k6_frac_N10_mem32K_40nm.xml
+Circuit name: raygentop.blif
+
+Building complex block graph.
+WARNING(1): io[0].clock[0] unconnected pin in architecture.
+Loop for doall = 0, init_parse took 0 seconds.
+Loop for doall = 0 took 0.01 seconds.
+Loop for doall = 1, init_parse took 0 seconds.
+Loop for doall = 1 took 0.03 seconds.
+Swept away 1105 nets with no fanout.
+WARNING(2): logical_block top^rgCont~16 #101 has no fanout.
+Removing input.
+WARNING(3): logical_block top^rgCont~17 #102 has no fanout.
+Removing input.
+WARNING(4): logical_block top^rgCont~18 #103 has no fanout.
+Removing input.
+WARNING(5): logical_block top^rgCont~19 #104 has no fanout.
+Removing input.
+WARNING(6): logical_block top^rgCont~20 #105 has no fanout.
+Removing input.
+WARNING(7): logical_block top^rgCont~21 #106 has no fanout.
+Removing input.
+WARNING(8): logical_block top^rgCont~22 #107 has no fanout.
+Removing input.
+WARNING(9): logical_block top^rgCont~23 #108 has no fanout.
+Removing input.
+WARNING(10): logical_block top^rgCont~24 #109 has no fanout.
+Removing input.
+WARNING(11): logical_block top^rgCont~25 #110 has no fanout.
+Removing input.
+WARNING(12): logical_block top^rgCont~26 #111 has no fanout.
+Removing input.
+WARNING(13): logical_block top^rgCont~27 #112 has no fanout.
+Removing input.
+WARNING(14): logical_block top^rgCont~28 #113 has no fanout.
+Removing input.
+WARNING(15): logical_block top^rgCont~29 #114 has no fanout.
+Removing input.
+WARNING(16): logical_block top^rgCont~30 #115 has no fanout.
+Removing input.
+WARNING(17): logical_block top^rgCont~31 #116 has no fanout.
+Removing input.
+Net is a constant generator: top^raygroup10~1.
+WARNING(18): logical_block #2022 with output top^raygroup10~1 has only 0 pin.
+WARNING(19): Block contains output -- may be a constant generator.
+Net is a constant generator: top^tm3_sram_addr~18.
+WARNING(20): logical_block #4052 with output top^tm3_sram_addr~18 has only 0 pin.
+WARNING(21): Block contains output -- may be a constant generator.
+Net is a constant generator: top^tm3_sram_adsp.
+WARNING(22): logical_block #4063 with output top^tm3_sram_adsp has only 0 pin.
+WARNING(23): Block contains output -- may be a constant generator.
+Net is a constant generator: top^raygroup01~1.
+WARNING(24): logical_block #4130 with output top^raygroup01~1 has only 0 pin.
+WARNING(25): Block contains output -- may be a constant generator.
+0 unconnected blocks in input netlist.
+Removed 483 LUT buffers.
+Sweeped away 499 nodes.
+BLIF circuit stats:
+	4 LUTs of size 0
+	1 LUTs of size 1
+	304 LUTs of size 2
+	403 LUTs of size 3
+	434 LUTs of size 4
+	375 LUTs of size 5
+	626 LUTs of size 6
+	239 of type input
+	305 of type output
+	1423 of type latch
+	2147 of type names
+	0 of type dual_port_ram
+	21 of type single_port_ram
+	18 of type multiply
+Timing analysis: ON
+Circuit netlist file: raygentop.net
+Circuit placement file: raygentop.place
+Circuit routing file: raygentop.route
+Circuit SDC file: raygentop.sdc
+Operation: RUN_FLOW
+
+Packer: ENABLED
+Placer: ENABLED
+Router: DISABLED
+PackerOpts.allow_early_exit: FALSE
+PackerOpts.allow_unrelated_clustering: TRUE
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.aspect: 1.000000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.block_delay: 0.000000
+PackerOpts.cluster_seed_type: TIMING
+PackerOpts.connection_driven: TRUE
+PackerOpts.global_clocks: TRUE
+PackerOpts.hill_climbing_flag: FALSE
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.intra_cluster_net_delay: 0.000000
+PackerOpts.recompute_timing_after: 32767
+PackerOpts.sweep_hanging_nets_and_inputs: TRUE
+PackerOpts.timing_driven: TRUE
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: BOUNDING_BOX_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlaceOpts.seed: 2
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+Initialize packing.
+Begin packing 'raygentop.blif'.
+
+After removing unused inputs...
+	total blocks: 4153, total nets: 4037, total inputs: 239, total outputs: 305
+Begin prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.33777e-09
+
+SDC file 'raygentop.sdc' blank or not found.
+
+Defaulting to: constrain all 0 inputs and 0 outputs on the netlist clock.
+Optimize this clock to run as fast as possible.
+Not enough resources expand FPGA size to x = 2 y = 2.
+Complex block 0: cb.n2808, type: clb
+	...................................................................
+Passed route at end.
+Complex block 1: cb.n2803, type: clb
+	.........................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 3 y = 3.
+Complex block 2: cb.n7776, type: clb
+	...................................................................................................
+Passed route at end.
+Complex block 3: cb.n7731, type: clb
+	........................................................................
+Passed route at end.
+Complex block 4: cb.n7736, type: clb
+	..................................................................................................
+Passed route at end.
+Complex block 5: cb.n7600_1, type: clb
+	.......................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 4 y = 4.
+Complex block 6: cb.n7631, type: clb
+	....................................
+Passed route at end.
+Complex block 7: cb.n2793, type: clb
+	............................................................................
+Passed route at end.
+Complex block 8: cb.n7725, type: clb
+	.............................................
+Passed route at end.
+Complex block 9: cb.n7701, type: clb
+	............................................
+Passed route at end.
+Complex block 10: cb.n2798, type: clb
+	.....................................................................
+Passed route at end.
+Complex block 11: cb.n7797, type: clb
+	......................................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 5 y = 5.
+Complex block 12: cb.n7638, type: clb
+	.........................................................................................................................
+Passed route at end.
+Complex block 13: cb.n7758, type: clb
+	...................................................................................
+Passed route at end.
+Complex block 14: cb.n7774_1, type: clb
+	.....................................................................................................
+Passed route at end.
+Complex block 15: cb.n7259, type: clb
+	..........................................................
+Passed route at end.
+Complex block 16: cb.n6459, type: clb
+	..................................................................
+Passed route at end.
+Complex block 17: cb.n5659, type: clb
+	..............................................................
+Passed route at end.
+Complex block 18: cb.n7632, type: clb
+	...............................................
+Passed route at end.
+Complex block 19: cb.n8799_1, type: clb
+	.........................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 6 y = 6.
+Complex block 20: cb.n7794_1, type: clb
+	..............................................................................
+Passed route at end.
+Complex block 21: cb.n8689_1, type: clb
+	......................................................................
+Passed route at end.
+Complex block 22: cb.n8590_1, type: clb
+	.....................................................................
+Passed route at end.
+Complex block 23: cb.n8584_1, type: clb
+	................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 7 y = 7.
+Complex block 24: cb.n8683, type: clb
+	................................................
+Passed route at end.
+Complex block 25: cb.n2768, type: clb
+	......................................................................
+Passed route at end.
+Complex block 26: cb.n8773, type: clb
+	..............................................
+Passed route at end.
+Complex block 27: cb.n2788, type: clb
+	......................................................................
+Passed route at end.
+Complex block 28: cb.n8762, type: clb
+	...............
+Passed route at end.
+Complex block 29: cb.top.matmult+matmultinst^FF_NODE~55, type: clb
+	........................................................
+Passed route at end.
+Complex block 30: cb.top.matmult+matmultinst^FF_NODE~150, type: clb
+	..........................................................................
+Passed route at end.
+Complex block 31: cb.n8691, type: clb
+	.........................................................
+Passed route at end.
+Complex block 32: cb.n8770_1, type: clb
+	.....................................................
+Passed route at end.
+Complex block 33: cb.top.matmult+matmultinst^FF_NODE~310, type: clb
+	.........................................................................................................................
+Passed route at end.
+Complex block 34: cb.n8419_1, type: clb
+	............................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 8 y = 8.
+Complex block 35: cb.n8396, type: clb
+	....................................
+Passed route at end.
+Complex block 36: cb.n3223, type: clb
+	....................................................................
+Passed route at end.
+Complex block 37: cb.n7834_1, type: clb
+	................................................................................................................
+Passed route at end.
+Complex block 38: cb.n7827, type: clb
+	..................................................................................................................
+Passed route at end.
+Complex block 39: cb.n7755_1, type: clb
+	.......................................................................
+Passed route at end.
+Complex block 40: cb.n2778, type: clb
+	.....................................................................
+Passed route at end.
+Complex block 41: cb.n7693, type: clb
+	................
+Passed route at end.
+Complex block 42: cb.n5649, type: clb
+	......................................................
+Passed route at end.
+Complex block 43: cb.n6449, type: clb
+	......................................................
+Passed route at end.
+Complex block 44: cb.n7762, type: clb
+	...............................................................................
+Passed route at end.
+Complex block 45: cb.n7244, type: clb
+	.......................................................
+Passed route at end.
+Complex block 46: cb.top.matmult+matmultinst^FF_NODE~154, type: clb
+	...................................................
+Passed route at end.
+Complex block 47: cb.top.matmult+matmultinst^FF_NODE~282, type: clb
+	.......................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 9 y = 9.
+Complex block 48: cb.top.matmult+matmultinst^FF_NODE~250, type: clb
+	.................................................
+Passed route at end.
+Complex block 49: cb.top.matmult+matmultinst^FF_NODE~90, type: clb
+	..................................................
+Passed route at end.
+Complex block 50: cb.top.matmult+matmultinst^FF_NODE~58, type: clb
+	..................................................
+Passed route at end.
+Complex block 51: cb.top.matmult+matmultinst^FF_NODE~186, type: clb
+	..................................................
+Passed route at end.
+Complex block 52: cb.top.matmult+matmultinst^FF_NODE~121, type: clb
+	.....................................................
+Passed route at end.
+Complex block 53: cb.top.matmult+matmultinst^FF_NODE~217, type: clb
+	......................................................
+Passed route at end.
+Complex block 54: cb.n8682, type: clb
+	...................................................................................................
+Passed route at end.
+Complex block 55: cb.n8583, type: clb
+	...................................................................................................
+Passed route at end.
+Complex block 56: cb.n8413, type: clb
+	.............................
+Passed route at end.
+Complex block 57: cb.n7497, type: clb
+	...........................................................
+Passed route at end.
+Complex block 58: cb.n7526, type: clb
+	..........................................................
+Passed route at end.
+Complex block 59: cb.n2588, type: clb
+	............................................................................................
+Passed route at end.
+Complex block 60: cb.n2713, type: clb
+	...................................................................
+Passed route at end.
+Complex block 61: cb.n2583, type: clb
+	..............................................................................................................................
+Passed route at end.
+Complex block 62: cb.n2708, type: clb
+	....................................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 10 y = 10.
+Complex block 63: cb.n2703, type: clb
+	.........................................................................
+Passed route at end.
+Complex block 64: cb.n2628, type: clb
+	........................................................................................................................................................................................
+Passed route at end.
+Complex block 65: cb.n7877, type: clb
+	..............................................................................................................................
+Passed route at end.
+Complex block 66: cb.n7879_1, type: clb
+	.......................................................................................
+Passed route at end.
+Complex block 67: cb.n9729, type: clb
+	.......................................................................
+Passed route at end.
+Complex block 68: cb.n3208, type: clb
+	.............................................................................................................
+Passed route at end.
+Complex block 69: cb.n4423, type: clb
+	.........................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 11 y = 11.
+Complex block 70: cb.n7234, type: clb
+	..........................................................
+Passed route at end.
+Complex block 71: cb.n5634, type: clb
+	...............................................................
+Passed route at end.
+Complex block 72: cb.top.matmult+matmultinst^FF_NODE~156, type: clb
+	...............................................................................................
+Passed route at end.
+Complex block 73: cb.top.matmult+matmultinst^FF_NODE~188, type: clb
+	................................................................................
+Passed route at end.
+Complex block 74: cb.top.matmult+matmultinst^FF_NODE~92, type: clb
+	...........................................................................
+Passed route at end.
+Complex block 75: cb.top.matmult+matmultinst^FF_NODE~60, type: clb
+	................................................................................................
+Passed route at end.
+Complex block 76: cb.top.matmult+matmultinst^FF_NODE~61, type: clb
+	....................................................................................
+Passed route at end.
+Complex block 77: cb.top.matmult+matmultinst^FF_NODE~189, type: clb
+	....................................................................................
+Passed route at end.
+Complex block 78: cb.top.matmult+matmultinst^FF_NODE~285, type: clb
+	.................................................................................................
+Passed route at end.
+Complex block 79: cb.top.matmult+matmultinst^FF_NODE~123, type: clb
+	..........................................................................
+Passed route at end.
+Complex block 80: cb.top.matmult+matmultinst^FF_NODE~315, type: clb
+	................................................................
+Passed route at end.
+Complex block 81: cb.top.matmult+matmultinst^FF_NODE~314, type: clb
+	.........................................................
+Passed route at end.
+Complex block 82: cb.top.matmult+matmultinst^FF_NODE~218, type: clb
+	.............................................................................................
+Passed route at end.
+Complex block 83: cb.top.matmult+matmultinst^FF_NODE~219, type: clb
+	...........................................................................
+Passed route at end.
+Complex block 84: cb.n2618, type: clb
+	.......................................................................................
+Passed route at end.
+Complex block 85: cb.n2578, type: clb
+	............................................................
+Passed route at end.
+Complex block 86: cb.n2698, type: clb
+	.......................................................
+Passed route at end.
+Complex block 87: cb.n8406, type: clb
+	........................
+Passed route at end.
+Not enough resources expand FPGA size to x = 12 y = 12.
+Complex block 88: cb.top.resultwriter+resultwriteinst.bilinearintrp+bilinearimp^FF_NODE~2917, type: clb
+	.............................................................................................................
+Passed route at end.
+Complex block 89: cb.n7882, type: clb
+	......................................................................................
+Passed route at end.
+Complex block 90: cb.n7886, type: clb
+	.....................................................................................
+Passed route at end.
+Complex block 91: cb.n9649, type: clb
+	.....................................................................................
+Passed route at end.
+Complex block 92: cb.n9604, type: clb
+	..........................................................
+Passed route at end.
+Complex block 93: cb.n8325_1, type: clb
+	......................................
+Passed route at end.
+Complex block 94: cb.n5624, type: clb
+	................................................................................
+Passed route at end.
+Complex block 95: cb.n6424, type: clb
+	....................................................................................
+Passed route at end.
+Complex block 96: cb.n7224, type: clb
+	.................................
+Passed route at end.
+Complex block 97: cb.n8532, type: clb
+	......................
+Passed route at end.
+Complex block 98: cb.n5441, type: clb
+	...............................................................................
+Passed route at end.
+Complex block 99: cb.n5446, type: clb
+	.................
+Passed route at end.
+Complex block 100: cb.n7416, type: clb
+	......................................................................
+Passed route at end.
+Complex block 101: cb.top.matmult+matmultinst^FF_NODE~317, type: clb
+	.................................................................................
+Passed route at end.
+Complex block 102: cb.n4751, type: clb
+	........................
+Passed route at end.
+Complex block 103: cb.n7506, type: clb
+	........................................................
+Passed route at end.
+Complex block 104: cb.n7477, type: clb
+	............................................................
+Passed route at end.
+Complex block 105: cb.n2673, type: clb
+	...............................................................
+Passed route at end.
+Complex block 106: cb.n8231, type: clb
+	..............................
+Passed route at end.
+Complex block 107: cb.top.matmult+matmultinst^FF_NODE~158, type: clb
+	...........................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 13 y = 13.
+Complex block 108: cb.top.matmult+matmultinst^FF_NODE~254, type: clb
+	.....................................................
+Passed route at end.
+Complex block 109: cb.top.matmult+matmultinst^FF_NODE~190, type: clb
+	........................................................................
+Passed route at end.
+Complex block 110: cb.top.matmult+matmultinst^FF_NODE~286, type: clb
+	.........................................................................
+Passed route at end.
+Complex block 111: cb.top.matmult+matmultinst^FF_NODE~94, type: clb
+	.............................................................
+Passed route at end.
+Complex block 112: cb.top.matmult+matmultinst^FF_NODE~62, type: clb
+	.......................................................
+Passed route at end.
+Complex block 113: cb.top.matmult+matmultinst^FF_NODE~159, type: clb
+	.......................................................
+Passed route at end.
+Complex block 114: cb.top.matmult+matmultinst^FF_NODE~191, type: clb
+	...................................................................................
+Passed route at end.
+Complex block 115: cb.top.matmult+matmultinst^FF_NODE~287, type: clb
+	..................................................
+Passed route at end.
+Complex block 116: cb.top.matmult+matmultinst^FF_NODE~95, type: clb
+	......................................................
+Passed route at end.
+Complex block 117: cb.top.matmult+matmultinst^FF_NODE~63, type: clb
+	....................................................................
+Passed route at end.
+Complex block 118: cb.top.matmult+matmultinst^FF_NODE~255, type: clb
+	...................................................
+Passed route at end.
+Complex block 119: cb.top.resultwriter+resultwriteinst.bilinearintrp+bilinearimp^FF_NODE~2873, type: clb
+	.........................................................................
+Passed route at end.
+Complex block 120: cb.n9529, type: clb
+	.....................................................
+Passed route at end.
+Complex block 121: cb.n2888, type: clb
+	................
+Passed route at end.
+Complex block 122: cb.n2743, type: clb
+	.................................................
+Passed route at end.
+Complex block 123: cb.n4781, type: clb
+	.........................................................................................................................
+Passed route at end.
+Complex block 124: cb.n8501, type: clb
+	........................................
+Passed route at end.
+Complex block 125: cb.n2738, type: clb
+	........................................................................................................
+Passed route at end.
+Complex block 126: cb.n8480_1, type: clb
+	.......................................................................................................
+Passed route at end.
+Complex block 127: cb.n8058, type: clb
+	........................................
+Passed route at end.
+Complex block 128: cb.n8054_1, type: clb
+	....................................
+Passed route at end.
+Complex block 129: cb.n8048, type: clb
+	.......................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 14 y = 14.
+Complex block 130: cb.top.matmult+matmultinst^FF_NODE~256, type: clb
+	...................................................
+Passed route at end.
+Complex block 131: cb.top.matmult+matmultinst^FF_NODE~288, type: clb
+	...........................................
+Passed route at end.
+Complex block 132: cb.top.matmult+matmultinst^FF_NODE~96, type: clb
+	..............................
+Passed route at end.
+Complex block 133: cb.top.matmult+matmultinst^FF_NODE~64, type: clb
+	...................................................................
+Passed route at end.
+Complex block 134: cb.top.matmult+matmultinst^FF_NODE~289, type: clb
+	....................................................
+Passed route at end.
+Complex block 135: cb.top.matmult+matmultinst^FF_NODE~257, type: clb
+	..............................
+Passed route at end.
+Complex block 136: cb.top.matmult+matmultinst^FF_NODE~97, type: clb
+	...................................................
+Passed route at end.
+Complex block 137: cb.top.matmult+matmultinst^FF_NODE~319, type: clb
+	...................................................
+Passed route at end.
+Complex block 138: cb.top.matmult+matmultinst^FF_NODE~223, type: clb
+	...................................................
+Passed route at end.
+Complex block 139: cb.top.matmult+matmultinst^FF_NODE~127, type: clb
+	....................................................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 15 y = 15.
+Complex block 140: cb.n8241, type: clb
+	...................................................................................
+Passed route at end.
+Complex block 141: cb.n8511, type: clb
+	.......................................................................
+Passed route at end.
+Complex block 142: cb.n4113, type: clb
+	......................................
+Passed route at end.
+Complex block 143: cb.n4053, type: clb
+	.........................
+Passed route at end.
+Complex block 144: cb.n9439, type: clb
+	.........................................................
+Passed route at end.
+Complex block 145: cb.out:top^tm3_sram_addr~3, type: io
+	
+Passed route at end.
+Complex block 146: cb.out:top^tm3_sram_addr~8, type: io
+	
+Passed route at end.
+Complex block 147: cb.out:top^tm3_sram_addr~5, type: io
+	
+Passed route at end.
+Complex block 148: cb.out:top^tm3_sram_addr~4, type: io
+	
+Passed route at end.
+Complex block 149: cb.out:top^tm3_sram_addr~6, type: io
+	
+Passed route at end.
+Complex block 150: cb.out:top^tm3_sram_addr~13, type: io
+	
+Passed route at end.
+Complex block 151: cb.out:top^tm3_sram_addr~12, type: io
+	
+Passed route at end.
+Complex block 152: cb.out:top^tm3_sram_addr~11, type: io
+	
+Passed route at end.
+Complex block 153: cb.out:top^tm3_sram_addr~10, type: io
+	
+Passed route at end.
+Complex block 154: cb.out:top^tm3_sram_addr~7, type: io
+	
+Passed route at end.
+Complex block 155: cb.out:top^tm3_sram_addr~2, type: io
+	
+Passed route at end.
+Complex block 156: cb.out:top^tm3_sram_addr~1, type: io
+	
+Passed route at end.
+Complex block 157: cb.out:top^tm3_sram_addr~15, type: io
+	
+Passed route at end.
+Complex block 158: cb.out:top^tm3_sram_addr~14, type: io
+	
+Passed route at end.
+Complex block 159: cb.out:top^tm3_sram_addr~9, type: io
+	
+Passed route at end.
+Complex block 160: cb.out:top^tm3_sram_addr~0, type: io
+	
+Passed route at end.
+Complex block 161: cb.n7265_1, type: clb
+	......................................................
+Passed route at end.
+Complex block 162: cb.n7307, type: clb
+	..........................................................................
+Passed route at end.
+Complex block 163: cb.n7313, type: clb
+	..........................................
+Passed route at end.
+Complex block 164: cb.n7277, type: clb
+	........................................
+Passed route at end.
+Complex block 165: cb.n7240_1, type: clb
+	............................................................
+Passed route at end.
+Complex block 166: cb.n9999, type: clb
+	..................................................
+Passed route at end.
+Complex block 167: cb.n9949, type: clb
+	...............................................................
+Passed route at end.
+Complex block 168: cb.n9249, type: clb
+	..................................................................
+Passed route at end.
+Complex block 169: cb.n9994, type: clb
+	.........................................
+Passed route at end.
+Complex block 170: cb.n9964, type: clb
+	..........
+Passed route at end.
+Complex block 171: cb.top^tm3_sram_data_in~62, type: io
+	
+Passed route at end.
+Complex block 172: cb.top^busy10, type: io
+	
+Passed route at end.
+Complex block 173: cb.top^tm3_sram_data_in~63, type: io
+	
+Passed route at end.
+Complex block 174: cb.top^busy01, type: io
+	
+Passed route at end.
+Complex block 175: cb.n8479_1, type: clb
+	............................
+Passed route at end.
+Complex block 176: cb.top.matmult+matmultinst^FF_NODE~290, type: clb
+	..............................
+Passed route at end.
+Complex block 177: cb.top.matmult+matmultinst^FF_NODE~195, type: clb
+	...................................................
+Passed route at end.
+Complex block 178: cb.top.matmult+matmultinst^FF_NODE~321, type: clb
+	............................................................
+Passed route at end.
+Complex block 179: cb.top.matmult+matmultinst^FF_NODE~129, type: clb
+	.................................................
+Passed route at end.
+Complex block 180: cb.top.matmult+matmultinst^FF_NODE~163, type: clb
+	............................................
+Passed route at end.
+Complex block 181: cb.top.matmult+matmultinst^FF_NODE~99, type: clb
+	....................................
+Passed route at end.
+Complex block 182: cb.top.matmult+matmultinst^FF_NODE~67, type: clb
+	............................
+Passed route at end.
+Complex block 183: cb.n7504_1, type: clb
+	.............................
+Passed route at end.
+Complex block 184: cb.n9394, type: clb
+	.............................
+Passed route at end.
+Not enough resources expand FPGA size to x = 16 y = 16.
+Complex block 185: cb.n10054, type: clb
+	............................
+Passed route at end.
+Complex block 186: cb.n10019, type: clb
+	..................
+Passed route at end.
+Complex block 187: cb.out:top^tm3_sram_addr~17, type: io
+	
+Passed route at end.
+Complex block 188: cb.out:top^tm3_sram_addr~16, type: io
+	
+Passed route at end.
+Complex block 189: cb.top^rgwant_read, type: io
+	
+Passed route at end.
+Complex block 190: cb.top^rgaddr_ready, type: io
+	
+Passed route at end.
+Complex block 191: cb.top^rgdata_ready, type: io
+	
+Passed route at end.
+Complex block 192: cb.top^rgCfgData_ready, type: io
+	
+Passed route at end.
+Complex block 193: cb.top^rgCfgData~31, type: io
+	
+Passed route at end.
+Complex block 194: cb.top^rgCfgData~30, type: io
+	
+Passed route at end.
+Complex block 195: cb.n7614, type: clb
+	........................................................................
+Passed route at end.
+Complex block 196: cb.top.matmult+matmultinst^FF_NODE~325, type: clb
+	.........................................................................................................................................................................................................................................................
+Passed route at end.
+Complex block 197: cb.top.matmult+matmultinst^FF_NODE~323, type: clb
+	.....................................................................................................................................................................................................
+Passed route at end.
+Complex block 198: cb.out:top^tm3_sram_oe~1, type: io
+	
+Passed route at end.
+Complex block 199: cb.out:top^tm3_sram_data_out~63, type: io
+	
+Passed route at end.
+Complex block 200: cb.out:top^tm3_sram_data_out~62, type: io
+	
+Passed route at end.
+Complex block 201: cb.out:top^tm3_sram_data_out~61, type: io
+	
+Passed route at end.
+Complex block 202: cb.out:top^tm3_sram_data_out~60, type: io
+	
+Passed route at end.
+Complex block 203: cb.out:top^tm3_sram_data_out~59, type: io
+	
+Passed route at end.
+Complex block 204: cb.out:top^tm3_sram_data_out~58, type: io
+	
+Passed route at end.
+Complex block 205: cb.out:top^tm3_sram_data_out~56, type: io
+	
+Passed route at end.
+Complex block 206: cb.out:top^tm3_sram_data_out~57, type: io
+	
+Passed route at end.
+Complex block 207: cb.out:top^tm3_sram_data_out~55, type: io
+	
+Passed route at end.
+Complex block 208: cb.out:top^tm3_sram_data_out~54, type: io
+	
+Passed route at end.
+Complex block 209: cb.out:top^tm3_sram_data_out~53, type: io
+	
+Passed route at end.
+Complex block 210: cb.out:top^tm3_sram_data_out~52, type: io
+	
+Passed route at end.
+Complex block 211: cb.out:top^tm3_sram_data_out~51, type: io
+	
+Passed route at end.
+Complex block 212: cb.out:top^tm3_sram_data_out~50, type: io
+	
+Passed route at end.
+Complex block 213: cb.out:top^tm3_sram_data_out~49, type: io
+	
+Passed route at end.
+Complex block 214: cb.out:top^tm3_sram_data_out~48, type: io
+	
+Passed route at end.
+Complex block 215: cb.out:top^tm3_sram_data_out~47, type: io
+	
+Passed route at end.
+Complex block 216: cb.out:top^tm3_sram_data_out~46, type: io
+	
+Passed route at end.
+Complex block 217: cb.out:top^tm3_sram_data_out~45, type: io
+	
+Passed route at end.
+Complex block 218: cb.out:top^tm3_sram_data_out~44, type: io
+	
+Passed route at end.
+Complex block 219: cb.out:top^tm3_sram_data_out~43, type: io
+	
+Passed route at end.
+Complex block 220: cb.out:top^tm3_sram_data_out~42, type: io
+	
+Passed route at end.
+Complex block 221: cb.out:top^tm3_sram_data_out~41, type: io
+	
+Passed route at end.
+Complex block 222: cb.out:top^tm3_sram_data_out~40, type: io
+	
+Passed route at end.
+Complex block 223: cb.out:top^tm3_sram_data_out~39, type: io
+	
+Passed route at end.
+Complex block 224: cb.out:top^tm3_sram_data_out~38, type: io
+	
+Passed route at end.
+Complex block 225: cb.out:top^tm3_sram_data_out~37, type: io
+	
+Passed route at end.
+Complex block 226: cb.out:top^tm3_sram_data_out~36, type: io
+	
+Passed route at end.
+Complex block 227: cb.out:top^tm3_sram_data_out~35, type: io
+	
+Passed route at end.
+Complex block 228: cb.out:top^tm3_sram_data_out~34, type: io
+	
+Passed route at end.
+Complex block 229: cb.out:top^tm3_sram_data_out~33, type: io
+	
+Passed route at end.
+Complex block 230: cb.out:top^tm3_sram_data_out~32, type: io
+	
+Passed route at end.
+Complex block 231: cb.out:top^tm3_sram_data_out~31, type: io
+	
+Passed route at end.
+Complex block 232: cb.out:top^tm3_sram_data_out~30, type: io
+	
+Passed route at end.
+Complex block 233: cb.out:top^tm3_sram_data_out~29, type: io
+	
+Passed route at end.
+Complex block 234: cb.out:top^tm3_sram_data_out~28, type: io
+	
+Passed route at end.
+Complex block 235: cb.out:top^tm3_sram_data_out~27, type: io
+	
+Passed route at end.
+Complex block 236: cb.out:top^tm3_sram_data_out~26, type: io
+	
+Passed route at end.
+Complex block 237: cb.out:top^tm3_sram_data_out~25, type: io
+	
+Passed route at end.
+Complex block 238: cb.out:top^tm3_sram_data_out~24, type: io
+	
+Passed route at end.
+Complex block 239: cb.out:top^tm3_sram_data_out~23, type: io
+	
+Passed route at end.
+Complex block 240: cb.out:top^tm3_sram_data_out~22, type: io
+	
+Passed route at end.
+Complex block 241: cb.out:top^tm3_sram_data_out~21, type: io
+	
+Passed route at end.
+Complex block 242: cb.out:top^tm3_sram_data_out~20, type: io
+	
+Passed route at end.
+Complex block 243: cb.out:top^tm3_sram_data_out~19, type: io
+	
+Passed route at end.
+Complex block 244: cb.out:top^tm3_sram_data_out~18, type: io
+	
+Passed route at end.
+Complex block 245: cb.out:top^tm3_sram_data_out~17, type: io
+	
+Passed route at end.
+Complex block 246: cb.out:top^tm3_sram_data_out~16, type: io
+	
+Passed route at end.
+Complex block 247: cb.out:top^tm3_sram_data_out~15, type: io
+	
+Passed route at end.
+Complex block 248: cb.out:top^tm3_sram_data_out~14, type: io
+	
+Passed route at end.
+Complex block 249: cb.out:top^tm3_sram_data_out~13, type: io
+	
+Passed route at end.
+Complex block 250: cb.out:top^tm3_sram_data_out~12, type: io
+	
+Passed route at end.
+Complex block 251: cb.out:top^tm3_sram_data_out~11, type: io
+	
+Passed route at end.
+Complex block 252: cb.out:top^tm3_sram_data_out~10, type: io
+	
+Passed route at end.
+Complex block 253: cb.out:top^tm3_sram_data_out~9, type: io
+	
+Passed route at end.
+Complex block 254: cb.out:top^tm3_sram_data_out~8, type: io
+	
+Passed route at end.
+Complex block 255: cb.out:top^tm3_sram_data_out~7, type: io
+	
+Passed route at end.
+Complex block 256: cb.out:top^tm3_sram_data_out~6, type: io
+	
+Passed route at end.
+Complex block 257: cb.out:top^tm3_sram_data_out~5, type: io
+	
+Passed route at end.
+Complex block 258: cb.out:top^tm3_sram_data_out~4, type: io
+	
+Passed route at end.
+Complex block 259: cb.out:top^tm3_sram_data_out~3, type: io
+	
+Passed route at end.
+Complex block 260: cb.out:top^tm3_sram_data_out~2, type: io
+	
+Passed route at end.
+Complex block 261: cb.out:top^tm3_sram_data_out~1, type: io
+	
+Passed route at end.
+Complex block 262: cb.out:top^tm3_sram_data_out~0, type: io
+	
+Passed route at end.
+Complex block 263: cb.top^tm3_sram_data_out~21, type: clb
+	.........................
+Passed route at end.
+Complex block 264: cb.top^tm3_sram_data_out~32, type: clb
+	...............
+Passed route at end.
+Complex block 265: cb.top^tm3_sram_data_out~6, type: clb
+	.........
+Passed route at end.
+Complex block 266: cb.top.matmult+matmultinst^MULTIPLY~32[0], type: mult_36
+	.
+Passed route at end.
+Complex block 267: cb.top.matmult+matmultinst^MULTIPLY~31[0], type: mult_36
+	.
+Passed route at end.
+Complex block 268: cb.top.matmult+matmultinst^MULTIPLY~30[0], type: mult_36
+	.
+Passed route at end.
+Complex block 269: cb.top.matmult+matmultinst^MULTIPLY~26[0], type: mult_36
+	.
+Passed route at end.
+Complex block 270: cb.top.matmult+matmultinst^MULTIPLY~25[0], type: mult_36
+	..
+Passed route at end.
+Complex block 271: cb.top.resultwriter+resultwriteinst.bilinearintrp+bilinearimp^MULTIPLY~2760[0], type: mult_36
+	...
+Passed route at end.
+Complex block 272: cb.top.resultwriter+resultwriteinst.bilinearintrp+bilinearimp^MULTIPLY~2765[0], type: mult_36
+	..
+Passed route at end.
+Complex block 273: cb.top.rgconfigmemory+ConfigMemoryInst.spram21x4+spraminst.single_port_ram+new_ram^out~19, type: memory
+	....................
+Passed route at end.
+Complex block 274: cb.top^rgCfgData~29, type: io
+	
+Passed route at end.
+Complex block 275: cb.top^rgCfgData~28, type: io
+	
+Passed route at end.
+Complex block 276: cb.top^globalreset, type: io
+	
+Passed route at end.
+Complex block 277: cb.top^tm3_sram_data_in~61, type: io
+	
+Passed route at end.
+Complex block 278: cb.top^tm3_sram_data_in~60, type: io
+	
+Passed route at end.
+Complex block 279: cb.top^tm3_sram_data_in~59, type: io
+	
+Passed route at end.
+Complex block 280: cb.top^tm3_sram_data_in~58, type: io
+	
+Passed route at end.
+Complex block 281: cb.top^tm3_sram_data_in~57, type: io
+	
+Passed route at end.
+Complex block 282: cb.top^tm3_sram_data_in~56, type: io
+	
+Passed route at end.
+Complex block 283: cb.top^tm3_sram_data_in~55, type: io
+	
+Passed route at end.
+Complex block 284: cb.top^tm3_sram_data_in~54, type: io
+	
+Passed route at end.
+Complex block 285: cb.top^tm3_sram_data_in~53, type: io
+	
+Passed route at end.
+Complex block 286: cb.top^tm3_sram_data_in~52, type: io
+	
+Passed route at end.
+Complex block 287: cb.top^tm3_sram_data_in~51, type: io
+	
+Passed route at end.
+Complex block 288: cb.top^tm3_sram_data_in~50, type: io
+	
+Passed route at end.
+Complex block 289: cb.top^tm3_sram_data_in~49, type: io
+	
+Passed route at end.
+Complex block 290: cb.top^tm3_sram_data_in~48, type: io
+	
+Passed route at end.
+Complex block 291: cb.top^tm3_sram_data_in~47, type: io
+	
+Passed route at end.
+Complex block 292: cb.top^tm3_sram_data_in~46, type: io
+	
+Passed route at end.
+Complex block 293: cb.top^tm3_sram_data_in~45, type: io
+	
+Passed route at end.
+Complex block 294: cb.top^tm3_sram_data_in~44, type: io
+	
+Passed route at end.
+Complex block 295: cb.top^tm3_sram_data_in~43, type: io
+	
+Passed route at end.
+Complex block 296: cb.top^tm3_sram_data_in~42, type: io
+	
+Passed route at end.
+Complex block 297: cb.top^tm3_sram_data_in~41, type: io
+	
+Passed route at end.
+Complex block 298: cb.top^tm3_sram_data_in~40, type: io
+	
+Passed route at end.
+Complex block 299: cb.top^tm3_sram_data_in~39, type: io
+	
+Passed route at end.
+Complex block 300: cb.top^tm3_sram_data_in~38, type: io
+	
+Passed route at end.
+Complex block 301: cb.top^tm3_sram_data_in~37, type: io
+	
+Passed route at end.
+Complex block 302: cb.top^tm3_sram_data_in~36, type: io
+	
+Passed route at end.
+Complex block 303: cb.top^tm3_sram_data_in~35, type: io
+	
+Passed route at end.
+Complex block 304: cb.top^tm3_sram_data_in~34, type: io
+	
+Passed route at end.
+Complex block 305: cb.top^tm3_sram_data_in~33, type: io
+	
+Passed route at end.
+Complex block 306: cb.top^tm3_sram_data_in~32, type: io
+	
+Passed route at end.
+Complex block 307: cb.top^tm3_sram_data_in~31, type: io
+	
+Passed route at end.
+Complex block 308: cb.top^tm3_sram_data_in~30, type: io
+	
+Passed route at end.
+Complex block 309: cb.top^tm3_sram_data_in~29, type: io
+	
+Passed route at end.
+Complex block 310: cb.top^tm3_sram_data_in~28, type: io
+	
+Passed route at end.
+Complex block 311: cb.top^tm3_sram_data_in~27, type: io
+	
+Passed route at end.
+Complex block 312: cb.top^tm3_sram_data_in~26, type: io
+	
+Passed route at end.
+Complex block 313: cb.top^tm3_sram_data_in~25, type: io
+	
+Passed route at end.
+Complex block 314: cb.top^tm3_sram_data_in~24, type: io
+	
+Passed route at end.
+Complex block 315: cb.top^tm3_sram_data_in~23, type: io
+	
+Passed route at end.
+Complex block 316: cb.top^tm3_sram_data_in~22, type: io
+	
+Passed route at end.
+Complex block 317: cb.top^tm3_sram_data_in~21, type: io
+	
+Passed route at end.
+Complex block 318: cb.top^tm3_sram_data_in~20, type: io
+	
+Passed route at end.
+Complex block 319: cb.top^tm3_sram_data_in~19, type: io
+	
+Passed route at end.
+Complex block 320: cb.top^tm3_sram_data_in~18, type: io
+	
+Passed route at end.
+Complex block 321: cb.top^tm3_sram_data_in~17, type: io
+	
+Passed route at end.
+Complex block 322: cb.top^tm3_sram_data_in~16, type: io
+	
+Passed route at end.
+Complex block 323: cb.top^tm3_sram_data_in~15, type: io
+	
+Passed route at end.
+Complex block 324: cb.top^tm3_sram_data_in~14, type: io
+	
+Passed route at end.
+Complex block 325: cb.top^tm3_sram_data_in~13, type: io
+	
+Passed route at end.
+Complex block 326: cb.top^tm3_sram_data_in~12, type: io
+	
+Passed route at end.
+Complex block 327: cb.top^tm3_sram_data_in~11, type: io
+	
+Passed route at end.
+Complex block 328: cb.top^tm3_sram_data_in~10, type: io
+	
+Passed route at end.
+Complex block 329: cb.top^tm3_sram_data_in~9, type: io
+	
+Passed route at end.
+Complex block 330: cb.top^tm3_sram_data_in~8, type: io
+	
+Passed route at end.
+Complex block 331: cb.top^tm3_sram_data_in~7, type: io
+	
+Passed route at end.
+Complex block 332: cb.top^tm3_sram_data_in~6, type: io
+	
+Passed route at end.
+Complex block 333: cb.top^tm3_sram_data_in~5, type: io
+	
+Passed route at end.
+Complex block 334: cb.top^tm3_sram_data_in~4, type: io
+	
+Passed route at end.
+Complex block 335: cb.top^tm3_sram_data_in~3, type: io
+	
+Passed route at end.
+Complex block 336: cb.top^tm3_sram_data_in~2, type: io
+	
+Passed route at end.
+Complex block 337: cb.top^tm3_sram_data_in~1, type: io
+	
+Passed route at end.
+Complex block 338: cb.top^tm3_sram_data_in~0, type: io
+	
+Passed route at end.
+Complex block 339: cb.top^rgResultSource~1, type: io
+	
+Passed route at end.
+Complex block 340: cb.top^rgResultSource~0, type: io
+	
+Passed route at end.
+Complex block 341: cb.top^rgResultReady, type: io
+	
+Passed route at end.
+Complex block 342: cb.top^rgDone, type: io
+	
+Passed route at end.
+Complex block 343: cb.out:top^rgread_ready, type: io
+	
+Passed route at end.
+Complex block 344: cb.out:top^rgwant_data, type: io
+	
+Passed route at end.
+Complex block 345: cb.out:top^rgwant_addr, type: io
+	
+Passed route at end.
+Complex block 346: cb.out:top^tm3_sram_oe~0, type: io
+	
+Passed route at end.
+Complex block 347: cb.out:top^tm3_sram_we~7, type: io
+	
+Passed route at end.
+Complex block 348: cb.out:top^tm3_sram_we~6, type: io
+	
+Passed route at end.
+Complex block 349: cb.out:top^tm3_sram_we~5, type: io
+	
+Passed route at end.
+Complex block 350: cb.out:top^tm3_sram_we~4, type: io
+	
+Passed route at end.
+Complex block 351: cb.out:top^tm3_sram_we~3, type: io
+	
+Passed route at end.
+Complex block 352: cb.out:top^tm3_sram_we~2, type: io
+	
+Passed route at end.
+Complex block 353: cb.out:top^tm3_sram_we~1, type: io
+	
+Passed route at end.
+Complex block 354: cb.out:top^tm3_sram_we~0, type: io
+	
+Passed route at end.
+Complex block 355: cb.out:top^rgStat~31, type: io
+	
+Passed route at end.
+Complex block 356: cb.out:top^rgwant_CfgData, type: io
+	
+Passed route at end.
+Complex block 357: cb.top^rgCfgData~15, type: io
+	
+Passed route at end.
+Complex block 358: cb.top^rgCfgData~14, type: io
+	
+Passed route at end.
+Complex block 359: cb.top^rgCfgData~13, type: io
+	
+Passed route at end.
+Complex block 360: cb.top^rgCfgData~12, type: io
+	
+Passed route at end.
+Complex block 361: cb.top^rgCfgData~11, type: io
+	
+Passed route at end.
+Complex block 362: cb.top^rgCfgData~10, type: io
+	
+Passed route at end.
+Complex block 363: cb.top^rgCfgData~9, type: io
+	
+Passed route at end.
+Complex block 364: cb.top^rgCfgData~8, type: io
+	
+Passed route at end.
+Complex block 365: cb.top^rgCfgData~7, type: io
+	
+Passed route at end.
+Complex block 366: cb.top^rgCfgData~6, type: io
+	
+Passed route at end.
+Complex block 367: cb.top^rgCfgData~5, type: io
+	
+Passed route at end.
+Complex block 368: cb.top^rgCfgData~4, type: io
+	
+Passed route at end.
+Complex block 369: cb.top^rgCfgData~3, type: io
+	
+Passed route at end.
+Complex block 370: cb.top^rgCfgData~2, type: io
+	
+Passed route at end.
+Complex block 371: cb.top^rgCfgData~1, type: io
+	
+Passed route at end.
+Complex block 372: cb.top^rgCfgData~0, type: io
+	
+Passed route at end.
+Complex block 373: cb.top^fbnextscanline, type: io
+	
+Passed route at end.
+Complex block 374: cb.top^rgCont~12, type: io
+	
+Passed route at end.
+Complex block 375: cb.top^rgCont~11, type: io
+	
+Passed route at end.
+Complex block 376: cb.top^rgCont~8, type: io
+	
+Passed route at end.
+Complex block 377: cb.top^rgCont~7, type: io
+	
+Passed route at end.
+Complex block 378: cb.top^rgCont~6, type: io
+	
+Passed route at end.
+Complex block 379: cb.top^rgCont~5, type: io
+	
+Passed route at end.
+Complex block 380: cb.top^rgCont~3, type: io
+	
+Passed route at end.
+Complex block 381: cb.top^rgCont~2, type: io
+	
+Passed route at end.
+Complex block 382: cb.top^rgaddrin~17, type: io
+	
+Passed route at end.
+Complex block 383: cb.top^rgaddrin~16, type: io
+	
+Passed route at end.
+Complex block 384: cb.top^rgaddrin~15, type: io
+	
+Passed route at end.
+Complex block 385: cb.top^rgaddrin~14, type: io
+	
+Passed route at end.
+Complex block 386: cb.top^rgaddrin~13, type: io
+	
+Passed route at end.
+Complex block 387: cb.top^rgaddrin~12, type: io
+	
+Passed route at end.
+Complex block 388: cb.top^rgaddrin~11, type: io
+	
+Passed route at end.
+Complex block 389: cb.top^rgaddrin~10, type: io
+	
+Passed route at end.
+Complex block 390: cb.top^rgaddrin~9, type: io
+	
+Passed route at end.
+Complex block 391: cb.top^rgaddrin~8, type: io
+	
+Passed route at end.
+Complex block 392: cb.top^rgaddrin~7, type: io
+	
+Passed route at end.
+Complex block 393: cb.top^rgaddrin~6, type: io
+	
+Passed route at end.
+Complex block 394: cb.top^rgaddrin~5, type: io
+	
+Passed route at end.
+Complex block 395: cb.top^rgaddrin~4, type: io
+	
+Passed route at end.
+Complex block 396: cb.top^rgaddrin~3, type: io
+	
+Passed route at end.
+Complex block 397: cb.top^rgaddrin~2, type: io
+	
+Passed route at end.
+Complex block 398: cb.top^rgaddrin~1, type: io
+	
+Passed route at end.
+Complex block 399: cb.top^rgaddrin~0, type: io
+	
+Passed route at end.
+Complex block 400: cb.top^rgResultData~18, type: io
+	
+Passed route at end.
+Complex block 401: cb.top^rgResultData~17, type: io
+	
+Passed route at end.
+Complex block 402: cb.top^rgResultData~16, type: io
+	
+Passed route at end.
+Complex block 403: cb.top^rgResultData~15, type: io
+	
+Passed route at end.
+Complex block 404: cb.top^rgResultData~14, type: io
+	
+Passed route at end.
+Complex block 405: cb.top^rgResultData~13, type: io
+	
+Passed route at end.
+Complex block 406: cb.top^rgResultData~12, type: io
+	
+Passed route at end.
+Complex block 407: cb.top^rgResultData~11, type: io
+	
+Passed route at end.
+Complex block 408: cb.top^rgResultData~10, type: io
+	
+Passed route at end.
+Complex block 409: cb.top^rgResultData~9, type: io
+	
+Passed route at end.
+Complex block 410: cb.top^rgResultData~8, type: io
+	
+Passed route at end.
+Complex block 411: cb.top^rgResultData~7, type: io
+	
+Passed route at end.
+Complex block 412: cb.top^rgResultData~6, type: io
+	
+Passed route at end.
+Complex block 413: cb.top^rgResultData~5, type: io
+	
+Passed route at end.
+Complex block 414: cb.top^rgResultData~4, type: io
+	
+Passed route at end.
+Complex block 415: cb.top^rgResultData~3, type: io
+	
+Passed route at end.
+Complex block 416: cb.top^rgResultData~2, type: io
+	
+Passed route at end.
+Complex block 417: cb.top^rgResultData~1, type: io
+	
+Passed route at end.
+Complex block 418: cb.top^rgResultData~0, type: io
+	
+Passed route at end.
+Complex block 419: cb.top^rgResultData~23, type: io
+	
+Passed route at end.
+Complex block 420: cb.top^rgResultData~22, type: io
+	
+Passed route at end.
+Complex block 421: cb.top^rgResultData~21, type: io
+	
+Passed route at end.
+Complex block 422: cb.top^rgResultData~20, type: io
+	
+Passed route at end.
+Complex block 423: cb.top^rgResultData~19, type: io
+	
+Passed route at end.
+Complex block 424: cb.top^rgCfgData~25, type: io
+	
+Passed route at end.
+Complex block 425: cb.top^rgCfgData~24, type: io
+	
+Passed route at end.
+Complex block 426: cb.top^rgCfgData~23, type: io
+	
+Passed route at end.
+Complex block 427: cb.top^rgCfgData~22, type: io
+	
+Passed route at end.
+Complex block 428: cb.top^rgCfgData~21, type: io
+	
+Passed route at end.
+Complex block 429: cb.top^rgCfgData~20, type: io
+	
+Passed route at end.
+Complex block 430: cb.top^rgCfgData~19, type: io
+	
+Passed route at end.
+Complex block 431: cb.top^rgCfgData~18, type: io
+	
+Passed route at end.
+Complex block 432: cb.top^rgCfgData~17, type: io
+	
+Passed route at end.
+Complex block 433: cb.top^rgCfgData~16, type: io
+	
+Passed route at end.
+Complex block 434: cb.top^rgCfgData~27, type: io
+	
+Passed route at end.
+Complex block 435: cb.top^rgCfgData~26, type: io
+	
+Passed route at end.
+Complex block 436: cb.top^rgCont~0, type: io
+	
+Passed route at end.
+Complex block 437: cb.top^rgResultData~31, type: io
+	
+Passed route at end.
+Complex block 438: cb.top^rgResultData~30, type: io
+	
+Passed route at end.
+Complex block 439: cb.top^rgResultData~29, type: io
+	
+Passed route at end.
+Complex block 440: cb.top^rgResultData~28, type: io
+	
+Passed route at end.
+Complex block 441: cb.top^rgResultData~27, type: io
+	
+Passed route at end.
+Complex block 442: cb.top^rgResultData~26, type: io
+	
+Passed route at end.
+Complex block 443: cb.top^rgResultData~25, type: io
+	
+Passed route at end.
+Complex block 444: cb.top^rgResultData~24, type: io
+	
+Passed route at end.
+Complex block 445: cb.top^rgCont~15, type: io
+	
+Passed route at end.
+Complex block 446: cb.top^rgCont~14, type: io
+	
+Passed route at end.
+Complex block 447: cb.top^rgCont~13, type: io
+	
+Passed route at end.
+Complex block 448: cb.top^rgCont~10, type: io
+	
+Passed route at end.
+Complex block 449: cb.top^rgCont~9, type: io
+	
+Passed route at end.
+Complex block 450: cb.top^rgCont~4, type: io
+	
+Passed route at end.
+Complex block 451: cb.top^rgCont~1, type: io
+	
+Passed route at end.
+Complex block 452: cb.top^rgdatain~59, type: io
+	
+Passed route at end.
+Complex block 453: cb.top^rgdatain~58, type: io
+	
+Passed route at end.
+Complex block 454: cb.top^rgdatain~27, type: io
+	
+Passed route at end.
+Complex block 455: cb.top^rgdatain~3, type: io
+	
+Passed route at end.
+Complex block 456: cb.top^rgdatain~0, type: io
+	
+Passed route at end.
+Complex block 457: cb.top^rgdatain~57, type: io
+	
+Passed route at end.
+Complex block 458: cb.top^rgdatain~11, type: io
+	
+Passed route at end.
+Complex block 459: cb.top^rgdatain~56, type: io
+	
+Passed route at end.
+Complex block 460: cb.top^rgdatain~26, type: io
+	
+Passed route at end.
+Complex block 461: cb.top^rgdatain~55, type: io
+	
+Passed route at end.
+Complex block 462: cb.top^rgdatain~25, type: io
+	
+Passed route at end.
+Complex block 463: cb.top^rgdatain~54, type: io
+	
+Passed route at end.
+Complex block 464: cb.top^rgdatain~53, type: io
+	
+Passed route at end.
+Complex block 465: cb.top^rgdatain~24, type: io
+	
+Passed route at end.
+Complex block 466: cb.top^rgdatain~10, type: io
+	
+Passed route at end.
+Complex block 467: cb.top^rgdatain~52, type: io
+	
+Passed route at end.
+Complex block 468: cb.top^rgdatain~51, type: io
+	
+Passed route at end.
+Complex block 469: cb.top^rgdatain~50, type: io
+	
+Passed route at end.
+Complex block 470: cb.top^rgdatain~23, type: io
+	
+Passed route at end.
+Complex block 471: cb.top^rgdatain~2, type: io
+	
+Passed route at end.
+Complex block 472: cb.top^rgdatain~49, type: io
+	
+Passed route at end.
+Complex block 473: cb.top^rgdatain~48, type: io
+	
+Passed route at end.
+Complex block 474: cb.top^rgdatain~22, type: io
+	
+Passed route at end.
+Complex block 475: cb.top^rgdatain~9, type: io
+	
+Passed route at end.
+Complex block 476: cb.top^rgdatain~47, type: io
+	
+Passed route at end.
+Complex block 477: cb.top^rgdatain~46, type: io
+	
+Passed route at end.
+Complex block 478: cb.top^rgdatain~21, type: io
+	
+Passed route at end.
+Complex block 479: cb.top^rgdatain~45, type: io
+	
+Passed route at end.
+Complex block 480: cb.top^rgdatain~44, type: io
+	
+Passed route at end.
+Complex block 481: cb.top^rgdatain~20, type: io
+	
+Passed route at end.
+Complex block 482: cb.top^rgdatain~8, type: io
+	
+Passed route at end.
+Complex block 483: cb.top^rgdatain~43, type: io
+	
+Passed route at end.
+Complex block 484: cb.top^rgdatain~42, type: io
+	
+Passed route at end.
+Complex block 485: cb.top^rgdatain~19, type: io
+	
+Passed route at end.
+Complex block 486: cb.top^rgdatain~41, type: io
+	
+Passed route at end.
+Complex block 487: cb.top^rgdatain~40, type: io
+	
+Passed route at end.
+Complex block 488: cb.top^rgdatain~18, type: io
+	
+Passed route at end.
+Complex block 489: cb.top^rgdatain~7, type: io
+	
+Passed route at end.
+Complex block 490: cb.top^rgdatain~39, type: io
+	
+Passed route at end.
+Complex block 491: cb.top^rgdatain~38, type: io
+	
+Passed route at end.
+Complex block 492: cb.top^rgdatain~17, type: io
+	
+Passed route at end.
+Complex block 493: cb.top^rgdatain~37, type: io
+	
+Passed route at end.
+Complex block 494: cb.top^rgdatain~36, type: io
+	
+Passed route at end.
+Complex block 495: cb.top^rgdatain~16, type: io
+	
+Passed route at end.
+Complex block 496: cb.top^rgdatain~6, type: io
+	
+Passed route at end.
+Complex block 497: cb.top^rgdatain~35, type: io
+	
+Passed route at end.
+Complex block 498: cb.top^rgdatain~15, type: io
+	
+Passed route at end.
+Complex block 499: cb.top^rgdatain~34, type: io
+	
+Passed route at end.
+Complex block 500: cb.top^rgdatain~33, type: io
+	
+Passed route at end.
+Complex block 501: cb.top^rgdatain~14, type: io
+	
+Passed route at end.
+Complex block 502: cb.top^rgdatain~5, type: io
+	
+Passed route at end.
+Complex block 503: cb.top^rgdatain~32, type: io
+	
+Passed route at end.
+Complex block 504: cb.top^rgdatain~31, type: io
+	
+Passed route at end.
+Complex block 505: cb.top^rgdatain~13, type: io
+	
+Passed route at end.
+Complex block 506: cb.top^rgdatain~30, type: io
+	
+Passed route at end.
+Complex block 507: cb.top^rgdatain~63, type: io
+	
+Passed route at end.
+Complex block 508: cb.top^rgdatain~62, type: io
+	
+Passed route at end.
+Complex block 509: cb.top^rgdatain~29, type: io
+	
+Passed route at end.
+Complex block 510: cb.top^rgdatain~61, type: io
+	
+Passed route at end.
+Complex block 511: cb.top^rgdatain~1, type: io
+	
+Passed route at end.
+Complex block 512: cb.top^rgdatain~28, type: io
+	
+Passed route at end.
+Complex block 513: cb.top^rgdatain~12, type: io
+	
+Passed route at end.
+Complex block 514: cb.top^rgdatain~60, type: io
+	
+Passed route at end.
+Complex block 515: cb.top^rgdatain~4, type: io
+	
+Passed route at end.
+Complex block 516: cb.out:top^rgData~6, type: io
+	
+Passed route at end.
+Complex block 517: cb.out:top^rgData~5, type: io
+	
+Passed route at end.
+Complex block 518: cb.out:top^rgData~4, type: io
+	
+Passed route at end.
+Complex block 519: cb.out:top^rgData~3, type: io
+	
+Passed route at end.
+Complex block 520: cb.out:top^rgData~2, type: io
+	
+Passed route at end.
+Complex block 521: cb.out:top^rgData~1, type: io
+	
+Passed route at end.
+Complex block 522: cb.out:top^rgData~0, type: io
+	
+Passed route at end.
+Complex block 523: cb.out:top^raygroupvalid10, type: io
+	
+Passed route at end.
+Complex block 524: cb.out:top^raygroup10~0, type: io
+	
+Passed route at end.
+Complex block 525: cb.out:top^raygroupvalid01, type: io
+	
+Passed route at end.
+Complex block 526: cb.out:top^raygroup01~0, type: io
+	
+Passed route at end.
+Complex block 527: cb.out:top^fbdatavalid, type: io
+	
+Passed route at end.
+Complex block 528: cb.out:top^fbdata~63, type: io
+	
+Passed route at end.
+Complex block 529: cb.out:top^fbdata~62, type: io
+	
+Passed route at end.
+Complex block 530: cb.out:top^fbdata~61, type: io
+	
+Passed route at end.
+Complex block 531: cb.out:top^fbdata~60, type: io
+	
+Passed route at end.
+Complex block 532: cb.out:top^fbdata~59, type: io
+	
+Passed route at end.
+Complex block 533: cb.out:top^fbdata~58, type: io
+	
+Passed route at end.
+Complex block 534: cb.out:top^fbdata~57, type: io
+	
+Passed route at end.
+Complex block 535: cb.out:top^fbdata~56, type: io
+	
+Passed route at end.
+Complex block 536: cb.out:top^fbdata~55, type: io
+	
+Passed route at end.
+Complex block 537: cb.out:top^fbdata~54, type: io
+	
+Passed route at end.
+Complex block 538: cb.out:top^fbdata~53, type: io
+	
+Passed route at end.
+Complex block 539: cb.out:top^fbdata~52, type: io
+	
+Passed route at end.
+Complex block 540: cb.out:top^fbdata~51, type: io
+	
+Passed route at end.
+Complex block 541: cb.out:top^fbdata~50, type: io
+	
+Passed route at end.
+Complex block 542: cb.out:top^fbdata~49, type: io
+	
+Passed route at end.
+Complex block 543: cb.out:top^fbdata~48, type: io
+	
+Passed route at end.
+Complex block 544: cb.out:top^fbdata~47, type: io
+	
+Passed route at end.
+Complex block 545: cb.out:top^fbdata~46, type: io
+	
+Passed route at end.
+Complex block 546: cb.out:top^fbdata~45, type: io
+	
+Passed route at end.
+Complex block 547: cb.out:top^fbdata~44, type: io
+	
+Passed route at end.
+Complex block 548: cb.out:top^fbdata~43, type: io
+	
+Passed route at end.
+Complex block 549: cb.out:top^fbdata~42, type: io
+	
+Passed route at end.
+Complex block 550: cb.out:top^fbdata~41, type: io
+	
+Passed route at end.
+Complex block 551: cb.out:top^fbdata~40, type: io
+	
+Passed route at end.
+Complex block 552: cb.out:top^fbdata~39, type: io
+	
+Passed route at end.
+Complex block 553: cb.out:top^fbdata~38, type: io
+	
+Passed route at end.
+Complex block 554: cb.out:top^fbdata~37, type: io
+	
+Passed route at end.
+Complex block 555: cb.out:top^fbdata~36, type: io
+	
+Passed route at end.
+Complex block 556: cb.out:top^fbdata~35, type: io
+	
+Passed route at end.
+Complex block 557: cb.out:top^fbdata~34, type: io
+	
+Passed route at end.
+Complex block 558: cb.out:top^fbdata~33, type: io
+	
+Passed route at end.
+Complex block 559: cb.out:top^fbdata~32, type: io
+	
+Passed route at end.
+Complex block 560: cb.out:top^fbdata~31, type: io
+	
+Passed route at end.
+Complex block 561: cb.out:top^fbdata~30, type: io
+	
+Passed route at end.
+Complex block 562: cb.out:top^fbdata~29, type: io
+	
+Passed route at end.
+Complex block 563: cb.out:top^fbdata~28, type: io
+	
+Passed route at end.
+Complex block 564: cb.out:top^fbdata~27, type: io
+	
+Passed route at end.
+Complex block 565: cb.out:top^fbdata~26, type: io
+	
+Passed route at end.
+Complex block 566: cb.out:top^fbdata~25, type: io
+	
+Passed route at end.
+Complex block 567: cb.out:top^fbdata~24, type: io
+	
+Passed route at end.
+Complex block 568: cb.out:top^fbdata~23, type: io
+	
+Passed route at end.
+Complex block 569: cb.out:top^fbdata~22, type: io
+	
+Passed route at end.
+Complex block 570: cb.out:top^fbdata~21, type: io
+	
+Passed route at end.
+Complex block 571: cb.out:top^fbdata~20, type: io
+	
+Passed route at end.
+Complex block 572: cb.out:top^fbdata~19, type: io
+	
+Passed route at end.
+Complex block 573: cb.out:top^fbdata~18, type: io
+	
+Passed route at end.
+Complex block 574: cb.out:top^fbdata~17, type: io
+	
+Passed route at end.
+Complex block 575: cb.out:top^fbdata~16, type: io
+	
+Passed route at end.
+Complex block 576: cb.out:top^fbdata~15, type: io
+	
+Passed route at end.
+Complex block 577: cb.out:top^fbdata~14, type: io
+	
+Passed route at end.
+Complex block 578: cb.out:top^fbdata~13, type: io
+	
+Passed route at end.
+Complex block 579: cb.out:top^fbdata~12, type: io
+	
+Passed route at end.
+Complex block 580: cb.out:top^fbdata~11, type: io
+	
+Passed route at end.
+Complex block 581: cb.out:top^fbdata~10, type: io
+	
+Passed route at end.
+Complex block 582: cb.out:top^fbdata~9, type: io
+	
+Passed route at end.
+Complex block 583: cb.out:top^fbdata~8, type: io
+	
+Passed route at end.
+Complex block 584: cb.out:top^fbdata~7, type: io
+	
+Passed route at end.
+Complex block 585: cb.out:top^fbdata~6, type: io
+	
+Passed route at end.
+Complex block 586: cb.out:top^fbdata~5, type: io
+	
+Passed route at end.
+Complex block 587: cb.out:top^fbdata~4, type: io
+	
+Passed route at end.
+Complex block 588: cb.out:top^fbdata~3, type: io
+	
+Passed route at end.
+Complex block 589: cb.out:top^fbdata~2, type: io
+	
+Passed route at end.
+Complex block 590: cb.out:top^fbdata~1, type: io
+	
+Passed route at end.
+Complex block 591: cb.out:top^fbdata~0, type: io
+	
+Passed route at end.
+Complex block 592: cb.out:top^rgStat~30, type: io
+	
+Passed route at end.
+Complex block 593: cb.out:top^rgStat~29, type: io
+	
+Passed route at end.
+Complex block 594: cb.out:top^rgStat~28, type: io
+	
+Passed route at end.
+Complex block 595: cb.out:top^rgStat~27, type: io
+	
+Passed route at end.
+Complex block 596: cb.out:top^rgStat~26, type: io
+	
+Passed route at end.
+Complex block 597: cb.out:top^rgStat~25, type: io
+	
+Passed route at end.
+Complex block 598: cb.out:top^rgStat~24, type: io
+	
+Passed route at end.
+Complex block 599: cb.out:top^rgStat~23, type: io
+	
+Passed route at end.
+Complex block 600: cb.out:top^rgStat~22, type: io
+	
+Passed route at end.
+Complex block 601: cb.out:top^rgStat~21, type: io
+	
+Passed route at end.
+Complex block 602: cb.out:top^rgStat~20, type: io
+	
+Passed route at end.
+Complex block 603: cb.out:top^rgStat~19, type: io
+	
+Passed route at end.
+Complex block 604: cb.out:top^rgStat~18, type: io
+	
+Passed route at end.
+Complex block 605: cb.out:top^rgStat~17, type: io
+	
+Passed route at end.
+Complex block 606: cb.out:top^rgStat~16, type: io
+	
+Passed route at end.
+Complex block 607: cb.out:top^rgStat~15, type: io
+	
+Passed route at end.
+Complex block 608: cb.out:top^rgStat~14, type: io
+	
+Passed route at end.
+Complex block 609: cb.out:top^rgStat~13, type: io
+	
+Passed route at end.
+Complex block 610: cb.out:top^rgStat~12, type: io
+	
+Passed route at end.
+Complex block 611: cb.out:top^rgStat~11, type: io
+	
+Passed route at end.
+Complex block 612: cb.out:top^rgStat~10, type: io
+	
+Passed route at end.
+Complex block 613: cb.out:top^rgStat~9, type: io
+	
+Passed route at end.
+Complex block 614: cb.out:top^rgStat~8, type: io
+	
+Passed route at end.
+Complex block 615: cb.out:top^rgStat~7, type: io
+	
+Passed route at end.
+Complex block 616: cb.out:top^rgStat~6, type: io
+	
+Passed route at end.
+Complex block 617: cb.out:top^rgStat~5, type: io
+	
+Passed route at end.
+Complex block 618: cb.out:top^rgStat~4, type: io
+	
+Passed route at end.
+Complex block 619: cb.out:top^rgStat~3, type: io
+	
+Passed route at end.
+Complex block 620: cb.out:top^rgStat~2, type: io
+	
+Passed route at end.
+Complex block 621: cb.out:top^rgStat~1, type: io
+	
+Passed route at end.
+Complex block 622: cb.out:top^rgStat~0, type: io
+	
+Passed route at end.
+Complex block 623: cb.out:top^rgAddrValid, type: io
+	
+Passed route at end.
+Complex block 624: cb.out:top^rgWE~2, type: io
+	
+Passed route at end.
+Complex block 625: cb.out:top^rgWE~1, type: io
+	
+Passed route at end.
+Complex block 626: cb.out:top^rgWE~0, type: io
+	
+Passed route at end.
+Complex block 627: cb.out:top^rgAddr~3, type: io
+	
+Passed route at end.
+Complex block 628: cb.out:top^rgAddr~2, type: io
+	
+Passed route at end.
+Complex block 629: cb.out:top^rgAddr~1, type: io
+	
+Passed route at end.
+Complex block 630: cb.out:top^rgAddr~0, type: io
+	
+Passed route at end.
+Complex block 631: cb.out:top^rgData~31, type: io
+	
+Passed route at end.
+Complex block 632: cb.out:top^rgData~30, type: io
+	
+Passed route at end.
+Complex block 633: cb.out:top^rgData~29, type: io
+	
+Passed route at end.
+Complex block 634: cb.out:top^rgData~28, type: io
+	
+Passed route at end.
+Complex block 635: cb.out:top^rgData~27, type: io
+	
+Passed route at end.
+Complex block 636: cb.out:top^rgData~26, type: io
+	
+Passed route at end.
+Complex block 637: cb.out:top^rgData~25, type: io
+	
+Passed route at end.
+Complex block 638: cb.out:top^rgData~24, type: io
+	
+Passed route at end.
+Complex block 639: cb.out:top^rgData~23, type: io
+	
+Passed route at end.
+Complex block 640: cb.out:top^rgData~22, type: io
+	
+Passed route at end.
+Complex block 641: cb.out:top^rgData~21, type: io
+	
+Passed route at end.
+Complex block 642: cb.out:top^rgData~20, type: io
+	
+Passed route at end.
+Complex block 643: cb.out:top^rgData~19, type: io
+	
+Passed route at end.
+Complex block 644: cb.out:top^rgData~18, type: io
+	
+Passed route at end.
+Complex block 645: cb.out:top^rgData~17, type: io
+	
+Passed route at end.
+Complex block 646: cb.out:top^rgData~16, type: io
+	
+Passed route at end.
+Complex block 647: cb.out:top^rgData~15, type: io
+	
+Passed route at end.
+Complex block 648: cb.out:top^rgData~14, type: io
+	
+Passed route at end.
+Complex block 649: cb.out:top^rgData~13, type: io
+	
+Passed route at end.
+Complex block 650: cb.out:top^rgData~12, type: io
+	
+Passed route at end.
+Complex block 651: cb.out:top^rgData~11, type: io
+	
+Passed route at end.
+Complex block 652: cb.out:top^rgData~10, type: io
+	
+Passed route at end.
+Complex block 653: cb.out:top^rgData~9, type: io
+	
+Passed route at end.
+Complex block 654: cb.out:top^rgData~8, type: io
+	
+Passed route at end.
+Complex block 655: cb.out:top^rgData~7, type: io
+	
+Passed route at end.
+Complex block 656: cb.out:top^rgdataout~12, type: io
+	
+Passed route at end.
+Complex block 657: cb.out:top^rgdataout~11, type: io
+	
+Passed route at end.
+Complex block 658: cb.out:top^rgdataout~10, type: io
+	
+Passed route at end.
+Complex block 659: cb.out:top^rgdataout~9, type: io
+	
+Passed route at end.
+Complex block 660: cb.out:top^rgdataout~8, type: io
+	
+Passed route at end.
+Complex block 661: cb.out:top^rgdataout~6, type: io
+	
+Passed route at end.
+Complex block 662: cb.out:top^rgdataout~7, type: io
+	
+Passed route at end.
+Complex block 663: cb.out:top^rgdataout~5, type: io
+	
+Passed route at end.
+Complex block 664: cb.out:top^rgdataout~2, type: io
+	
+Passed route at end.
+Complex block 665: cb.out:top^rgdataout~1, type: io
+	
+Passed route at end.
+Complex block 666: cb.out:top^rgdataout~4, type: io
+	
+Passed route at end.
+Complex block 667: cb.out:top^rgdataout~3, type: io
+	
+Passed route at end.
+Complex block 668: cb.out:top^rgdataout~0, type: io
+	
+Passed route at end.
+Complex block 669: cb.out:top^rgdataout~63, type: io
+	
+Passed route at end.
+Complex block 670: cb.out:top^rgdataout~62, type: io
+	
+Passed route at end.
+Complex block 671: cb.out:top^rgdataout~61, type: io
+	
+Passed route at end.
+Complex block 672: cb.out:top^rgdataout~60, type: io
+	
+Passed route at end.
+Complex block 673: cb.out:top^rgdataout~59, type: io
+	
+Passed route at end.
+Complex block 674: cb.out:top^rgdataout~58, type: io
+	
+Passed route at end.
+Complex block 675: cb.out:top^rgdataout~57, type: io
+	
+Passed route at end.
+Complex block 676: cb.out:top^rgdataout~56, type: io
+	
+Passed route at end.
+Complex block 677: cb.out:top^rgdataout~55, type: io
+	
+Passed route at end.
+Complex block 678: cb.out:top^rgdataout~54, type: io
+	
+Passed route at end.
+Complex block 679: cb.out:top^rgdataout~53, type: io
+	
+Passed route at end.
+Complex block 680: cb.out:top^rgdataout~52, type: io
+	
+Passed route at end.
+Complex block 681: cb.out:top^rgdataout~51, type: io
+	
+Passed route at end.
+Complex block 682: cb.out:top^rgdataout~50, type: io
+	
+Passed route at end.
+Complex block 683: cb.out:top^rgdataout~49, type: io
+	
+Passed route at end.
+Complex block 684: cb.out:top^rgdataout~48, type: io
+	
+Passed route at end.
+Complex block 685: cb.out:top^rgdataout~47, type: io
+	
+Passed route at end.
+Complex block 686: cb.out:top^rgdataout~46, type: io
+	
+Passed route at end.
+Complex block 687: cb.out:top^rgdataout~45, type: io
+	
+Passed route at end.
+Complex block 688: cb.out:top^rgdataout~44, type: io
+	
+Passed route at end.
+Complex block 689: cb.out:top^rgdataout~43, type: io
+	
+Passed route at end.
+Complex block 690: cb.out:top^rgdataout~42, type: io
+	
+Passed route at end.
+Complex block 691: cb.out:top^rgdataout~41, type: io
+	
+Passed route at end.
+Complex block 692: cb.out:top^rgdataout~40, type: io
+	
+Passed route at end.
+Not enough resources expand FPGA size to x = 17 y = 17.
+Complex block 693: cb.out:top^rgdataout~39, type: io
+	
+Passed route at end.
+Complex block 694: cb.out:top^rgdataout~38, type: io
+	
+Passed route at end.
+Complex block 695: cb.out:top^rgdataout~37, type: io
+	
+Passed route at end.
+Complex block 696: cb.out:top^rgdataout~36, type: io
+	
+Passed route at end.
+Complex block 697: cb.out:top^rgdataout~35, type: io
+	
+Passed route at end.
+Complex block 698: cb.out:top^rgdataout~34, type: io
+	
+Passed route at end.
+Complex block 699: cb.out:top^rgdataout~33, type: io
+	
+Passed route at end.
+Complex block 700: cb.out:top^rgdataout~32, type: io
+	
+Passed route at end.
+Complex block 701: cb.out:top^rgdataout~31, type: io
+	
+Passed route at end.
+Complex block 702: cb.out:top^rgdataout~30, type: io
+	
+Passed route at end.
+Complex block 703: cb.out:top^rgdataout~29, type: io
+	
+Passed route at end.
+Complex block 704: cb.out:top^rgdataout~28, type: io
+	
+Passed route at end.
+Complex block 705: cb.out:top^rgdataout~27, type: io
+	
+Passed route at end.
+Complex block 706: cb.out:top^rgdataout~26, type: io
+	
+Passed route at end.
+Complex block 707: cb.out:top^rgdataout~25, type: io
+	
+Passed route at end.
+Complex block 708: cb.out:top^rgdataout~24, type: io
+	
+Passed route at end.
+Complex block 709: cb.out:top^rgdataout~23, type: io
+	
+Passed route at end.
+Complex block 710: cb.out:top^rgdataout~22, type: io
+	
+Passed route at end.
+Complex block 711: cb.out:top^rgdataout~21, type: io
+	
+Passed route at end.
+Complex block 712: cb.out:top^rgdataout~20, type: io
+	
+Passed route at end.
+Complex block 713: cb.out:top^rgdataout~19, type: io
+	
+Passed route at end.
+Complex block 714: cb.out:top^rgdataout~18, type: io
+	
+Passed route at end.
+Complex block 715: cb.out:top^rgdataout~17, type: io
+	
+Passed route at end.
+Complex block 716: cb.out:top^rgdataout~16, type: io
+	
+Passed route at end.
+Complex block 717: cb.out:top^rgdataout~15, type: io
+	
+Passed route at end.
+Complex block 718: cb.out:top^rgdataout~14, type: io
+	
+Passed route at end.
+Complex block 719: cb.out:top^rgdataout~13, type: io
+	
+Passed route at end.
+Complex block 720: cb.out:top^raygroup10~1, type: io
+	
+Passed route at end.
+Complex block 721: cb.out:top^raygroup01~1, type: io
+	
+Passed route at end.
+Complex block 722: cb.out:top^tm3_sram_adsp, type: io
+	
+Passed route at end.
+Complex block 723: cb.out:top^tm3_sram_addr~18, type: io
+	
+Passed route at end.
+Complex block 724: cb.top^tm3_clk_v0, type: io
+	
+Passed route at end.
+	<EMPTY>: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	io: # blocks: 544, average # input + clock pins used: 0.560662, average # output pins used: 0.439338
+	clb: # blocks: 173, average # input + clock pins used: 21.4509, average # output pins used: 8.65318
+	mult_36: # blocks: 7, average # input + clock pins used: 60.4286, average # output pins used: 29.5714
+	memory: # blocks: 1, average # input + clock pins used: 31, average # output pins used: 21
+Absorbed logical nets 2073 out of 4037 nets, 1964 nets not absorbed.
+
+Netlist conversion complete.
+
+Packing took 3.76 seconds.
+Packing completed.
+Begin parsing packed FPGA netlist file.
+Finished parsing packed FPGA netlist file.
+Netlist generated from file 'raygentop.net'.
+top^raygroup01~1 is a constant generator.
+top^raygroup10~1 is a constant generator.
+top^tm3_sram_addr~18 is a constant generator.
+top^tm3_sram_adsp is a constant generator.
+
+Netlist num_nets: 1964
+Netlist num_blocks: 725
+Netlist <EMPTY> blocks: 0.
+Netlist clb blocks: 173.
+Netlist mult_36 blocks: 7.
+Netlist memory blocks: 1.
+Netlist inputs pins: 239
+Netlist output pins: 305
+
+Auto-sizing FPGA at x = 27 y = 27
+Auto-sizing FPGA at x = 14 y = 14
+Auto-sizing FPGA at x = 20 y = 20
+Auto-sizing FPGA at x = 17 y = 17
+Auto-sizing FPGA at x = 15 y = 15
+Auto-sizing FPGA at x = 16 y = 16
+Auto-sizing FPGA at x = 16 y = 16
+FPGA auto-sized to x = 17 y = 17
+The circuit will be mapped into a 17 x 17 array of clbs.
+
+Resource usage...
+	Netlist      0	blocks of type: <EMPTY>
+	Architecture 16	blocks of type: <EMPTY>
+	Netlist      544	blocks of type: io
+	Architecture 544	blocks of type: io
+	Netlist      173	blocks of type: clb
+	Architecture 221	blocks of type: clb
+	Netlist      7	blocks of type: mult_36
+	Architecture 8	blocks of type: mult_36
+	Netlist      1	blocks of type: memory
+	Architecture 4	blocks of type: memory
+
+Initial placement cost: 354.159 bb_cost: 354.159 td_cost: 0 delay_cost: 0
+
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+        T      Cost  Av BB Cost  Av TD Cost  Av Tot Del  P to P Del    d_max  Ac Rate Std Dev R limit     Exp Tot Moves   Alpha
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+ 61.56686    353.28     353.278           0           0           0  14.2919   0.9982  4.3205 18.0000  0.0000      6511  0.5000
+ 30.78343    356.34     356.335           0           0           0  14.2919   0.9963  4.8595 18.0000  0.0000     13022  0.5000
+ 15.39172    353.66     353.657           0           0           0  14.2919   0.9939  4.2050 18.0000  0.0000     19533  0.5000
+  7.69586    355.17     355.174           0           0           0  14.2919   0.9854  5.2536 18.0000  0.0000     26044  0.5000
+  3.84793    348.14     348.138           0           0           0  14.2919   0.9708  6.9007 18.0000  0.0000     32555  0.5000
+  1.92396    346.29     346.288           0           0           0  14.2919   0.9558  3.1917 18.0000  0.0000     39066  0.9000
+  1.73157    343.96     343.964           0           0           0  14.2919   0.9490  3.2943 18.0000  0.0000     45577  0.9000
+  1.55841    337.96     337.956           0           0           0  14.2919   0.9360  4.6774 18.0000  0.0000     52088  0.9000
+  1.40257    337.61     337.609           0           0           0  14.2919   0.9274  3.1567 18.0000  0.0000     58599  0.9000
+  1.26231    339.91     339.905           0           0           0  14.2919   0.9250  4.1468 18.0000  0.0000     65110  0.9000
+  1.13608    335.36      335.36           0           0           0  14.2919   0.9183  5.3053 18.0000  0.0000     71621  0.9000
+  1.02247    337.82     337.821           0           0           0  14.2919   0.9111  2.7799 18.0000  0.0000     78132  0.9000
+  0.92023    332.46     332.456           0           0           0  14.2919   0.8891  4.2728 18.0000  0.0000     84643  0.9000
+  0.82820    327.87     327.869           0           0           0  14.2919   0.8839  5.5228 18.0000  0.0000     91154  0.9000
+  0.74538    326.19     326.192           0           0           0  14.2919   0.8748  5.2452 18.0000  0.0000     97665  0.9000
+  0.67084    317.77     317.768           0           0           0  14.2919   0.8441  4.5217 18.0000  0.0000    104176  0.9000
+  0.60376    317.59     317.589           0           0           0  14.2919   0.8424  4.6212 18.0000  0.0000    110687  0.9000
+  0.54338     309.3     309.303           0           0           0  14.2919   0.8162  6.3653 18.0000  0.0000    117198  0.9000
+  0.48905     303.3     303.302           0           0           0  14.2919   0.8040  2.9685 18.0000  0.0000    123709  0.9000
+  0.44014    303.97     303.971           0           0           0  14.2919   0.7956  3.9789 18.0000  0.0000    130220  0.9500
+  0.41813    296.48     296.476           0           0           0  14.2919   0.7728  3.2191 18.0000  0.0000    136731  0.9500
+  0.39723    290.58     290.579           0           0           0  14.2919   0.7603  2.7549 18.0000  0.0000    143242  0.9500
+  0.37737    286.47     286.472           0           0           0  14.2919   0.7474  2.6012 18.0000  0.0000    149753  0.9500
+  0.35850    289.88     289.884           0           0           0  14.2919   0.7518  3.4164 18.0000  0.0000    156264  0.9500
+  0.34057     287.1     287.096           0           0           0  14.2919   0.7320  2.8213 18.0000  0.0000    162775  0.9500
+  0.32354    276.03     276.033           0           0           0  14.2919   0.7363  3.5582 18.0000  0.0000    169286  0.9500
+  0.30737    270.61     270.608           0           0           0  14.2919   0.7199  2.1364 18.0000  0.0000    175797  0.9500
+  0.29200    270.76     270.757           0           0           0  14.2919   0.7105  2.0949 18.0000  0.0000    182308  0.9500
+  0.27740    266.88     266.879           0           0           0  14.2919   0.7145  3.7897 18.0000  0.0000    188819  0.9500
+  0.26353    261.33     261.331           0           0           0  14.2919   0.6812  2.0708 18.0000  0.0000    195330  0.9500
+  0.25035    259.76     259.762           0           0           0  14.2919   0.6804  2.0999 18.0000  0.0000    201841  0.9500
+  0.23783     257.6     257.605           0           0           0  14.2919   0.6796  1.4850 18.0000  0.0000    208352  0.9500
+  0.22594    250.85     250.852           0           0           0  14.2919   0.6593  1.5750 18.0000  0.0000    214863  0.9500
+  0.21465    252.49     252.487           0           0           0  14.2919   0.6468  2.7417 18.0000  0.0000    221374  0.9500
+  0.20391    248.35     248.351           0           0           0  14.2919   0.6441  4.0512 18.0000  0.0000    227885  0.9500
+  0.19372    239.81     239.813           0           0           0  14.2919   0.6480  2.1497 18.0000  0.0000    234396  0.9500
+  0.18403    237.53     237.528           0           0           0  14.2919   0.6272  0.9883 18.0000  0.0000    240907  0.9500
+  0.17483    238.56     238.564           0           0           0  14.2919   0.6314  1.8472 18.0000  0.0000    247418  0.9500
+  0.16609    236.58      236.58           0           0           0  14.2919   0.6236  0.8736 18.0000  0.0000    253929  0.9500
+  0.15778    236.22     236.216           0           0           0  14.2919   0.5967  1.0203 18.0000  0.0000    260440  0.9500
+  0.14990     234.8     234.797           0           0           0  14.2919   0.5965  1.1620 18.0000  0.0000    266951  0.9500
+  0.14240    235.84     235.844           0           0           0  14.2919   0.5740  1.4342 18.0000  0.0000    273462  0.9500
+  0.13528    236.53     236.528           0           0           0  14.2919   0.5695  1.4760 18.0000  0.0000    279973  0.9500
+  0.12852    232.05     232.048           0           0           0  14.2919   0.5654  1.4299 18.0000  0.0000    286484  0.9500
+  0.12209     229.5     229.496           0           0           0  14.2919   0.5592  0.9387 18.0000  0.0000    292995  0.9500
+  0.11599    229.58     229.578           0           0           0  14.2919   0.5463  1.5478 18.0000  0.0000    299506  0.9500
+  0.11019    228.58     228.583           0           0           0  14.2919   0.5349  0.7527 18.0000  0.0000    306017  0.9500
+  0.10468     225.7     225.698           0           0           0  14.2919   0.5191  1.0839 18.0000  0.0000    312528  0.9500
+  0.09944    225.13     225.129           0           0           0  14.2919   0.5091  1.3330 18.0000  0.0000    319039  0.9500
+  0.09447    220.38      220.38           0           0           0  14.2919   0.4841  0.9769 18.0000  0.0000    325550  0.9500
+  0.08975    218.04     218.037           0           0           0  14.2919   0.4485  0.8903 18.0000  0.0000    332061  0.9500
+  0.08526    218.45     218.447           0           0           0  14.2919   0.4577  0.8580 18.0000  0.0000    338572  0.9500
+  0.08100    217.14     217.145           0           0           0  14.2919   0.4439  0.8594 18.0000  0.0000    345083  0.9500
+  0.07695     214.9     214.899           0           0           0  14.2919   0.4112  0.8998 18.0000  0.0000    351594  0.9500
+  0.07310    214.92     214.921           0           0           0  14.2919   0.4620  1.0624 17.4807  0.0000    358105  0.9500
+  0.06945    213.46     213.464           0           0           0  14.2919   0.4469  1.4999 17.8651  0.0000    364616  0.9500
+  0.06597    211.93     211.926           0           0           0  14.2919   0.4113  1.0570 17.9890  0.0000    371127  0.9500
+  0.06267    210.77      210.77           0           0           0  14.2919   0.4162  0.5989 17.4728  0.0000    377638  0.9500
+  0.05954    209.21     209.213           0           0           0  14.2919   0.4113  0.7093 17.0572  0.0000    384149  0.9500
+  0.05656    206.91     206.914           0           0           0  14.2919   0.3909  1.3076 16.5678  0.0000    390660  0.9500
+  0.05374    204.07     204.068           0           0           0  14.2919   0.3953  0.5571 15.7539  0.0000    397171  0.9500
+  0.05105    202.35     202.353           0           0           0  14.2919   0.3748  0.6091 15.0502  0.0000    403682  0.9500
+  0.04850     201.9     201.896           0           0           0  14.2919   0.3955  1.0216 14.0682  0.0000    410193  0.9500
+  0.04607     201.1     201.097           0           0           0  14.2919   0.4012  0.4267 13.4419  0.0000    416704  0.9500
+  0.04377    200.32     200.318           0           0           0  14.2919   0.4082  0.4098 12.9199  0.0000    423215  0.9500
+  0.04158    198.44     198.439           0           0           0  14.2919   0.4081  0.5858 12.5095  0.0000    429726  0.9500
+  0.03950    197.15     197.153           0           0           0  14.2919   0.3927  0.6098 12.1102  0.0000    436237  0.9500
+  0.03753    195.69     195.688           0           0           0  14.2919   0.3996  1.0490 11.5376  0.0000    442748  0.9500
+  0.03565    193.16     193.158           0           0           0  14.2919   0.3794  0.4111 11.0718  0.0000    449259  0.9500
+  0.03387    191.16     191.159           0           0           0  14.2919   0.3890  0.4479 10.4004  0.0000    455770  0.9500
+  0.03217     190.1       190.1           0           0           0  14.2919   0.4059  0.5420  9.8704  0.0000    462281  0.9500
+  0.03056    189.76     189.762           0           0           0  14.2919   0.4147  0.5450  9.5341  0.0000    468792  0.9500
+  0.02904    187.85     187.848           0           0           0  14.2919   0.3864  0.4300  9.2927  0.0000    475303  0.9500
+  0.02758    186.62     186.619           0           0           0  14.2919   0.4013  0.5511  8.7948  0.0000    481814  0.9500
+  0.02621    185.21     185.206           0           0           0  14.2919   0.3838  0.4013  8.4546  0.0000    488325  0.9500
+  0.02490    184.66     184.658           0           0           0  14.2919   0.4122  0.3540  7.9796  0.0000    494836  0.9500
+  0.02365    184.08     184.085           0           0           0  14.2919   0.3877  0.2477  7.7580  0.0000    501347  0.9500
+  0.02247    183.53     183.531           0           0           0  14.2919   0.3787  0.5161  7.3518  0.0000    507858  0.9500
+  0.02134    182.43     182.433           0           0           0  14.2919   0.3995  0.2184  6.9015  0.0000    514369  0.9500
+  0.02028    181.53     181.526           0           0           0  14.2919   0.3930  0.4581  6.6218  0.0000    520880  0.9500
+  0.01926    180.22     180.222           0           0           0  14.2919   0.3901  0.4310  6.3108  0.0000    527391  0.9500
+  0.01830    179.02     179.024           0           0           0  14.2919   0.4018  0.4219  5.9959  0.0000    533902  0.9500
+  0.01739    179.21     179.214           0           0           0  14.2919   0.4076  0.2519  5.7668  0.0000    540413  0.9500
+  0.01652    178.53      178.53           0           0           0  14.2919   0.3889  0.3860  5.5800  0.0000    546924  0.9500
+  0.01569    177.51     177.512           0           0           0  14.2919   0.3807  0.3358  5.2948  0.0000    553435  0.9500
+  0.01491    177.04     177.043           0           0           0  14.2919   0.4128  0.1296  4.9810  0.0000    559946  0.9500
+  0.01416    176.55     176.549           0           0           0  14.2919   0.3916  0.3190  4.8457  0.0000    566457  0.9500
+  0.01345    175.51     175.514           0           0           0  14.2919   0.3794  0.3327  4.6114  0.0000    572968  0.9500
+  0.01278    174.89     174.892           0           0           0  14.2919   0.3537  0.2862  4.3318  0.0000    579479  0.9500
+  0.01214     174.1     174.102           0           0           0  14.2919   0.4141  0.1912  3.9580  0.0000    585990  0.9500
+  0.01153    173.58     173.576           0           0           0  14.2919   0.3926  0.2114  3.8553  0.0000    592501  0.9500
+  0.01096    173.13     173.134           0           0           0  14.2919   0.3821  0.0962  3.6725  0.0000    599012  0.9500
+  0.01041    172.89     172.894           0           0           0  14.2919   0.3637  0.1847  3.4599  0.0000    605523  0.9500
+  0.00989    172.42     172.416           0           0           0  14.2919   0.3608  0.1933  3.1959  0.0000    612034  0.9500
+  0.00939    172.07     172.068           0           0           0  14.2919   0.4248  0.1257  2.9427  0.0000    618545  0.9500
+  0.00892    171.91     171.913           0           0           0  14.2919   0.4113  0.1672  2.8980  0.0000    625056  0.9500
+  0.00848    171.53     171.529           0           0           0  14.2919   0.3975  0.1561  2.8149  0.0000    631567  0.9500
+  0.00805    171.42     171.421           0           0           0  14.2919   0.4050  0.1511  2.6952  0.0000    638078  0.9500
+  0.00765    170.95     170.946           0           0           0  14.2919   0.3777  0.0932  2.6009  0.0000    644589  0.9500
+  0.00727    170.91     170.911           0           0           0  14.2919   0.3545  0.1177  2.4388  0.0000    651100  0.9500
+  0.00691    170.66     170.659           0           0           0  14.2919   0.3437  0.0884  2.2302  0.0000    657611  0.9500
+  0.00656    170.59     170.594           0           0           0  14.2919   0.3442  0.0812  2.0155  0.0000    664122  0.9500
+  0.00623    170.42     170.424           0           0           0  14.2919   0.4167  0.0521  1.8224  0.0000    670633  0.9500
+  0.00592    170.16     170.161           0           0           0  14.2919   0.4127  0.0967  1.7799  0.0000    677144  0.9500
+  0.00562    169.82     169.825           0           0           0  14.2919   0.3958  0.1255  1.7313  0.0000    683655  0.9500
+  0.00534     169.7     169.702           0           0           0  14.2919   0.3801  0.0627  1.6547  0.0000    690166  0.9500
+  0.00508    169.74     169.738           0           0           0  14.2919   0.3688  0.1055  1.5556  0.0000    696677  0.9500
+  0.00482     169.4     169.401           0           0           0  14.2919   0.3606  0.0684  1.4448  0.0000    703188  0.9500
+  0.00458    169.47     169.471           0           0           0  14.2919   0.3571  0.0479  1.3301  0.0000    709699  0.9500
+  0.00435     169.3     169.298           0           0           0  14.2919   0.3496  0.0808  1.2198  0.0000    716210  0.9500
+  0.00413    169.16     169.159           0           0           0  14.2919   0.3434  0.0540  1.1095  0.0000    722721  0.9500
+  0.00393    169.09     169.088           0           0           0  14.2919   0.3202  0.0508  1.0024  0.0000    729232  0.9500
+  0.00373       169     168.996           0           0           0  14.2919   0.3222  0.0878  1.0000  0.0000    735743  0.9500
+  0.00354    168.81     168.808           0           0           0  14.2919   0.2917  0.0304  1.0000  0.0000    742254  0.9500
+  0.00337    168.85     168.849           0           0           0  14.2919   0.2907  0.0535  1.0000  0.0000    748765  0.9500
+  0.00320     168.8     168.802           0           0           0  14.2919   0.2887  0.0589  1.0000  0.0000    755276  0.9500
+  0.00304     168.7     168.701           0           0           0  14.2919   0.2722  0.0286  1.0000  0.0000    761787  0.9500
+  0.00289    168.72     168.716           0           0           0  14.2919   0.2616  0.0298  1.0000  0.0000    768298  0.9500
+  0.00274    168.55     168.552           0           0           0  14.2919   0.2522  0.0390  1.0000  0.0000    774809  0.9500
+  0.00261    168.52     168.516           0           0           0  14.2919   0.2507  0.0158  1.0000  0.0000    781320  0.9500
+  0.00248    168.54     168.541           0           0           0  14.2919   0.2562  0.0215  1.0000  0.0000    787831  0.9500
+  0.00235    168.52     168.522           0           0           0  14.2919   0.2477  0.0299  1.0000  0.0000    794342  0.9500
+  0.00223    168.43     168.426           0           0           0  14.2919   0.2351  0.0127  1.0000  0.0000    800853  0.9500
+  0.00212     168.4       168.4           0           0           0  14.2919   0.2249  0.0195  1.0000  0.0000    807364  0.9500
+  0.00202    168.37     168.367           0           0           0  14.2919   0.2284  0.0178  1.0000  0.0000    813875  0.9500
+  0.00192    168.38     168.382           0           0           0  14.2919   0.2321  0.0000  1.0000  0.0000    820386  0.9500
+  0.00182    168.36     168.363           0           0           0  14.2919   0.2259  0.0069  1.0000  0.0000    826897  0.9500
+  0.00173    168.33     168.326           0           0           0  14.2919   0.2344  0.0000  1.0000  0.0000    833408  0.9500
+  0.00164    168.32     168.324           0           0           0  14.2919   0.2287  0.0000  1.0000  0.0000    839919  0.9500
+  0.00156    168.32     168.321           0           0           0  14.2919   0.2149  0.0109  1.0000  0.0000    846430  0.9500
+  0.00148    168.32     168.321           0           0           0  14.2919   0.2253  0.0100  1.0000  0.0000    852941  0.9500
+  0.00141     168.3     168.303           0           0           0  14.2919   0.2164  0.0108  1.0000  0.0000    859452  0.9500
+  0.00134     168.3     168.299           0           0           0  14.2919   0.2172  0.0146  1.0000  0.0000    865963  0.9500
+  0.00127    168.29     168.294           0           0           0  14.2919   0.2227  0.0159  1.0000  0.0000    872474  0.9500
+  0.00121    168.28     168.285           0           0           0  14.2919   0.2159  0.0000  1.0000  0.0000    878985  0.9500
+  0.00115    168.27     168.273           0           0           0  14.2919   0.2104  0.0109  1.0000  0.0000    885496  0.9500
+  0.00109    168.25     168.252           0           0           0  14.2919   0.2050  0.0000  1.0000  0.0000    892007  0.9500
+  0.00104    168.23     168.229           0           0           0  14.2919   0.2162  0.0000  1.0000  0.0000    898518  0.9500
+  0.00098    168.21     168.212           0           0           0  14.2919   0.2144  0.0159  1.0000  0.0000    905029  0.9500
+  0.00093    168.21     168.212           0           0           0  14.2919   0.2060  0.0000  1.0000  0.0000    911540  0.9500
+  0.00089    168.22     168.215           0           0           0  14.2919   0.2115  0.0072  1.0000  0.0000    918051  0.9500
+  0.00084    168.21     168.208           0           0           0  14.2919   0.2072  0.0027  1.0000  0.0000    924562  0.9500
+  0.00080     168.2     168.202           0           0           0  14.2919   0.2123  0.0000  1.0000  0.0000    931073  0.9500
+  0.00076     168.2     168.202           0           0           0  14.2919   0.2178  0.0000  1.0000  0.0000    937584  0.9500
+  0.00072     168.2     168.205           0           0           0  14.2919   0.2130  0.0165  1.0000  0.0000    944095  0.9500
+  0.00069    168.19     168.195           0           0           0  14.2919   0.2010  0.0000  1.0000  0.0000    950606  0.9500
+  0.00065    168.19     168.193           0           0           0  14.2919   0.2092  0.0000  1.0000  0.0000    957117  0.9500
+  0.00062    168.19     168.192           0           0           0  14.2919   0.2024  0.0086  1.0000  0.0000    963628  0.9500
+  0.00059    168.19     168.192           0           0           0  14.2919   0.2017  0.0000  1.0000  0.0000    970139  0.9500
+  0.00056    168.19     168.194           0           0           0  14.2919   0.2093  0.0000  1.0000  0.0000    976650  0.9500
+  0.00053    168.19     168.191           0           0           0  14.2919   0.2103  0.0000  1.0000  0.0000    983161  0.9500
+  0.00050    168.19     168.191           0           0           0  14.2919   0.2014  0.0000  1.0000  0.0000    989672  0.9500
+  0.00048    168.19      168.19           0           0           0  14.2919   0.2090  0.0000  1.0000  0.0000    996183  0.9500
+  0.00046    168.19      168.19           0           0           0  14.2919   0.2078  0.0000  1.0000  0.0000   1002694  0.9500
+  0.00043    168.19     168.191           0           0           0  14.2919   0.2080  0.0000  1.0000  0.0000   1009205  0.9500
+  0.00000    168.19     168.191           0           0           0            0.1539  0.0000  1.0000  0.0000   1015716
+
+BB estimate of min-dist (placement) wirelength: 16804
+bb_cost recomputed from scratch: 168.19
+
+Completed placement consistency check successfully.
+
+Swaps called: 1016441
+Placement cost: 168.19, bb_cost: 168.19, td_cost: 0, delay_cost: 0
+Placement total # of swap attempts: 1016441
+	Swap reject rate: 0
+	Swap accept rate: 0
+	Swap abort rate: 0
+Placement took 1.12 seconds.
+The entire flow of VPR took 5.17 seconds.

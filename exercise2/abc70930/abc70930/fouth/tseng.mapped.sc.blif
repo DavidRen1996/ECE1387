@@ -1,0 +1,2047 @@
+# Benchmark "top" written by ABC on Sat Dec 15 18:02:41 2018
+.model top
+.inputs tin_pv10_4_4_ tin_pv11_4_4_ tin_pv6_7_7_ tin_pv2_0_0_ tin_pv10_3_3_ \
+ tin_pv1_2_2_ tin_pv11_3_3_ tin_pv4_3_3_ tin_pv10_2_2_ tin_pv11_2_2_ \
+ tin_pv6_0_0_ tin_pv2_1_1_ tin_pv10_1_1_ tin_pv1_3_3_ preset_0_0_ \
+ tin_pv11_1_1_ tin_pv4_4_4_ tin_pready_0_0_ tin_pv10_0_0_ tin_pv11_0_0_ \
+ tin_pv6_1_1_ tin_pv2_2_2_ tin_pv1_4_4_ tin_pv4_5_5_ tin_pv6_2_2_ \
+ tin_pv2_3_3_ tin_pv1_5_5_ tin_pv4_6_6_ tin_pv6_3_3_ tin_pv2_4_4_ \
+ tin_pv1_6_6_ pclk tin_pv4_7_7_ tin_pv6_4_4_ tin_pv2_5_5_ tin_pv1_7_7_ \
+ tin_pv4_0_0_ tin_pv6_5_5_ tin_pv2_6_6_ tin_pv10_7_7_ tin_pv1_0_0_ \
+ tin_pv11_7_7_ tin_pv4_1_1_ tin_pv10_6_6_ tin_pv11_6_6_ tin_pv6_6_6_ \
+ tin_pv2_7_7_ preset tin_pv10_5_5_ tin_pv1_1_1_ tin_pv11_5_5_ tin_pv4_2_2_
+.outputs pv14_2_2_ pv12_3_3_ pv10_4_4_ pv7_5_5_ pv3_6_6_ pv15_2_2_ \
+ pv13_3_3_ pv11_4_4_ pv6_7_7_ pv2_0_0_ pv14_1_1_ pv12_2_2_ pv10_3_3_ \
+ pv9_0_0_ pv5_1_1_ pv1_2_2_ pv15_1_1_ pv13_2_2_ pv11_3_3_ pv8_2_2_ pv4_3_3_ \
+ pv14_0_0_ pv12_1_1_ pv10_2_2_ pv7_6_6_ pv3_7_7_ pv15_0_0_ pv13_1_1_ \
+ pv11_2_2_ pv6_0_0_ pv2_1_1_ pv12_0_0_ pv10_1_1_ pv9_1_1_ pv5_2_2_ pv1_3_3_ \
+ pv13_0_0_ pv11_1_1_ pv8_3_3_ pv4_4_4_ pready_0_0_ pv10_0_0_ pv7_7_7_ \
+ pv3_0_0_ pv11_0_0_ pv6_1_1_ pv2_2_2_ pv9_2_2_ pv5_3_3_ pv1_4_4_ pv8_4_4_ \
+ pv4_5_5_ pv7_0_0_ pv3_1_1_ pv6_2_2_ pv2_3_3_ pv9_3_3_ pv5_4_4_ pv1_5_5_ \
+ pv8_5_5_ pv4_6_6_ pv7_1_1_ pv3_2_2_ pv6_3_3_ pv2_4_4_ pv9_4_4_ pv5_5_5_ \
+ pv1_6_6_ pv8_6_6_ pv4_7_7_ pv7_2_2_ pv3_3_3_ pv6_4_4_ pv2_5_5_ pv14_7_7_ \
+ pv9_5_5_ pv5_6_6_ pv1_7_7_ pv15_7_7_ pv8_7_7_ pv4_0_0_ pv14_6_6_ pv12_7_7_ \
+ pv7_3_3_ pv3_4_4_ pv15_6_6_ pv13_7_7_ pv6_5_5_ pv2_6_6_ pdn pv14_5_5_ \
+ pv12_6_6_ pv10_7_7_ pv9_6_6_ pv5_7_7_ pv1_0_0_ pv15_5_5_ pv13_6_6_ \
+ pv11_7_7_ pv8_0_0_ pv4_1_1_ pv14_4_4_ pv12_5_5_ pv10_6_6_ pv7_4_4_ \
+ pv3_5_5_ pv15_4_4_ pv13_5_5_ pv11_6_6_ pv6_6_6_ pv2_7_7_ pv14_3_3_ \
+ pv12_4_4_ pv10_5_5_ pv9_7_7_ pv5_0_0_ pv1_1_1_ pv15_3_3_ pv13_4_4_ \
+ pv11_5_5_ pv8_1_1_ pv4_2_2_
+.default_input_arrival 0 0
+
+.latch       n349    n_n4142  0
+.latch       n354    n_n3936  0
+.latch       n359    n_n3574  0
+.latch       n364    n_n3008  0
+.latch       n369    n_n3726  0
+.latch       n374    n_n3604  0
+.latch       n379    n_n3144  0
+.latch       n384    n_n3782  0
+.latch       n389    n_n3067  0
+.latch       n394    n_n4258  0
+.latch       n399    n_n3225  0
+.latch       n404    n_n3180  0
+.latch       n409    n_n3274  0
+.latch       n414    n_n3475  0
+.latch       n419    n_n3687  0
+.latch       n424    n_n3381  0
+.latch       n429    n_n3098  0
+.latch       n434    n_n4108  0
+.latch       n439    n_n3497  0
+.latch       n444    n_n3793  0
+.latch       n449    n_n4316  0
+.latch       n454    n_n4349  0
+.latch       n459    n_n3029  0
+.latch       n464    n_n3619  0
+.latch       n469    n_n3264  0
+.latch       n474    n_n3780  0
+.latch       n479     ndn3_4  0
+.latch       n484    n_n4114  0
+.latch       n489    n_n3146  0
+.latch       n494    n_n3511  0
+.latch       n499    n_n3152  0
+.latch       n504    n_n3833  0
+.latch       n509    n_n4282  0
+.latch       n514    n_n3305  0
+.latch       n519    n_n4392  0
+.latch       n524    n_n4224  0
+.latch       n529    n_n3198  0
+.latch       n534    n_n3204  0
+.latch       n539    n_n3024  0
+.latch       n544    n_n4139  0
+.latch       n549    ndn3_15  0
+.latch       n554    n_n3133  0
+.latch       n559    n_n4074  0
+.latch       n564    n_n3270  0
+.latch       n569    n_n3858  0
+.latch       n574    n_n3456  0
+.latch       n579    n_n3521  0
+.latch       n584    n_n3081  0
+.latch       n589    n_n4381  0
+.latch       n594    n_n3670  0
+.latch       n599    n_n4211  0
+.latch       n604    n_n3493  0
+.latch       n609    n_n3495  0
+.latch       n614    n_n3916  0
+.latch       n619    n_n3195  0
+.latch       n624    n_n3525  0
+.latch       n629    n_n3729  0
+.latch       n634    n_n3876  0
+.latch       n639     ndn3_5  0
+.latch       n644    n_n3549  0
+.latch       n649    n_n3489  0
+.latch       n654    n_n3764  0
+.latch       n659    n_n3281  0
+.latch       n664    n_n3707  0
+.latch       n669    n_n3517  0
+.latch       n674    n_n4160  0
+.latch       n679    n_n4222  0
+.latch       n684    n_n3012  0
+.latch       n689    n_n4071  0
+.latch       n694    n_n3372  0
+.latch       n699    n_n3344  0
+.latch       n704    n_n3688  0
+.latch       n709    n_n3079  0
+.latch       n714    n_n3313  0
+.latch       n719    n_n3411  0
+.latch       n724    n_n3231  0
+.latch       n729    n_n3396  0
+.latch       n734    n_n3432  0
+.latch       n739    n_n3606  0
+.latch       n744    n_n3733  0
+.latch       n749    n_n3556  0
+.latch       n754    n_n4040  0
+.latch       n759    n_n3120  0
+.latch       n764    n_n3221  0
+.latch       n769    n_n3173  0
+.latch       n774    n_n3851  0
+.latch       n779    n_n3113  0
+.latch       n784    n_n3242  0
+.latch       n789    n_n3118  0
+.latch       n794    n_n3376  0
+.latch       n799    n_n4089  0
+.latch       n804    n_n3044  0
+.latch       n809    n_n3627  0
+.latch       n814    n_n3035  0
+.latch       n819    n_n3111  0
+.latch       n824    n_n3321  0
+.latch       n829    n_n3443  0
+.latch       n834    n_n3215  0
+.latch       n839    ndn3_10  0
+.latch       n844    n_n4172  0
+.latch       n849     nlc1_2  0
+.latch       n854    n_n3590  0
+.latch       n859    n_n4110  0
+.latch       n864     nlc3_3  0
+.latch       n869    n_n3576  0
+.latch       n874    n_n4129  0
+.latch       n879    n_n4189  0
+.latch       n884    n_n4286  0
+.latch       n889    n_n4383  0
+.latch       n894        pdn  0
+.latch       n898    n_n3567  0
+.latch       n903    n_n3892  0
+.latch       n908    n_n3075  0
+.latch       n913    n_n3354  0
+.latch       n918    n_n3465  0
+.latch       n923     ndn3_6  0
+.latch       n928    n_n3617  0
+.latch       n933    n_n4162  0
+.latch       n938    n_n3207  0
+.latch       n943    n_n4120  0
+.latch       n948    n_n3065  0
+.latch       n953    n_n4005  0
+.latch       n958    n_n3266  0
+.latch       n963    n_n4337  0
+.latch       n968    n_n3600  0
+.latch       n973    n_n3415  0
+.latch       n978    n_n4243  0
+.latch       n983    n_n3872  0
+.latch       n988    n_n3648  0
+.latch       n993    n_n3358  0
+.latch       n998    n_n3350  0
+.latch      n1003     ndn3_7  0
+.latch      n1008    n_n3116  0
+.latch      n1013    n_n3583  0
+.latch      n1018    n_n3906  0
+.latch      n1023    n_n4131  0
+.latch      n1028    n_n3316  0
+.latch      n1033    n_n3061  0
+.latch      n1038    n_n3048  0
+.latch      n1043    n_n3886  0
+.latch      n1048    n_n3919  0
+.latch      n1053    n_n3128  0
+.latch      n1058    n_n3995  0
+.latch      n1063    n_n4213  0
+.latch      n1068    n_n3761  0
+.latch      n1073     ndn3_8  0
+.latch      n1078    n_n3252  0
+.latch      n1083    n_n4366  0
+.latch      n1088    n_n3328  0
+.latch      n1093    n_n3988  0
+.latch      n1098    n_n3348  0
+.latch      n1103    n_n3544  0
+.latch      n1108    n_n3101  0
+.latch      n1113    n_n4279  0
+.latch      n1118    n_n3896  0
+.latch      n1123    n_n3736  0
+.latch      n1128    n_n4251  0
+.latch      n1133    n_n3650  0
+.latch      n1138    n_n3307  0
+.latch      n1143    n_n4294  0
+.latch      n1148    n_n4334  0
+.latch      n1153    n_n3955  0
+.latch      n1158    n_n4164  0
+.latch      n1163    n_n3155  0
+.latch      n1168    n_n3749  0
+.latch      n1173    n_n4233  0
+.latch      n1178    n_n4347  0
+.latch      n1183    n_n3826  0
+.latch      n1188    n_n3360  0
+.latch      n1193    n_n3458  0
+.latch      n1198    n_n3093  0
+.latch      n1203    n_n3157  0
+.latch      n1208    n_n3506  0
+.latch      n1213    n_n3161  0
+.latch      n1218    n_n3319  0
+.latch      n1223    n_n3429  0
+.latch      n1228    n_n3971  0
+.latch      n1233    n_n3449  0
+.latch      n1238    n_n4270  0
+.latch      n1243    n_n4288  0
+.latch      n1248    n_n3183  0
+.latch      n1253    n_n3130  0
+.latch      n1258    nlak4_2  0
+.latch      n1263    n_n4047  0
+.latch      n1268    n_n3978  0
+.latch      n1273    n_n3239  0
+.latch      n1278    n_n4145  0
+.latch      n1283    n_n3890  0
+.latch      n1288    n_n4003  0
+.latch      n1293    n_n3091  0
+.latch      n1298    n_n3985  0
+.latch      n1303    n_n3326  0
+.latch      n1308    n_n4052  0
+.latch      n1313     nsr4_2  0
+.latch      n1318    n_n4099  0
+.latch      n1323    n_n4375  0
+.latch      n1328    n_n4067  0
+.latch      n1333    n_n4290  0
+.latch      n1338    n_n3898  0
+.latch      n1343    n_n4122  0
+.latch      n1348    n_n3774  0
+.latch      n1353    n_n3014  0
+.latch      n1358    n_n4241  0
+.latch      n1363    n_n3952  0
+.latch      n1368    n_n3237  0
+.latch      n1373    n_n3968  0
+.latch      n1378    n_n3922  0
+.latch      n1383    n_n3551  0
+.latch      n1388    n_n3379  0
+.latch      n1393    n_n4275  0
+.latch      n1398    n_n3570  0
+.latch      n1403    n_n3854  0
+.latch      n1408    n_n4057  0
+.latch      n1413    n_n3451  0
+.latch      n1418    n_n4037  0
+.latch      n1423    n_n3408  0
+.latch      n1428    n_n4229  0
+.latch      n1433    n_n4201  0
+.latch      n1438    n_n3339  0
+.latch      n1443    n_n4362  0
+.latch      n1448    n_n3483  0
+.latch      n1453    n_n3557  0
+.latch      n1458    n_n4185  0
+.latch      n1463    n_n3069  0
+.latch      n1468    n_n3643  0
+.latch      n1473    n_n3404  0
+.latch      n1478    n_n3057  0
+.latch      n1483    n_n3020  0
+.latch      n1488    n_n3828  0
+.latch      n1493    n_n3631  0
+.latch      n1498    n_n3138  0
+.latch      n1503     nsr1_2  0
+.latch      n1508    n_n4065  0
+.latch      n1513    n_n3679  0
+.latch      n1518    n_n3287  0
+.latch      n1523    n_n4351  0
+.latch      n1528    n_n4059  0
+.latch      n1533    n_n3436  0
+.latch      n1538    nen3_10  0
+.latch      n1543    n_n3461  0
+.latch      n1548    n_n4012  0
+.latch      n1553    n_n3051  0
+.latch      n1558    n_n3073  0
+.latch      n1563    n_n3777  0
+.latch      n1568    n_n3709  0
+.latch      n1573    n_n3946  0
+.latch      n1578    n_n3085  0
+.latch      n1583    n_n3259  0
+.latch      n1588    n_n3504  0
+.latch      n1593    n_n4045  0
+.latch      n1598    n_n3954  0
+.latch      n1603    n_n3136  0
+.latch      n1608    n_n4372  0
+.latch      n1613    n_n4236  0
+.latch      n1618    n_n3040  0
+.latch      n1623    n_n3874  0
+.latch      n1628    n_n3999  0
+.latch      n1633    n_n3223  0
+.latch      n1638    ndn1_34  0
+.latch      n1643    n_n3743  0
+.latch      n1648    n_n3657  0
+.latch      n1653    n_n3213  0
+.latch      n1658    n_n3095  0
+.latch      n1663    n_n3663  0
+.latch      n1668    n_n3724  0
+.latch      n1673    n_n3038  0
+.latch      n1678    n_n3370  0
+.latch      n1683    n_n3624  0
+.latch      n1688    n_n3578  0
+.latch      n1693    n_n3713  0
+.latch      n1698    n_n3089  0
+.latch      n1703    n_n3211  0
+.latch      n1708    n_n3367  0
+.latch      n1713    n_n3434  0
+.latch      n1718    n_n3126  0
+.latch      n1723    n_n4192  0
+.latch      n1728    n_n4136  0
+.latch      n1733    n_n3053  0
+.latch      n1738    n_n3938  0
+.latch      n1743    n_n3769  0
+.latch      n1748    n_n4390  0
+.latch      n1753    nsr3_17  0
+.latch      n1758    n_n3903  0
+.latch      n1763    n_n3658  0
+.latch      n1768    nrq3_11  0
+.latch      n1773    n_n3818  0
+.latch      n1778    n_n3533  0
+.latch      n1783    n_n3463  0
+.latch      n1788    n_n3175  0
+.latch      n1793    n_n3055  0
+.latch      n1798    n_n3202  0
+.latch      n1803    n_n3385  0
+.latch      n1808    n_n4077  0
+.latch      n1813    n_n3142  0
+.latch      n1818    n_n3901  0
+.latch      n1823    n_n3934  0
+.latch      n1828    n_n3823  0
+.latch      n1833    n_n3722  0
+.latch      n1838    n_n4309  0
+.latch      n1843    n_n4159  0
+.latch      n1848    n_n4330  0
+.latch      n1853    n_n3836  0
+.latch      n1858    n_n3470  0
+.latch      n1863    n_n3331  0
+.latch      n1868    n_n3883  0
+.latch      n1873    n_n4299  0
+.latch      n1878    n_n4157  0
+.latch      n1883     ndn3_9  0
+.latch      n1888    n_n3208  0
+.latch      n1893    n_n3190  0
+.latch      n1898    n_n4029  0
+.latch      n1903    n_n3042  0
+.latch      n1908    nsr3_14  0
+.latch      n1913    n_n4151  0
+.latch      n1918    n_n3188  0
+.latch      n1923    n_n4303  0
+.latch      n1928    n_n3250  0
+.latch      n1933    n_n3170  0
+.latch      n1938    n_n3758  0
+.latch      n1943    n_n3910  0
+.latch      n1948    n_n3108  0
+.latch      n1953    n_n3150  0
+.latch      n1958    n_n4320  0
+.latch      n1963    n_n4360  0
+.latch      n1968    n_n4247  0
+.latch      n1973    n_n4199  0
+.latch      n1978    n_n3966  0
+.latch      n1983    n_n3766  0
+.latch      n1988    n_n4021  0
+.latch      n1993    n_n4062  0
+.latch      n1998    n_n3514  0
+.latch      n2003    n_n3572  0
+.latch      n2008    n_n4166  0
+.latch      n2013    n_n3976  0
+.latch      n2018    n_n3394  0
+.latch      n2023    n_n4095  0
+.latch      n2028    n_n3863  0
+.latch      n2033    n_n3720  0
+.latch      n2038    ngfdn_3  0
+.latch      n2043    n_n3756  0
+.latch      n2048    n_n3667  0
+.latch      n2053    n_n3342  0
+.latch      n2058    n_n3529  0
+.latch      n2063    n_n4209  0
+.latch      n2068    n_n4324  0
+.latch      n2073    n_n3337  0
+.latch      n2078    n_n4227  0
+.latch      n2083    n_n4153  0
+.latch      n2088    n_n3831  0
+.latch      n2093    n_n3233  0
+.latch      n2098    n_n4263  0
+.latch      n2103    n_n3413  0
+.latch      n2108    n_n4182  0
+.latch      n2113    n_n3841  0
+.latch      n2118    n_n3441  0
+.latch      n2123    n_n4026  0
+.latch      n2128    n_n4342  0
+.latch      n2133    n_n4102  0
+.latch      n2138    n_n3277  0
+.latch      n2143    n_n4180  0
+.latch      n2148    n_n3878  0
+.latch      n2153    n_n3931  0
+.latch      n2158    n_n3845  0
+.latch      n2163    n_n3865  0
+.latch      n2168    n_n3486  0
+.latch      n2173    n_n4056  0
+.latch      n2178    n_n3674  0
+.latch      n2183    n_n3959  0
+.latch      n2188    n_n3608  0
+.latch      n2193    n_n4080  0
+.latch      n2198    n_n4018  0
+.latch      n2203    n_n4354  0
+.latch      n2208    n_n3797  0
+.latch      n2213    n_n3739  0
+.latch      n2218    n_n3646  0
+.latch      n2223    n_n3099  0
+.latch      n2228    n_n3537  0
+.latch      n2233    n_n3806  0
+.latch      n2238    n_n3087  0
+.latch      n2243    n_n4105  0
+.latch      n2248    n_n3262  0
+.latch      n2253    n_n4125  0
+.latch      n2258    n_n3814  0
+.latch      n2263    n_n4093  0
+.latch      n2268     nsr3_3  0
+
+.gate inv1   a=n_n3358 O=n1329
+.gate inv1   a=n_n4153 O=n1330
+.gate nor2   a=n1330 b=n1329 O=pv14_2_2_
+.gate inv1   a=n_n3631 O=n1332
+.gate inv1   a=n_n3367 O=n1333_1
+.gate nor2   a=n1333_1 b=n1332 O=pv12_3_3_
+.gate inv1   a=n_n4136 O=n1335
+.gate nor2   a=n_n3042 b=tin_pv10_4_4_ O=n1336
+.gate aoi21  a=n_n3042 b=n1335 c=n1336 O=pv10_4_4_
+.gate inv1   a=n_n3130 O=n1338_1
+.gate inv1   a=n_n3679 O=n1339
+.gate nor2   a=n1339 b=n1338_1 O=pv7_5_5_
+.gate inv1   a=n_n3252 O=n1341
+.gate inv1   a=n_n3057 O=n1342
+.gate nor2   a=n1342 b=n1341 O=pv3_6_6_
+.gate inv1   a=n_n3113 O=n1344
+.gate inv1   a=n_n4037 O=n1345
+.gate nor2   a=n1345 b=n1344 O=pv15_2_2_
+.gate inv1   a=n_n3600 O=n1347
+.gate inv1   a=n_n3404 O=n1348_1
+.gate nor2   a=n1348_1 b=n1347 O=pv13_3_3_
+.gate inv1   a=n_n3966 O=n1350
+.gate nor2   a=n_n4120 b=tin_pv11_4_4_ O=n1351
+.gate aoi21  a=n1350 b=n_n4120 c=n1351 O=pv11_4_4_
+.gate inv1   a=n_n3370 O=n1353_1
+.gate nor2   a=n_n4164 b=tin_pv6_7_7_ O=n1354
+.gate aoi21  a=n1353_1 b=n_n4164 c=n1354 O=pv6_7_7_
+.gate inv1   a=n_n3910 O=n1356
+.gate nor2   a=n_n3211 b=tin_pv2_0_0_ O=n1357
+.gate aoi21  a=n1356 b=n_n3211 c=n1357 O=pv2_0_0_
+.gate inv1   a=n_n3012 O=n1359
+.gate inv1   a=n_n3038 O=n1360
+.gate nor2   a=n1360 b=n1359 O=pv14_1_1_
+.gate inv1   a=n_n3067 O=n1362
+.gate inv1   a=n_n3576 O=n1363_1
+.gate nor2   a=n1363_1 b=n1362 O=pv12_2_2_
+.gate inv1   a=n_n3213 O=n1365
+.gate nor2   a=n_n4129 b=tin_pv10_3_3_ O=n1366
+.gate aoi21  a=n1365 b=n_n4129 c=n1366 O=pv10_3_3_
+.gate inv1   a=n_n3128 O=n1368_1
+.gate inv1   a=n_n3890 O=n1369
+.gate nor2   a=n1369 b=n1368_1 O=pv9_0_0_
+.gate inv1   a=n_n3443 O=n1371
+.gate inv1   a=n_n3287 O=n1372
+.gate nor2   a=n1372 b=n1371 O=pv5_1_1_
+.gate inv1   a=n_n3537 O=n1374
+.gate nor2   a=n_n3470 b=tin_pv1_2_2_ O=n1375
+.gate aoi21  a=n1374 b=n_n3470 c=n1375 O=pv1_2_2_
+.gate inv1   a=n_n3606 O=n1377
+.gate inv1   a=n_n3108 O=n1378_1
+.gate nor2   a=n1378_1 b=n1377 O=pv15_1_1_
+.gate inv1   a=n_n3379 O=n1380
+.gate inv1   a=n_n3463 O=n1381
+.gate nor2   a=n1381 b=n1380 O=pv13_2_2_
+.gate inv1   a=n_n3583 O=n1383_1
+.gate nor2   a=n_n3432 b=tin_pv11_3_3_ O=n1384
+.gate aoi21  a=n1383_1 b=n_n3432 c=n1384 O=pv11_3_3_
+.gate inv1   a=n_n3456 O=n1386
+.gate inv1   a=n_n3055 O=n1387
+.gate nor2   a=n1387 b=n1386 O=pv8_2_2_
+.gate inv1   a=n_n4309 O=n1389
+.gate nor2   a=n_n3489 b=tin_pv4_3_3_ O=n1390
+.gate aoi21  a=n1389 b=n_n3489 c=n1390 O=pv4_3_3_
+.gate inv1   a=n_n3761 O=n1392
+.gate inv1   a=n_n3903 O=n1393_1
+.gate nor2   a=n1393_1 b=n1392 O=pv14_0_0_
+.gate inv1   a=n_n3264 O=n1395
+.gate inv1   a=n_n4390 O=n1396
+.gate nor2   a=n1396 b=n1395 O=pv12_1_1_
+.gate inv1   a=n_n3549 O=n1398_1
+.gate nor2   a=n_n3065 b=tin_pv10_2_2_ O=n1399
+.gate aoi21  a=n_n3065 b=n1398_1 c=n1399 O=pv10_2_2_
+.gate inv1   a=n_n3670 O=n1401
+.gate inv1   a=n_n3617 O=n1402
+.gate nor2   a=n1402 b=n1401 O=pv7_6_6_
+.gate inv1   a=n_n3590 O=n1404
+.gate inv1   a=n_n4102 O=n1405
+.gate nor2   a=n1405 b=n1404 O=pv3_7_7_
+.gate inv1   a=n_n4003 O=n1407
+.gate inv1   a=n_n3188 O=n1408_1
+.gate nor2   a=n1408_1 b=n1407 O=pv15_0_0_
+.gate inv1   a=n_n3221 O=n1410
+.gate inv1   a=n_n3150 O=n1411
+.gate nor2   a=n1411 b=n1410 O=pv13_1_1_
+.gate inv1   a=n_n3823 O=n1413_1
+.gate nor2   a=n_n3152 b=tin_pv11_2_2_ O=n1414
+.gate aoi21  a=n1413_1 b=n_n3152 c=n1414 O=pv11_2_2_
+.gate inv1   a=n_n3506 O=n1416
+.gate nor2   a=n_n3029 b=tin_pv6_0_0_ O=n1417
+.gate aoi21  a=n1416 b=n_n3029 c=n1417 O=pv6_0_0_
+.gate inv1   a=n_n3646 O=n1419
+.gate nor2   a=n_n3999 b=tin_pv2_1_1_ O=n1420
+.gate aoi21  a=n1419 b=n_n3999 c=n1420 O=pv2_1_1_
+.gate inv1   a=n_n3098 O=n1422
+.gate inv1   a=n_n3339 O=n1423_1
+.gate nor2   a=n1423_1 b=n1422 O=pv12_0_0_
+.gate inv1   a=n_n3270 O=n1425
+.gate nor2   a=n_n3872 b=tin_pv10_1_1_ O=n1426
+.gate aoi21  a=n_n3872 b=n1425 c=n1426 O=pv10_1_1_
+.gate inv1   a=n_n3024 O=n1428_1
+.gate inv1   a=n_n3044 O=n1429
+.gate nor2   a=n1429 b=n1428_1 O=pv9_1_1_
+.gate inv1   a=n_n4286 O=n1431
+.gate inv1   a=n_n3350 O=n1432
+.gate nor2   a=n1432 b=n1431 O=pv5_2_2_
+.gate inv1   a=n_n4180 O=n1434
+.gate nor2   a=n_n3441 b=tin_pv1_3_3_ O=n1435
+.gate aoi21  a=n1434 b=n_n3441 c=n1435 O=pv1_3_3_
+.gate inv1   a=n_n3061 O=n1437
+.gate inv1   a=n_n3434 O=n1438_1
+.gate nor2   a=n1438_1 b=n1437 O=pv13_0_0_
+.gate inv1   a=n_n4142 O=n1440
+.gate nor2   a=n_n4185 b=tin_pv11_1_1_ O=n1441
+.gate aoi21  a=n_n4185 b=n1440 c=n1441 O=pv11_1_1_
+.gate inv1   a=n_n3146 O=n1443_1
+.gate inv1   a=n_n3091 O=n1444
+.gate nor2   a=n1444 b=n1443_1 O=pv8_3_3_
+.gate inv1   a=n_n3627 O=n1446
+.gate nor2   a=n_n4110 b=tin_pv4_4_4_ O=n1447
+.gate aoi21  a=n_n4110 b=n1446 c=n1447 O=pv4_4_4_
+.gate inv1   a=n_n3354 O=n1449
+.gate nor2   a=n_n4108 b=tin_pready_0_0_ O=n1450
+.gate aoi21  a=n1449 b=n_n4108 c=n1450 O=pready_0_0_
+.gate inv1   a=n_n4209 O=n1452
+.gate nor2   a=n_n4282 b=tin_pv10_0_0_ O=n1453_1
+.gate aoi21  a=n1452 b=n_n4282 c=n1453_1 O=pv10_0_0_
+.gate inv1   a=n_n3136 O=n1455
+.gate inv1   a=n_n4077 O=n1456
+.gate nor2   a=n1456 b=n1455 O=pv7_7_7_
+.gate inv1   a=n_n3173 O=n1458_1
+.gate inv1   a=n_n3828 O=n1459
+.gate nor2   a=n1459 b=n1458_1 O=pv3_0_0_
+.gate inv1   a=n_n3514 O=n1461
+.gate nor2   a=n_n3233 b=tin_pv11_0_0_ O=n1462
+.gate aoi21  a=n_n3233 b=n1461 c=n1462 O=pv11_0_0_
+.gate inv1   a=n_n3952 O=n1464
+.gate nor2   a=n_n3144 b=tin_pv6_1_1_ O=n1465
+.gate aoi21  a=n1464 b=n_n3144 c=n1465 O=pv6_1_1_
+.gate inv1   a=n_n3202 O=n1467
+.gate nor2   a=n_n4354 b=tin_pv2_2_2_ O=n1468_1
+.gate aoi21  a=n_n4354 b=n1467 c=n1468_1 O=pv2_2_2_
+.gate inv1   a=n_n3736 O=n1470
+.gate inv1   a=n_n3157 O=n1471
+.gate nor2   a=n1471 b=n1470 O=pv9_2_2_
+.gate inv1   a=n_n3321 O=n1473_1
+.gate inv1   a=n_n4236 O=n1474
+.gate nor2   a=n1474 b=n1473_1 O=pv5_3_3_
+.gate inv1   a=n_n3806 O=n1476
+.gate nor2   a=n_n3863 b=tin_pv1_4_4_ O=n1477
+.gate aoi21  a=n1476 b=n_n3863 c=n1477 O=pv1_4_4_
+.gate inv1   a=n_n3344 O=n1479
+.gate inv1   a=n_n3095 O=n1480
+.gate nor2   a=n1480 b=n1479 O=pv8_4_4_
+.gate inv1   a=n_n3733 O=n1482
+.gate nor2   a=n_n3087 b=tin_pv4_5_5_ O=n1483_1
+.gate aoi21  a=n_n3087 b=n1482 c=n1483_1 O=pv4_5_5_
+.gate inv1   a=n_n3161 O=n1485
+.gate inv1   a=n_n3069 O=n1486
+.gate nor2   a=n1486 b=n1485 O=pv7_0_0_
+.gate inv1   a=n_n3048 O=n1488_1
+.gate inv1   a=n_n3461 O=n1489
+.gate nor2   a=n1489 b=n1488_1 O=pv3_1_1_
+.gate inv1   a=n_n3138 O=n1491
+.gate nor2   a=n_n3307 b=tin_pv6_2_2_ O=n1492
+.gate aoi21  a=n1491 b=n_n3307 c=n1492 O=pv6_2_2_
+.gate inv1   a=n_n3465 O=n1494
+.gate nor2   a=n_n3874 b=tin_pv2_3_3_ O=n1495
+.gate aoi21  a=n_n3874 b=n1494 c=n1495 O=pv2_3_3_
+.gate inv1   a=n_n3906 O=n1497
+.gate inv1   a=n_n3749 O=n1498_1
+.gate nor2   a=n1498_1 b=n1497 O=pv9_3_3_
+.gate inv1   a=n_n3793 O=n1500
+.gate inv1   a=n_n4213 O=n1501
+.gate nor2   a=n1501 b=n1500 O=pv5_4_4_
+.gate inv1   a=n_n3313 O=n1503_1
+.gate nor2   a=n_n3101 b=tin_pv1_5_5_ O=n1504
+.gate aoi21  a=n_n3101 b=n1503_1 c=n1504 O=pv1_5_5_
+.gate inv1   a=n_n3116 O=n1506
+.gate inv1   a=n_n3331 O=n1507
+.gate nor2   a=n1507 b=n1506 O=pv8_5_5_
+.gate inv1   a=n_n3413 O=n1509
+.gate nor2   a=n_n3774 b=tin_pv4_6_6_ O=n1510
+.gate aoi21  a=n1509 b=n_n3774 c=n1510 O=pv4_6_6_
+.gate inv1   a=n_n3415 O=n1512
+.gate inv1   a=n_n3971 O=n1513_1
+.gate nor2   a=n1513_1 b=n1512 O=pv7_1_1_
+.gate inv1   a=n_n3190 O=n1515
+.gate inv1   a=n_n3739 O=n1516
+.gate nor2   a=n1516 b=n1515 O=pv3_2_2_
+.gate inv1   a=n_n3486 O=n1518_1
+.gate nor2   a=n_n3204 b=tin_pv6_3_3_ O=n1519
+.gate aoi21  a=n1518_1 b=n_n3204 c=n1519 O=pv6_3_3_
+.gate inv1   a=n_n3133 O=n1521
+.gate nor2   a=n_n3643 b=tin_pv2_4_4_ O=n1522
+.gate aoi21  a=n_n3643 b=n1521 c=n1522 O=pv2_4_4_
+.gate inv1   a=n_n3687 O=n1524
+.gate inv1   a=n_n3650 O=n1525
+.gate nor2   a=n1525 b=n1524 O=pv9_4_4_
+.gate inv1   a=n_n3266 O=n1527
+.gate inv1   a=n_n3408 O=n1528_1
+.gate nor2   a=n1528_1 b=n1527 O=pv5_5_5_
+.gate inv1   a=n_n3118 O=n1530
+.gate nor2   a=n_n4018 b=tin_pv1_6_6_ O=n1531
+.gate aoi21  a=n_n4018 b=n1530 c=n1531 O=pv1_6_6_
+.gate inv1   a=n_n3180 O=n1533_1
+.gate inv1   a=n_n3223 O=n1534
+.gate nor2   a=n1534 b=n1533_1 O=pv8_6_6_
+.gate inv1   a=n_n4166 O=n1536
+.gate nor2   a=n_n4114 b=tin_pv4_7_7_ O=n1537
+.gate aoi21  a=n1536 b=n_n4114 c=n1537 O=pv4_7_7_
+.gate inv1   a=n_n3497 O=n1539
+.gate inv1   a=n_n4105 O=n1540
+.gate nor2   a=n1540 b=n1539 O=pv7_2_2_
+.gate inv1   a=n_n3274 O=n1542
+.gate inv1   a=n_n4342 O=n1543_1
+.gate nor2   a=n1543_1 b=n1542 O=pv3_3_3_
+.gate inv1   a=n_n4065 O=n1545
+.gate nor2   a=n_n3093 b=tin_pv6_4_4_ O=n1546
+.gate aoi21  a=n1545 b=n_n3093 c=n1546 O=pv6_4_4_
+.gate inv1   a=n_n3780 O=n1548_1
+.gate nor2   a=n_n4059 b=tin_pv2_5_5_ O=n1549
+.gate aoi21  a=n_n4059 b=n1548_1 c=n1549 O=pv2_5_5_
+.gate inv1   a=n_n3449 O=n1551
+.gate inv1   a=n_n4241 O=n1552
+.gate nor2   a=n1552 b=n1551 O=pv14_7_7_
+.gate inv1   a=n_n3985 O=n1554
+.gate inv1   a=n_n4290 O=n1555
+.gate nor2   a=n1555 b=n1554 O=pv9_5_5_
+.gate inv1   a=n_n3567 O=n1557
+.gate inv1   a=n_n3237 O=n1558_1
+.gate nor2   a=n1558_1 b=n1557 O=pv5_6_6_
+.gate inv1   a=n_n4199 O=n1560
+.gate nor2   a=n_n3544 b=tin_pv1_7_7_ O=n1561
+.gate aoi21  a=n1560 b=n_n3544 c=n1561 O=pv1_7_7_
+.gate inv1   a=n_n3079 O=n1563_1
+.gate inv1   a=n_n3648 O=n1564
+.gate nor2   a=n1564 b=n1563_1 O=pv15_7_7_
+.gate inv1   a=n_n3525 O=n1566
+.gate inv1   a=n_n3529 O=n1567
+.gate nor2   a=n1567 b=n1566 O=pv8_7_7_
+.gate inv1   a=n_n3517 O=n1569
+.gate nor2   a=n_n3826 b=tin_pv4_0_0_ O=n1570
+.gate aoi21  a=n_n3826 b=n1569 c=n1570 O=pv4_0_0_
+.gate inv1   a=n_n3713 O=n1572
+.gate inv1   a=n_n3262 O=n1573_1
+.gate nor2   a=n1573_1 b=n1572 O=pv14_6_6_
+.gate inv1   a=n_n3764 O=n1575
+.gate inv1   a=n_n3720 O=n1576
+.gate nor2   a=n1576 b=n1575 O=pv12_7_7_
+.gate inv1   a=n_n3411 O=n1578_1
+.gate inv1   a=n_n4303 O=n1579
+.gate nor2   a=n1579 b=n1578_1 O=pv7_3_3_
+.gate inv1   a=n_n3729 O=n1581
+.gate inv1   a=n_n4162 O=n1582
+.gate nor2   a=n1582 b=n1581 O=pv3_4_4_
+.gate inv1   a=n_n4375 O=n1584
+.gate inv1   a=n_n3020 O=n1585
+.gate nor2   a=n1585 b=n1584 O=pv15_6_6_
+.gate inv1   a=n_n3372 O=n1587
+.gate inv1   a=n_n3394 O=n1588_1
+.gate nor2   a=n1588_1 b=n1587 O=pv13_7_7_
+.gate inv1   a=n_n4189 O=n1590
+.gate nor2   a=n_n3348 b=tin_pv6_5_5_ O=n1591
+.gate aoi21  a=n_n3348 b=n1590 c=n1591 O=pv6_5_5_
+.gate inv1   a=n_n3385 O=n1593_1
+.gate nor2   a=n_n3120 b=tin_pv2_6_6_ O=n1594
+.gate aoi21  a=n1593_1 b=n_n3120 c=n1594 O=pv2_6_6_
+.gate inv1   a=n_n3008 O=n1596
+.gate inv1   a=n_n3663 O=n1597
+.gate nor2   a=n1597 b=n1596 O=pv14_5_5_
+.gate inv1   a=n_n3782 O=n1599
+.gate inv1   a=n_n3896 O=n1600
+.gate nor2   a=n1600 b=n1599 O=pv12_6_6_
+.gate inv1   a=n_n3225 O=n1602
+.gate nor2   a=n_n3521 b=tin_pv10_7_7_ O=n1603_1
+.gate aoi21  a=n_n3521 b=n1602 c=n1603_1 O=pv10_7_7_
+.gate inv1   a=n_n4243 O=n1605
+.gate inv1   a=n_n3239 O=n1606
+.gate nor2   a=n1606 b=n1605 O=pv9_6_6_
+.gate inv1   a=n_n3111 O=n1608_1
+.gate inv1   a=n_n4005 O=n1609
+.gate nor2   a=n1609 b=n1608_1 O=pv5_7_7_
+.gate inv1   a=n_n4192 O=n1611
+.gate nor2   a=n_n3551 b=tin_pv1_0_0_ O=n1612
+.gate aoi21  a=n1611 b=n_n3551 c=n1612 O=pv1_0_0_
+.gate inv1   a=n_n3277 O=n1614
+.gate inv1   a=n_n3674 O=n1615
+.gate nor2   a=n1615 b=n1614 O=pv15_5_5_
+.gate inv1   a=n_n3155 O=n1617
+.gate inv1   a=n_n3797 O=n1618_1
+.gate nor2   a=n1618_1 b=n1617 O=pv13_6_6_
+.gate inv1   a=n_n3376 O=n1620
+.gate nor2   a=n_n3360 b=tin_pv11_7_7_ O=n1621
+.gate aoi21  a=n_n3360 b=n1620 c=n1621 O=pv11_7_7_
+.gate inv1   a=n_n3014 O=n1623_1
+.gate inv1   a=n_n4320 O=n1624
+.gate nor2   a=n1624 b=n1623_1 O=pv8_0_0_
+.gate inv1   a=n_n3722 O=n1626
+.gate nor2   a=n_n4089 b=tin_pv4_1_1_ O=n1627
+.gate aoi21  a=n1626 b=n_n4089 c=n1627 O=pv4_1_1_
+.gate inv1   a=n_n3326 O=n1629
+.gate inv1   a=n_n3089 O=n1630
+.gate nor2   a=n1630 b=n1629 O=pv14_4_4_
+.gate inv1   a=n_n3619 O=n1632
+.gate inv1   a=n_n3337 O=n1633_1
+.gate nor2   a=n1633_1 b=n1632 O=pv12_5_5_
+.gate inv1   a=n_n3342 O=n1635
+.gate nor2   a=n_n3570 b=tin_pv10_6_6_ O=n1636
+.gate aoi21  a=n1635 b=n_n3570 c=n1636 O=pv10_6_6_
+.gate inv1   a=n_n3073 O=n1638_1
+.gate inv1   a=n_n3053 O=n1639
+.gate nor2   a=n1639 b=n1638_1 O=pv7_4_4_
+.gate inv1   a=n_n3436 O=n1641
+.gate inv1   a=n_n3142 O=n1642
+.gate nor2   a=n1642 b=n1641 O=pv3_5_5_
+.gate inv1   a=n_n3305 O=n1644
+.gate inv1   a=n_n3667 O=n1645
+.gate nor2   a=n1645 b=n1644 O=pv15_4_4_
+.gate inv1   a=n_n4139 O=n1647
+.gate inv1   a=n_n3777 O=n1648_1
+.gate nor2   a=n1648_1 b=n1647 O=pv13_5_5_
+.gate inv1   a=n_n4279 O=n1650
+.gate nor2   a=n_n3504 b=tin_pv11_6_6_ O=n1651
+.gate aoi21  a=n_n3504 b=n1650 c=n1651 O=pv11_6_6_
+.gate inv1   a=n_n3429 O=n1653_1
+.gate nor2   a=n_n3836 b=tin_pv6_6_6_ O=n1654
+.gate aoi21  a=n_n3836 b=n1653_1 c=n1654 O=pv6_6_6_
+.gate inv1   a=n_n3126 O=n1656
+.gate nor2   a=n_n4131 b=tin_pv2_7_7_ O=n1657
+.gate aoi21  a=n1656 b=n_n4131 c=n1657 O=pv2_7_7_
+.gate inv1   a=n_n3396 O=n1659
+.gate inv1   a=n_n3316 O=n1660
+.gate nor2   a=n1660 b=n1659 O=pv14_3_3_
+.gate inv1   a=n_n3231 O=n1662
+.gate inv1   a=n_n3175 O=n1663_1
+.gate nor2   a=n1663_1 b=n1662 O=pv12_4_4_
+.gate inv1   a=n_n4247 O=n1665
+.gate nor2   a=n_n3381 b=tin_pv10_5_5_ O=n1666
+.gate aoi21  a=n1665 b=n_n3381 c=n1666 O=pv10_5_5_
+.gate inv1   a=n_n3319 O=n1668_1
+.gate inv1   a=n_n3040 O=n1669
+.gate nor2   a=n1669 b=n1668_1 O=pv9_7_7_
+.gate inv1   a=n_n3195 O=n1671
+.gate inv1   a=n_n3572 O=n1672
+.gate nor2   a=n1672 b=n1671 O=pv5_0_0_
+.gate inv1   a=n_n3183 O=n1674
+.gate nor2   a=n_n3215 b=tin_pv1_1_1_ O=n1675
+.gate aoi21  a=n1674 b=n_n3215 c=n1675 O=pv1_1_1_
+.gate inv1   a=n_n4172 O=n1677
+.gate inv1   a=n_n3051 O=n1678_1
+.gate nor2   a=n1678_1 b=n1677 O=pv15_3_3_
+.gate inv1   a=n_n3075 O=n1680
+.gate inv1   a=n_n3758 O=n1681
+.gate nor2   a=n1681 b=n1680 O=pv13_4_4_
+.gate inv1   a=n_n3207 O=n1683_1
+.gate nor2   a=n_n3081 b=tin_pv11_5_5_ O=n1684
+.gate aoi21  a=n1683_1 b=n_n3081 c=n1684 O=pv11_5_5_
+.gate inv1   a=n_n3938 O=n1686
+.gate inv1   a=n_n3883 O=n1687
+.gate nor2   a=n1687 b=n1686 O=pv8_1_1_
+.gate inv1   a=n_n4372 O=n1689
+.gate nor2   a=n_n4347 b=tin_pv4_2_2_ O=n1690
+.gate aoi21  a=n1689 b=n_n4347 c=n1690 O=pv4_2_2_
+.gate inv1   a=n_n3724 O=n1692
+.gate inv1   a=n_n4067 O=n1693_1
+.gate inv1   a=n_n4251 O=n1694
+.gate inv1   a=n_n4330 O=n1695
+.gate inv1   a=n_n4182 O=n1696
+.gate nor3   a=n_n4159 b=n_n4383 c=n_n4160 O=n1697
+.gate nand3  a=n1697 b=n1696 c=n1695 O=n1698_1
+.gate nor2   a=n1698_1 b=n_n4224 O=n1699
+.gate nand2  a=n1699 b=n1694 O=n1700
+.gate inv1   a=n1699 O=n1701
+.gate nand2  a=n1701 b=n_n4251 O=n1702
+.gate and2   a=n1702 b=n1700 O=n1703_1
+.gate inv1   a=n1703_1 O=n1704
+.gate nand2  a=n1698_1 b=n_n4224 O=n1705
+.gate nand2  a=n1705 b=n1701 O=n1706
+.gate nand2  a=n1697 b=n1696 O=n1707
+.gate nand2  a=n1707 b=n_n4330 O=n1708_1
+.gate nand2  a=n1708_1 b=n1698_1 O=n1709
+.gate inv1   a=n_n4160 O=n1710
+.gate inv1   a=n_n4383 O=n1711
+.gate inv1   a=n_n4159 O=n1712
+.gate nand3  a=n1712 b=n1711 c=n1710 O=n1713_1
+.gate nand2  a=n1713_1 b=n_n4182 O=n1714
+.gate nand2  a=n1714 b=n1707 O=n1715
+.gate inv1   a=n_n3976 O=n1716
+.gate nand2  a=n_n4222 b=n1710 O=n1717
+.gate nand3  a=n1717 b=n1716 c=n_n4159 O=n1718_1
+.gate inv1   a=n_n4222 O=n1719
+.gate nor2   a=n_n4159 b=n_n4160 O=n1720
+.gate aoi21  a=n1719 b=n_n4160 c=n1720 O=n1721
+.gate nand2  a=n1721 b=n1718_1 O=n1722
+.gate oai21  a=n_n4159 b=n_n4160 c=n_n4383 O=n1723_1
+.gate nand2  a=n1723_1 b=n1713_1 O=n1724
+.gate nand2  a=n1724 b=n1722 O=n1725
+.gate inv1   a=n_n4316 O=n1726
+.gate nand4  a=n1723_1 b=n1721 c=n1718_1 d=n1713_1 O=n1727
+.gate nand2  a=n1727 b=n1726 O=n1728_1
+.gate nand2  a=n1728_1 b=n1725 O=n1729
+.gate nand2  a=n1729 b=n1715 O=n1730
+.gate inv1   a=n_n4229 O=n1731
+.gate inv1   a=n1715 O=n1732
+.gate nand3  a=n1728_1 b=n1725 c=n1732 O=n1733_1
+.gate nand2  a=n1733_1 b=n1731 O=n1734
+.gate nand2  a=n1734 b=n1730 O=n1735
+.gate nand2  a=n1735 b=n1709 O=n1736
+.gate inv1   a=n_n3916 O=n1737
+.gate inv1   a=n1709 O=n1738_1
+.gate nand3  a=n1734 b=n1730 c=n1738_1 O=n1739
+.gate nand2  a=n1739 b=n1737 O=n1740
+.gate nand2  a=n1740 b=n1736 O=n1741
+.gate nand2  a=n1741 b=n1706 O=n1742
+.gate inv1   a=n_n3898 O=n1743_1
+.gate inv1   a=n1706 O=n1744
+.gate nand3  a=n1740 b=n1736 c=n1744 O=n1745
+.gate nand2  a=n1745 b=n1743_1 O=n1746
+.gate nand2  a=n1746 b=n1742 O=n1747
+.gate nand2  a=n1747 b=n1704 O=n1748_1
+.gate inv1   a=n_n4145 O=n1749
+.gate nand3  a=n1746 b=n1742 c=n1703_1 O=n1750
+.gate nand2  a=n1750 b=n1749 O=n1751
+.gate nand2  a=n1751 b=n1748_1 O=n1752
+.gate xor2a  a=n1752 b=n_n3841 O=n1753_1
+.gate xor2a  a=n1700 b=n_n4270 O=n1754
+.gate xor2a  a=n1754 b=n1753_1 O=n1755
+.gate inv1   a=n_n4360 O=n1756
+.gate nand2  a=n1750 b=n1748_1 O=n1757
+.gate xor2a  a=n1757 b=n_n4145 O=n1758_1
+.gate inv1   a=n_n4362 O=n1759
+.gate nand3  a=n1745 b=n1742 c=n_n3898 O=n1760
+.gate aoi21  a=n1740 b=n1736 c=n1744 O=n1761
+.gate inv1   a=n1745 O=n1762
+.gate oai21  a=n1762 b=n1761 c=n1743_1 O=n1763_1
+.gate nand3  a=n1763_1 b=n1760 c=n1759 O=n1764
+.gate inv1   a=n1764 O=n1765
+.gate nand2  a=n1763_1 b=n1760 O=n1766
+.gate nand2  a=n1766 b=n_n4362 O=n1767
+.gate inv1   a=n_n3876 O=n1768_1
+.gate xor2a  a=n1735 b=n1709 O=n1769
+.gate xor2a  a=n1769 b=n_n3916 O=n1770
+.gate nand2  a=n1770 b=n1768_1 O=n1771
+.gate nand2  a=n1769 b=n_n3916 O=n1772
+.gate nand2  a=n1739 b=n1736 O=n1773_1
+.gate nand2  a=n1773_1 b=n1737 O=n1774
+.gate aoi21  a=n1774 b=n1772 c=n1768_1 O=n1775
+.gate inv1   a=n_n4258 O=n1776
+.gate xor2a  a=n1729 b=n1715 O=n1777
+.gate nand2  a=n1777 b=n_n4229 O=n1778_1
+.gate nand2  a=n1733_1 b=n1730 O=n1779
+.gate nand2  a=n1779 b=n1731 O=n1780
+.gate nand3  a=n1780 b=n1778_1 c=n1776 O=n1781
+.gate inv1   a=n1781 O=n1782
+.gate nand2  a=n1780 b=n1778_1 O=n1783_1
+.gate nand2  a=n1783_1 b=n_n4258 O=n1784
+.gate inv1   a=n_n3946 O=n1785
+.gate nand3  a=n1727 b=n1725 c=n_n4316 O=n1786
+.gate nand2  a=n1727 b=n1725 O=n1787
+.gate nand2  a=n1787 b=n1726 O=n1788_1
+.gate nand2  a=n1788_1 b=n1786 O=n1789
+.gate inv1   a=n1789 O=n1790
+.gate nand2  a=n1790 b=n1785 O=n1791
+.gate nor2   a=n1790 b=n1785 O=n1792
+.gate inv1   a=n_n3743 O=n1793_1
+.gate inv1   a=n_n3756 O=n1794
+.gate nand2  a=n1716 b=n_n4159 O=n1795
+.gate nand2  a=n_n3976 b=n1712 O=n1796
+.gate and2   a=n1796 b=n1795 O=n1797
+.gate inv1   a=n1797 O=n1798_1
+.gate nand3  a=n1798_1 b=n1794 c=n1793_1 O=n1799
+.gate inv1   a=n1799 O=n1800
+.gate oai21  a=n1797 b=n_n3756 c=n_n3743 O=n1801
+.gate nand2  a=n1719 b=n_n4160 O=n1802
+.gate nand4  a=n1802 b=n1717 c=n1716 d=n_n4159 O=n1803_1
+.gate nand2  a=n1802 b=n1717 O=n1804
+.gate nand2  a=n1804 b=n1795 O=n1805
+.gate nand2  a=n1805 b=n1803_1 O=n1806
+.gate aoi21  a=n1806 b=n1801 c=n1800 O=n1807
+.gate oai21  a=n1807 b=n1792 c=n1791 O=n1808_1
+.gate aoi21  a=n1808_1 b=n1784 c=n1782 O=n1809
+.gate oai21  a=n1809 b=n1775 c=n1771 O=n1810
+.gate aoi21  a=n1810 b=n1767 c=n1765 O=n1811
+.gate oai21  a=n1811 b=n_n4299 c=n1758_1 O=n1812
+.gate nand2  a=n1811 b=n_n4299 O=n1813_1
+.gate nand3  a=n1813_1 b=n1812 c=n1756 O=n1814
+.gate aoi21  a=n1813_1 b=n1812 c=n1756 O=n1815
+.gate aoi21  a=n1814 b=n1755 c=n1815 O=n1816
+.gate nor2   a=n1693_1 b=n_n3833 O=n1817
+.gate aoi21  a=n1816 b=n1693_1 c=n1817 O=n1818_1
+.gate nand2  a=n_n4026 b=n_n3851 O=n1819
+.gate oai21  a=n1816 b=n_n4026 c=n1819 O=n1820
+.gate nand2  a=n_n4151 b=nlc1_2 O=n1821
+.gate oai21  a=nlc1_2 b=preset_0_0_ c=n1821 O=n1822
+.gate nor2   a=pdn b=preset O=n1823_1
+.gate inv1   a=n1823_1 O=n1824
+.gate nor2   a=n1824 b=nsr1_2 O=n1825
+.gate nand2  a=n1825 b=n1822 O=n1826
+.gate inv1   a=n1826 O=n1827
+.gate nand3  a=n1827 b=n1820 c=n1818_1 O=n1828_1
+.gate inv1   a=preset O=n1829
+.gate nand2  a=n1822 b=nsr1_2 O=n1830
+.gate inv1   a=n1830 O=n1831
+.gate nor2   a=n1831 b=pdn O=n1832
+.gate inv1   a=n1832 O=n1833_1
+.gate nand2  a=n1833_1 b=n1829 O=n1834
+.gate oai22  a=n1834 b=n1440 c=n1828_1 d=n1692 O=n349
+.gate inv1   a=n_n3936 O=n1836
+.gate inv1   a=pv11_1_1_ O=n1837
+.gate inv1   a=ndn3_9 O=n1838_1
+.gate nand3  a=n1838_1 b=ndn3_8 c=n1829 O=n1839
+.gate inv1   a=ndn3_8 O=n1840
+.gate oai21  a=ndn3_9 b=n1840 c=n1829 O=n1841
+.gate oai22  a=n1841 b=n1836 c=n1839 d=n1837 O=n354
+.gate inv1   a=n_n3709 O=n1843_1
+.gate nand2  a=n1816 b=n1693_1 O=n1844
+.gate inv1   a=n1817 O=n1845
+.gate and2   a=nsr3_17 b=nen3_10 O=n1846
+.gate nand2  a=n1846 b=n_n4093 O=n1847
+.gate inv1   a=n1847 O=n1848_1
+.gate nand3  a=n1848_1 b=n1845 c=n1844 O=n1849
+.gate inv1   a=n1849 O=n1850
+.gate inv1   a=n_n3831 O=n1851
+.gate inv1   a=n_n4026 O=n1852
+.gate nand2  a=n1814 b=n1755 O=n1853_1
+.gate nand2  a=n1813_1 b=n1812 O=n1854
+.gate nand2  a=n1854 b=n_n4360 O=n1855
+.gate nand2  a=n1855 b=n1853_1 O=n1856
+.gate nand2  a=n1856 b=n1852 O=n1857
+.gate aoi21  a=n1819 b=n1857 c=n1851 O=n1858_1
+.gate nand3  a=n1819 b=n1857 c=n1693_1 O=n1859
+.gate nand4  a=n1859 b=n1858_1 c=n1850 d=n1843_1 O=n1860
+.gate inv1   a=n_n3707 O=n1861
+.gate nor3   a=n1843_1 b=n1861 c=n_n3198 O=n1862
+.gate nor2   a=n1862 b=preset O=n1863_1
+.gate nand3  a=n1863_1 b=n1860 c=n_n3574 O=n1864
+.gate nand4  a=n1848_1 b=n1820 c=n1818_1 d=n_n3831 O=n1865
+.gate nand2  a=n1859 b=n1843_1 O=n1866
+.gate nor2   a=n1866 b=n1865 O=n1867
+.gate nand3  a=n1867 b=n_n3743 c=n1829 O=n1868_1
+.gate nor2   a=n1797 b=n_n3959 O=n1869
+.gate inv1   a=n1869 O=n1870
+.gate inv1   a=n_n3574 O=n1871
+.gate nand2  a=n1806 b=n1871 O=n1872
+.gate nand3  a=n1805 b=n1803_1 c=n_n3574 O=n1873_1
+.gate nand2  a=n1873_1 b=n1872 O=n1874
+.gate inv1   a=n1874 O=n1875
+.gate nand2  a=n1862 b=n1829 O=n1876
+.gate aoi21  a=n1875 b=n1870 c=n1876 O=n1877
+.gate oai21  a=n1875 b=n1870 c=n1877 O=n1878_1
+.gate nand3  a=n1878_1 b=n1868_1 c=n1864 O=n359
+.gate nand3  a=n1827 b=n_n4157 c=n_n3035 O=n1880
+.gate oai21  a=n1834 b=n1596 c=n1880 O=n364
+.gate nand3  a=n1863_1 b=n1860 c=n_n3726 O=n1882
+.gate nand3  a=n1867 b=n_n4360 c=n1829 O=n1883_1
+.gate xor2a  a=n1755 b=n_n3726 O=n1884
+.gate inv1   a=n1770 O=n1885
+.gate nand2  a=n1873_1 b=n1869 O=n1886
+.gate nand2  a=n1886 b=n1872 O=n1887
+.gate nand3  a=n1887 b=n1788_1 c=n1786 O=n1888_1
+.gate aoi21  a=n1788_1 b=n1786 c=n1887 O=n1889
+.gate oai21  a=n1889 b=n_n3995 c=n1888_1 O=n1890
+.gate inv1   a=n1890 O=n1891
+.gate nand2  a=n1891 b=n1783_1 O=n1892
+.gate xor2a  a=n1777 b=n_n4229 O=n1893_1
+.gate nand2  a=n1890 b=n1893_1 O=n1894
+.gate nand2  a=n1894 b=n_n3818 O=n1895
+.gate nand2  a=n1895 b=n1892 O=n1896
+.gate nand2  a=n1896 b=n1885 O=n1897
+.gate nand3  a=n1895 b=n1892 c=n1770 O=n1898_1
+.gate nand2  a=n1898_1 b=n_n4040 O=n1899
+.gate nand2  a=n1899 b=n1897 O=n1900
+.gate nand2  a=n1900 b=n1766 O=n1901
+.gate inv1   a=n1766 O=n1902
+.gate nand3  a=n1899 b=n1897 c=n1902 O=n1903_1
+.gate nand2  a=n1903_1 b=n_n3988 O=n1904
+.gate nand2  a=n1904 b=n1901 O=n1905
+.gate nand2  a=n1905 b=n_n4080 O=n1906
+.gate inv1   a=n_n4080 O=n1907
+.gate nand3  a=n1904 b=n1901 c=n1907 O=n1908_1
+.gate nand2  a=n1908_1 b=n1758_1 O=n1909
+.gate nand2  a=n1909 b=n1906 O=n1910
+.gate aoi21  a=n1910 b=n1884 c=n1876 O=n1911
+.gate oai21  a=n1910 b=n1884 c=n1911 O=n1912
+.gate nand3  a=n1912 b=n1883_1 c=n1882 O=n369
+.gate inv1   a=n_n3604 O=n1914
+.gate inv1   a=n_n3658 O=n1915
+.gate inv1   a=n_n4349 O=n1916
+.gate inv1   a=n_n4071 O=n1917
+.gate inv1   a=n_n3892 O=n1918_1
+.gate inv1   a=n_n4337 O=n1919
+.gate nand4  a=n1919 b=n1918_1 c=n1917 d=n1916 O=n1920
+.gate inv1   a=n_n3968 O=n1921
+.gate inv1   a=n_n3922 O=n1922
+.gate inv1   a=n_n4201 O=n1923_1
+.gate inv1   a=n_n3533 O=n1924
+.gate nand4  a=n1924 b=n1923_1 c=n1922 d=n1921 O=n1925
+.gate oai21  a=n1925 b=n1920 c=n1915 O=n1926
+.gate inv1   a=nsr3_14 O=n1927
+.gate nor2   a=n1927 b=nsr3_17 O=n1928_1
+.gate nand2  a=n1928_1 b=n_n4045 O=n1929
+.gate or2    a=n1929 b=n1926 O=n1930
+.gate aoi21  a=n1930 b=n1914 c=preset O=n374
+.gate inv1   a=n_n3144 O=n1932
+.gate aoi21  a=n1833_1 b=n1932 c=preset O=n379
+.gate aoi21  a=n1833_1 b=n1599 c=preset O=n384
+.gate aoi21  a=n1833_1 b=n1362 c=preset O=n389
+.gate inv1   a=pv10_3_3_ O=n1936
+.gate inv1   a=ndn3_7 O=n1937
+.gate nor2   a=ndn3_8 b=n1937 O=n1938_1
+.gate nand2  a=n_n4258 b=n1829 O=n1939
+.gate nand2  a=n1938_1 b=n1829 O=n1940
+.gate oai22  a=n1940 b=n1936 c=n1939 d=n1938_1 O=n394
+.gate oai22  a=n1834 b=n1602 c=n1826 d=n1756 O=n399
+.gate aoi21  a=n1833_1 b=n1533_1 c=preset O=n404
+.gate aoi21  a=n1833_1 b=n1542 c=preset O=n409
+.gate inv1   a=n_n3475 O=n1945
+.gate inv1   a=n_n4366 O=n1946
+.gate nor2   a=n_n4125 b=n_n4222 O=n1947
+.gate inv1   a=n_n4125 O=n1948_1
+.gate nor2   a=n1948_1 b=n1719 O=n1949
+.gate inv1   a=n1949 O=n1950
+.gate nand2  a=n_n3976 b=n_n3934 O=n1951
+.gate aoi21  a=n1951 b=n1950 c=n1947 O=n1952
+.gate or2    a=n1952 b=n_n3901 O=n1953_1
+.gate nand2  a=n1952 b=n_n3901 O=n1954
+.gate nand2  a=n1954 b=n1726 O=n1955
+.gate nand3  a=n1955 b=n1953_1 c=n_n3769 O=n1956
+.gate nand2  a=n1956 b=n1731 O=n1957
+.gate inv1   a=n_n3769 O=n1958_1
+.gate nand2  a=n1955 b=n1953_1 O=n1959
+.gate nand2  a=n1959 b=n1958_1 O=n1960
+.gate nand3  a=n1960 b=n1957 c=n_n4047 O=n1961
+.gate nand2  a=n1961 b=n1737 O=n1962
+.gate inv1   a=n_n4047 O=n1963_1
+.gate nand2  a=n1960 b=n1957 O=n1964
+.gate nand2  a=n1964 b=n1963_1 O=n1965
+.gate nand3  a=n1965 b=n1962 c=n_n3898 O=n1966
+.gate nand2  a=n1966 b=n1946 O=n1967
+.gate nand2  a=n1965 b=n1962 O=n1968_1
+.gate nand2  a=n1968_1 b=n1743_1 O=n1969
+.gate nand3  a=n1969 b=n1967 c=n_n4145 O=n1970
+.gate nand2  a=n1969 b=n1967 O=n1971
+.gate nand2  a=n1971 b=n1749 O=n1972
+.gate nand2  a=n1972 b=n1970 O=n1973_1
+.gate inv1   a=n_n4056 O=n1974
+.gate inv1   a=n_n3557 O=n1975
+.gate nand3  a=n_n4056 b=n1975 c=n_n4057 O=n1976
+.gate inv1   a=n1976 O=n1977
+.gate inv1   a=n_n4045 O=n1978_1
+.gate inv1   a=n1928_1 O=n1979
+.gate nand2  a=n_n3658 b=n_n3604 O=n1980
+.gate nand2  a=n1980 b=n1926 O=n1981
+.gate inv1   a=n1981 O=n1982
+.gate nor3   a=n1982 b=n1979 c=n1978_1 O=n1983_1
+.gate aoi21  a=n1983_1 b=n1974 c=n1977 O=n1984
+.gate nand2  a=n1984 b=n1829 O=n1985
+.gate inv1   a=n1985 O=n1986
+.gate nand2  a=n1977 b=n1829 O=n1987
+.gate inv1   a=n1987 O=n1988_1
+.gate aoi21  a=n1988_1 b=n1973_1 c=n1986 O=n1989
+.gate nand2  a=n1988_1 b=n1945 O=n1990
+.gate oai22  a=n1990 b=n1973_1 c=n1989 d=n1945 O=n414
+.gate inv1   a=n_n3458 O=n1992
+.gate oai22  a=n1834 b=n1524 c=n1826 d=n1992 O=n419
+.gate inv1   a=n_n3381 O=n1994
+.gate aoi21  a=n1833_1 b=n1994 c=preset O=n424
+.gate inv1   a=n_n3688 O=n1996
+.gate inv1   a=n_n3624 O=n1997
+.gate nor2   a=n1997 b=n1996 O=n1998_1
+.gate nand2  a=n1998_1 b=n1827 O=n1999
+.gate oai21  a=n1834 b=n1422 c=n1999 O=n429
+.gate inv1   a=ndn1_34 O=n2001
+.gate aoi21  a=n2001 b=pdn c=n_n4108 O=n2002
+.gate aoi21  a=n2002 b=n1833_1 c=preset O=n434
+.gate inv1   a=n_n3901 O=n2004
+.gate nand2  a=n1981 b=n1827 O=n2005
+.gate oai22  a=n2005 b=n2004 c=n1834 d=n1539 O=n439
+.gate oai22  a=n1834 b=n1500 c=n1826 d=n1885 O=n444
+.gate inv1   a=nen3_10 O=n2008_1
+.gate nor2   a=n2008_1 b=ndn3_10 O=n2009
+.gate nand2  a=n2009 b=n1829 O=n2010
+.gate inv1   a=nrq3_11 O=n2011
+.gate nor2   a=ngfdn_3 b=n2011 O=n2012
+.gate inv1   a=n2012 O=n2013_1
+.gate inv1   a=ngfdn_3 O=n2014
+.gate nor2   a=n2014 b=ndn3_15 O=n2015
+.gate nand2  a=n2015 b=n1981 O=n2016
+.gate inv1   a=n2016 O=n2017
+.gate aoi22  a=n2017 b=n_n3901 c=n2009 d=n_n3978 O=n2018_1
+.gate oai21  a=n2013_1 b=n1789 c=n2018_1 O=n2019
+.gate nand2  a=n2009 b=n_n3858 O=n2020
+.gate inv1   a=n_n4211 O=n2021
+.gate inv1   a=n_n3657 O=n2022
+.gate nor2   a=n2022 b=n2021 O=n2023_1
+.gate nand2  a=n2023_1 b=n2015 O=n2024
+.gate nand2  a=n2012 b=n_n4316 O=n2025
+.gate nand3  a=n2025 b=n2024 c=n2020 O=n2026
+.gate nand2  a=n2026 b=n2019 O=n2027
+.gate or2    a=n2026 b=n2019 O=n2028_1
+.gate nand2  a=n2028_1 b=n2027 O=n2029
+.gate inv1   a=n_n3934 O=n2030
+.gate aoi22  a=n2012 b=n1798_1 c=n2009 d=n_n3931 O=n2031
+.gate oai21  a=n2016 b=n2030 c=n2031 O=n2032
+.gate nand2  a=n2015 b=n1998_1 O=n2033_1
+.gate nand2  a=n2009 b=n_n3878 O=n2034
+.gate nand2  a=n2012 b=n_n3976 O=n2035
+.gate nand3  a=n2035 b=n2034 c=n2033_1 O=n2036
+.gate aoi22  a=n2012 b=n1806 c=n2009 d=n_n3328 O=n2037
+.gate oai21  a=n2016 b=n1948_1 c=n2037 O=n2038_1
+.gate nand3  a=n2038_1 b=n2036 c=n2032 O=n2039
+.gate nand2  a=n2036 b=n2032 O=n2040
+.gate inv1   a=n2038_1 O=n2041
+.gate nand2  a=n2041 b=n2040 O=n2042
+.gate nand2  a=n2012 b=n_n4222 O=n2043_1
+.gate inv1   a=n_n3099 O=n2044
+.gate nor2   a=n2044 b=n1836 O=n2045
+.gate nand2  a=n2045 b=n2015 O=n2046
+.gate nand2  a=n2009 b=n_n3208 O=n2047
+.gate nand3  a=n2047 b=n2046 c=n2043_1 O=n2048_1
+.gate nand2  a=n2048_1 b=n2042 O=n2049
+.gate and2   a=n2049 b=n2039 O=n2050
+.gate xnor2a a=n2050 b=n2029 O=n2051
+.gate nor2   a=n2009 b=preset O=n2052
+.gate inv1   a=n2052 O=n2053_1
+.gate oai22  a=n2053_1 b=n1726 c=n2051 d=n2010 O=n449
+.gate inv1   a=pv6_0_0_ O=n2055
+.gate nand3  a=n1937 b=ndn3_6 c=n1829 O=n2056
+.gate inv1   a=ndn3_6 O=n2057
+.gate oai21  a=ndn3_7 b=n2057 c=n1829 O=n2058_1
+.gate oai22  a=n2058_1 b=n1916 c=n2056 d=n2055 O=n454
+.gate inv1   a=n_n3029 O=n2060
+.gate aoi21  a=n1833_1 b=n2060 c=preset O=n459
+.gate aoi21  a=n1833_1 b=n1632 c=preset O=n464
+.gate aoi21  a=n1833_1 b=n1395 c=preset O=n469
+.gate inv1   a=n_n3035 O=n2064
+.gate inv1   a=n_n4288 O=n2065
+.gate inv1   a=n_n4157 O=n2066
+.gate oai21  a=n2066 b=n2064 c=n2065 O=n2067
+.gate nand2  a=n2067 b=n1827 O=n2068_1
+.gate oai21  a=n1834 b=n1548_1 c=n2068_1 O=n474
+.gate inv1   a=ndn3_4 O=n2070
+.gate nand2  a=n2014 b=n1829 O=n2071
+.gate inv1   a=pready_0_0_ O=n2072
+.gate oai21  a=n1830 b=n2072 c=nsr3_3 O=n2073_1
+.gate inv1   a=n2073_1 O=n2074
+.gate aoi21  a=n2074 b=n2070 c=n2071 O=n479
+.gate inv1   a=n_n4114 O=n2076
+.gate aoi21  a=n1833_1 b=n2076 c=preset O=n484
+.gate aoi21  a=n1833_1 b=n1443_1 c=preset O=n489
+.gate inv1   a=n_n3511 O=n2079
+.gate nand3  a=n2073_1 b=n2070 c=n1829 O=n2080
+.gate inv1   a=n2080 O=n2081
+.gate nand2  a=n2081 b=pv1_5_5_ O=n2082
+.gate oai21  a=n2074 b=ndn3_4 c=n1829 O=n2083_1
+.gate oai21  a=n2083_1 b=n2079 c=n2082 O=n494
+.gate inv1   a=n_n3152 O=n2085
+.gate aoi21  a=n1833_1 b=n2085 c=preset O=n499
+.gate inv1   a=n1820 O=n2087
+.gate nor2   a=n1849 b=n2087 O=n2088_1
+.gate nand2  a=n2088_1 b=n1693_1 O=n2089
+.gate nand2  a=n2089 b=n_n3833 O=n2090
+.gate nand3  a=n2089 b=n2090 c=n1829 O=n504
+.gate inv1   a=n_n4282 O=n2093_1
+.gate aoi21  a=n1833_1 b=n2093_1 c=preset O=n509
+.gate aoi21  a=n1833_1 b=n1644 c=preset O=n514
+.gate inv1   a=n_n4392 O=n2096
+.gate nand2  a=n2015 b=n1829 O=n2097
+.gate nand2  a=n2042 b=n2039 O=n2098_1
+.gate xor2a  a=n2098_1 b=n2048_1 O=n2099
+.gate nor2   a=n2015 b=preset O=n2100
+.gate inv1   a=n2100 O=n2101
+.gate oai22  a=n2101 b=n2096 c=n2099 d=n2097 O=n519
+.gate inv1   a=n_n4224 O=n2103_1
+.gate inv1   a=pv4_5_5_ O=n2104
+.gate nand3  a=n2057 b=ndn3_5 c=n1829 O=n2105
+.gate inv1   a=ndn3_5 O=n2106
+.gate oai21  a=ndn3_6 b=n2106 c=n1829 O=n2107
+.gate oai22  a=n2107 b=n2103_1 c=n2105 d=n2104 O=n524
+.gate inv1   a=n1876 O=n2109
+.gate xor2a  a=n1910 b=n_n3726 O=n2110
+.gate nand2  a=n1908_1 b=n1906 O=n2111
+.gate nand2  a=n2111 b=n1758_1 O=n2112
+.gate inv1   a=n2111 O=n2113_1
+.gate nor2   a=n1798_1 b=n_n3574 O=n2114
+.gate oai22  a=n2114 b=n1874 c=n1872 d=n1798_1 O=n2115
+.gate inv1   a=n_n3995 O=n2116
+.gate xor2a  a=n1887 b=n1789 O=n2117
+.gate inv1   a=n2117 O=n2118_1
+.gate nor2   a=n2118_1 b=n2116 O=n2119
+.gate nand2  a=n2119 b=n2115 O=n2120
+.gate inv1   a=n2114 O=n2121
+.gate nand2  a=n1872 b=n1869 O=n2122
+.gate nand3  a=n2122 b=n2121 c=n1873_1 O=n2123_1
+.gate nand2  a=n2123_1 b=n1789 O=n2124
+.gate inv1   a=n2115 O=n2125
+.gate nand3  a=n2118_1 b=n2125 c=n2116 O=n2126
+.gate nand3  a=n2126 b=n2124 c=n2120 O=n2127
+.gate xor2a  a=n_n3818 b=n_n4229 O=n2129
+.gate inv1   a=n2129 O=n2130
+.gate xor2a  a=n1890 b=n1779 O=n2131
+.gate xor2a  a=n2131 b=n2130 O=n2132
+.gate xor2a  a=n2117 b=n_n3995 O=n2133_1
+.gate inv1   a=n2133_1 O=n2134
+.gate xor2a  a=n2115 b=n2116 O=n2135
+.gate oai22  a=n2135 b=n2134 c=n2123_1 d=n1789 O=n2136
+.gate nand3  a=n2136 b=n2132 c=n1783_1 O=n2137
+.gate nor2   a=n2132 b=n1783_1 O=n2138_1
+.gate aoi21  a=n2137 b=n2136 c=n2138_1 O=n2139
+.gate xor2a  a=n_n4040 b=n_n3916 O=n2140
+.gate inv1   a=n2140 O=n2141
+.gate nor2   a=n1890 b=n1893_1 O=n2142
+.gate inv1   a=n_n3818 O=n2143_1
+.gate aoi21  a=n1890 b=n1893_1 c=n2143_1 O=n2144
+.gate oai21  a=n2144 b=n2142 c=n1769 O=n2145
+.gate nand3  a=n1895 b=n1892 c=n1773_1 O=n2146
+.gate nand2  a=n2146 b=n2145 O=n2147
+.gate xor2a  a=n2147 b=n2141 O=n2148_1
+.gate nand2  a=n2148_1 b=n1770 O=n2149
+.gate nand2  a=n2149 b=n2139 O=n2150
+.gate inv1   a=n2148_1 O=n2151
+.gate xor2a  a=n1890 b=n1777 O=n2152
+.gate nand2  a=n2152 b=n2129 O=n2153_1
+.gate nand2  a=n2131 b=n2130 O=n2154
+.gate nand3  a=n2154 b=n2153_1 c=n1783_1 O=n2155
+.gate nand2  a=n2136 b=n2155 O=n2156
+.gate nand2  a=n2154 b=n2153_1 O=n2157
+.gate nand3  a=n2157 b=n2127 c=n1893_1 O=n2158_1
+.gate nand2  a=n2158_1 b=n2156 O=n2159
+.gate nand3  a=n2159 b=n2151 c=n1885 O=n2160
+.gate nand2  a=n2160 b=n2150 O=n2161
+.gate xor2a  a=n_n3898 b=n_n3988 O=n2162
+.gate nand2  a=n1745 b=n1742 O=n2163_1
+.gate inv1   a=n2163_1 O=n2164
+.gate nand2  a=n1900 b=n2164 O=n2165
+.gate nand3  a=n1899 b=n1897 c=n2163_1 O=n2166
+.gate nand3  a=n2166 b=n2165 c=n2162 O=n2167
+.gate inv1   a=n2162 O=n2168_1
+.gate nand2  a=n2166 b=n2165 O=n2169
+.gate nand2  a=n2169 b=n2168_1 O=n2170
+.gate nand3  a=n2170 b=n2167 c=n1902 O=n2171
+.gate nand2  a=n2171 b=n2161 O=n2172
+.gate nand2  a=n2170 b=n2167 O=n2173_1
+.gate oai21  a=n2148_1 b=n1770 c=n2159 O=n2174
+.gate nand3  a=n2148_1 b=n2139 c=n1770 O=n2175
+.gate nand2  a=n2175 b=n2174 O=n2176
+.gate nand3  a=n2176 b=n2173_1 c=n1766 O=n2177
+.gate nand2  a=n2177 b=n2172 O=n2178_1
+.gate nand2  a=n2178_1 b=n2113_1 O=n2179
+.gate nand3  a=n2179 b=n2112 c=n2110 O=n2180
+.gate inv1   a=n1755 O=n2181
+.gate xnor2a a=n1910 b=n_n3726 O=n2182
+.gate nand2  a=n2182 b=n2181 O=n2183_1
+.gate or2    a=n2176 b=n2161 O=n2184
+.gate nand3  a=n2184 b=n2183_1 c=n2180 O=n2185
+.gate and2   a=n2185 b=n2109 O=n529
+.gate inv1   a=n_n3204 O=n2187
+.gate aoi21  a=n1833_1 b=n2187 c=preset O=n534
+.gate aoi21  a=n1833_1 b=n1428_1 c=preset O=n539
+.gate aoi21  a=n1833_1 b=n1647 c=preset O=n544
+.gate nand3  a=n2014 b=ndn3_15 c=n1829 O=n2191
+.gate inv1   a=n2191 O=n549
+.gate inv1   a=n_n4074 O=n2193_1
+.gate inv1   a=n_n3578 O=n2194
+.gate nor2   a=n2194 b=n2193_1 O=n2195
+.gate oai21  a=n2195 b=n_n3458 c=n1827 O=n2196
+.gate oai21  a=n1834 b=n1521 c=n2196 O=n554
+.gate nand2  a=n2012 b=n1829 O=n2198_1
+.gate inv1   a=n_n3085 O=n2199
+.gate inv1   a=n_n3250 O=n2200
+.gate nor2   a=n2200 b=n2199 O=n2201
+.gate nand2  a=n2201 b=n2015 O=n2202
+.gate nand2  a=n2012 b=n_n4229 O=n2203_1
+.gate nand2  a=n2009 b=n_n4294 O=n2204
+.gate nand3  a=n2204 b=n2203_1 c=n2202 O=n2205
+.gate aoi22  a=n2017 b=n_n3769 c=n2009 d=n_n3281 O=n2206
+.gate oai21  a=n2013_1 b=n1783_1 c=n2206 O=n2207
+.gate nand2  a=n2207 b=n2205 O=n2208_1
+.gate or2    a=n2207 b=n2205 O=n2209
+.gate inv1   a=n2028_1 O=n2210
+.gate oai21  a=n2050 b=n2210 c=n2027 O=n2211
+.gate nand2  a=n2211 b=n2209 O=n2212
+.gate nand2  a=n2212 b=n2208_1 O=n2213_1
+.gate aoi22  a=n2017 b=n_n4047 c=n2009 d=n_n4021 O=n2214
+.gate oai21  a=n2013_1 b=n1885 c=n2214 O=n2215
+.gate nand2  a=n2195 b=n2015 O=n2216
+.gate nand2  a=n2012 b=n_n3916 O=n2217
+.gate nand2  a=n2009 b=n_n3886 O=n2218_1
+.gate nand3  a=n2218_1 b=n2217 c=n2216 O=n2219
+.gate or2    a=n2219 b=n2215 O=n2220
+.gate nand2  a=n2219 b=n2215 O=n2221
+.gate nand2  a=n2221 b=n2220 O=n2222
+.gate xor2a  a=n2222 b=n2213_1 O=n2223_1
+.gate nor2   a=n2012 b=preset O=n2224
+.gate inv1   a=n2224 O=n2225
+.gate oai22  a=n2225 b=n2193_1 c=n2223_1 d=n2198_1 O=n559
+.gate oai22  a=n1834 b=n1425 c=n1826 d=n1793_1 O=n564
+.gate inv1   a=n_n3858 O=n2228_1
+.gate nand2  a=n2081 b=pv1_2_2_ O=n2229
+.gate oai21  a=n2083_1 b=n2228_1 c=n2229 O=n569
+.gate aoi21  a=n1833_1 b=n1386 c=preset O=n574
+.gate inv1   a=n_n3521 O=n2232
+.gate aoi21  a=n1833_1 b=n2232 c=preset O=n579
+.gate inv1   a=n_n3081 O=n2234
+.gate aoi21  a=n1833_1 b=n2234 c=preset O=n584
+.gate inv1   a=n_n4381 O=n2236
+.gate inv1   a=n_n3493 O=n2237
+.gate nand2  a=n1982 b=n1928_1 O=n2238_1
+.gate nand2  a=n2238_1 b=n_n4045 O=n2239
+.gate nand2  a=n2239 b=n2237 O=n2240
+.gate nand2  a=n2240 b=n1984 O=n2241
+.gate inv1   a=n2241 O=n2242
+.gate nor2   a=n2242 b=preset O=n2243_1
+.gate inv1   a=n2243_1 O=n2244
+.gate nand2  a=n1983_1 b=n1974 O=n2245
+.gate aoi21  a=n1979 b=n_n4045 c=n_n3493 O=n2246
+.gate nand2  a=n2246 b=n1982 O=n2247
+.gate nand2  a=n2247 b=n2245 O=n2248_1
+.gate inv1   a=n_n4029 O=n2249
+.gate inv1   a=n_n3955 O=n2250
+.gate inv1   a=n_n3845 O=n2251
+.gate nand3  a=n2251 b=n_n3954 c=n2250 O=n2252
+.gate inv1   a=n2252 O=n2253_1
+.gate nand2  a=n2253_1 b=n2249 O=n2254
+.gate nor2   a=n2254 b=n_n3865 O=n2255
+.gate inv1   a=n2255 O=n2256
+.gate nor2   a=n2256 b=n_n4052 O=n2257
+.gate nor2   a=n2257 b=n2236 O=n2258_1
+.gate nand2  a=n2257 b=n2236 O=n2259
+.gate inv1   a=n2259 O=n2260
+.gate oai21  a=n2260 b=n2258_1 c=n1977 O=n2261
+.gate nor3   a=n1982 b=n_n4045 c=n_n3493 O=n2262
+.gate inv1   a=n2262 O=n2263_1
+.gate oai21  a=n2263_1 b=n2236 c=n2261 O=n2264
+.gate aoi21  a=n2248_1 b=n_n3892 c=n2264 O=n2265
+.gate nand2  a=n2242 b=n1829 O=n2266
+.gate oai22  a=n2266 b=n2236 c=n2265 d=n2244 O=n589
+.gate oai22  a=n2005 b=n1945 c=n1834 d=n1401 O=n594
+.gate inv1   a=pv11_2_2_ O=n2269
+.gate oai22  a=n1841 b=n2021 c=n1839 d=n2269 O=n599
+.gate inv1   a=n2239 O=n2271
+.gate nand2  a=n2271 b=n1829 O=n2272
+.gate inv1   a=n2272 O=n2273
+.gate nand2  a=n2273 b=n_n3493 O=n2274
+.gate inv1   a=n2274 O=n604
+.gate inv1   a=n_n3495 O=n2276
+.gate oai22  a=n2101 b=n2276 c=n2097 d=n2051 O=n609
+.gate oai22  a=n2223_1 b=n2010 c=n2053_1 d=n1737 O=n614
+.gate aoi21  a=n1833_1 b=n1671 c=preset O=n619
+.gate inv1   a=n_n3242 O=n2280
+.gate oai22  a=n1834 b=n1566 c=n1826 d=n2280 O=n624
+.gate nand2  a=n1827 b=n_n3916 O=n2282
+.gate oai21  a=n1834 b=n1581 c=n2282 O=n629
+.gate inv1   a=pv10_4_4_ O=n2284
+.gate nand2  a=n_n3876 b=n1829 O=n2285
+.gate oai22  a=n2285 b=n1938_1 c=n1940 d=n2284 O=n634
+.gate aoi21  a=n2106 b=n2070 c=n2071 O=n639
+.gate oai22  a=n1834 b=n1398_1 c=n1826 d=n1785 O=n644
+.gate inv1   a=n_n3489 O=n2289
+.gate aoi21  a=n1833_1 b=n2289 c=preset O=n649
+.gate inv1   a=n_n3170 O=n2291
+.gate nor2   a=n2291 b=n2280 O=n2292
+.gate nand2  a=n2292 b=n1827 O=n2293
+.gate oai21  a=n1834 b=n1575 c=n2293 O=n654
+.gate inv1   a=n_n3281 O=n2295
+.gate inv1   a=pv2_3_3_ O=n2296
+.gate nand3  a=n2106 b=ndn3_4 c=n1829 O=n2297
+.gate oai21  a=ndn3_5 b=n2070 c=n1829 O=n2298
+.gate oai22  a=n2298 b=n2295 c=n2297 d=n2296 O=n659
+.gate nand2  a=n1859 b=n1818_1 O=n2300
+.gate nand2  a=n2300 b=n1846 O=n2301
+.gate nand2  a=n2301 b=n_n4093 O=n2302
+.gate nor2   a=n2302 b=preset O=n2303
+.gate aoi21  a=n2185 b=n1862 c=n1861 O=n2304
+.gate inv1   a=n2304 O=n2305
+.gate nand2  a=n2305 b=n2303 O=n664
+.gate oai22  a=n1834 b=n1569 c=n1826 d=n1712 O=n669
+.gate inv1   a=pv4_1_1_ O=n2308
+.gate oai22  a=n2107 b=n1710 c=n2105 d=n2308 O=n674
+.gate oai22  a=n2099 b=n2010 c=n2053_1 d=n1719 O=n679
+.gate nand3  a=n1827 b=n_n3099 c=n_n3936 O=n2311
+.gate oai21  a=n1834 b=n1359 c=n2311 O=n684
+.gate inv1   a=pv6_5_5_ O=n2313
+.gate oai22  a=n2058_1 b=n1917 c=n2056 d=n2313 O=n689
+.gate aoi21  a=n1833_1 b=n1587 c=preset O=n694
+.gate oai22  a=n1834 b=n1479 c=n1826 d=n2193_1 O=n699
+.gate xnor2a a=n2036 b=n2032 O=n2317
+.gate oai22  a=n2317 b=n2198_1 c=n2225 d=n1996 O=n704
+.gate oai21  a=n2292 b=n_n4233 c=n1827 O=n2319
+.gate oai21  a=n1834 b=n1563_1 c=n2319 O=n709
+.gate oai21  a=n1834 b=n1503_1 c=n1880 O=n714
+.gate aoi21  a=n1833_1 b=n1578_1 c=preset O=n719
+.gate nand2  a=n2195 b=n1827 O=n2323
+.gate oai21  a=n1834 b=n1662 c=n2323 O=n724
+.gate aoi21  a=n1833_1 b=n1659 c=preset O=n729
+.gate inv1   a=n_n3432 O=n2326
+.gate aoi21  a=n1833_1 b=n2326 c=preset O=n734
+.gate aoi21  a=n1833_1 b=n1377 c=preset O=n739
+.gate oai22  a=n1834 b=n1482 c=n1826 d=n2103_1 O=n744
+.gate inv1   a=n_n3556 O=n2330
+.gate inv1   a=pv11_6_6_ O=n2331
+.gate oai22  a=n1841 b=n2330 c=n1839 d=n2331 O=n749
+.gate nand3  a=n1863_1 b=n1860 c=n_n4040 O=n2333
+.gate nand3  a=n1867 b=n_n3876 c=n1829 O=n2334
+.gate nand3  a=n1898_1 b=n1897 c=n_n4040 O=n2335
+.gate inv1   a=n_n4040 O=n2336
+.gate nand2  a=n1898_1 b=n1897 O=n2337
+.gate nand2  a=n2337 b=n2336 O=n2338
+.gate nand3  a=n2338 b=n2335 c=n2109 O=n2339
+.gate nand3  a=n2339 b=n2334 c=n2333 O=n754
+.gate inv1   a=n_n3120 O=n2341
+.gate aoi21  a=n1833_1 b=n2341 c=preset O=n759
+.gate nand2  a=n1827 b=n_n4222 O=n2343
+.gate oai21  a=n1834 b=n1410 c=n2343 O=n764
+.gate nand2  a=n1827 b=n_n3976 O=n2345
+.gate oai21  a=n1834 b=n1458_1 c=n2345 O=n769
+.gate inv1   a=n_n3851 O=n2347
+.gate inv1   a=n1857 O=n2348
+.gate nand3  a=n1850 b=n2348 c=n_n3831 O=n2349
+.gate aoi21  a=n2349 b=n2347 c=preset O=n774
+.gate oai21  a=n2023_1 b=n_n3495 c=n1827 O=n2351
+.gate oai21  a=n1834 b=n1344 c=n2351 O=n779
+.gate nand2  a=n2292 b=n2015 O=n2353
+.gate nand2  a=n2012 b=n_n3841 O=n2354
+.gate nand2  a=n2009 b=n_n3259 O=n2355
+.gate nand3  a=n2355 b=n2354 c=n2353 O=n2356
+.gate aoi22  a=n2017 b=n_n3475 c=n2009 d=n_n4062 O=n2357
+.gate oai21  a=n2013_1 b=n1758_1 c=n2357 O=n2358
+.gate inv1   a=n_n4122 O=n2359
+.gate nor2   a=n2359 b=n2330 O=n2360
+.gate nand2  a=n2360 b=n2015 O=n2361
+.gate nand2  a=n2012 b=n_n4145 O=n2362
+.gate nand2  a=n2009 b=n_n3919 O=n2363
+.gate nand3  a=n2363 b=n2362 c=n2361 O=n2364
+.gate nand2  a=n2364 b=n2358 O=n2365
+.gate aoi22  a=n2017 b=n_n4366 c=n2009 d=n_n3854 O=n2366
+.gate oai21  a=n2013_1 b=n1766 c=n2366 O=n2367
+.gate nand3  a=n2015 b=n_n4157 c=n_n3035 O=n2368
+.gate nand2  a=n2009 b=n_n3511 O=n2369
+.gate nand2  a=n2012 b=n_n3898 O=n2370
+.gate nand3  a=n2370 b=n2369 c=n2368 O=n2371
+.gate or2    a=n2371 b=n2367 O=n2372
+.gate inv1   a=n2372 O=n2373
+.gate inv1   a=n2221 O=n2374
+.gate aoi21  a=n2220 b=n2213_1 c=n2374 O=n2375
+.gate nand2  a=n2371 b=n2367 O=n2376
+.gate oai21  a=n2375 b=n2373 c=n2376 O=n2377
+.gate or2    a=n2364 b=n2358 O=n2378
+.gate nand2  a=n2378 b=n2377 O=n2379
+.gate nand2  a=n2379 b=n2365 O=n2380
+.gate aoi22  a=n2017 b=n_n4324 c=n2009 d=n_n3451 O=n2381
+.gate oai21  a=n2013_1 b=n1755 c=n2381 O=n2382
+.gate xnor2a a=n2382 b=n2380 O=n2383
+.gate xor2a  a=n2383 b=n2356 O=n2384
+.gate oai22  a=n2384 b=n2198_1 c=n2225 d=n2280 O=n784
+.gate nand3  a=n1827 b=n_n4122 c=n_n3556 O=n2386
+.gate oai21  a=n1834 b=n1530 c=n2386 O=n789
+.gate inv1   a=n_n3483 O=n2388
+.gate oai22  a=n1834 b=n1620 c=n1828_1 d=n2388 O=n794
+.gate inv1   a=n_n4089 O=n2390
+.gate aoi21  a=n1833_1 b=n2390 c=preset O=n799
+.gate oai22  a=n1834 b=n1429 c=n1826 d=n2096 O=n804
+.gate oai22  a=n1834 b=n1446 c=n1826 d=n1695 O=n809
+.gate inv1   a=pv11_5_5_ O=n2394
+.gate oai22  a=n1841 b=n2064 c=n1839 d=n2394 O=n814
+.gate oai22  a=n1834 b=n1608_1 c=n1826 d=n1755 O=n819
+.gate aoi21  a=n1833_1 b=n1473_1 c=preset O=n824
+.gate aoi21  a=n1833_1 b=n1371 c=preset O=n829
+.gate inv1   a=n_n3215 O=n2399
+.gate aoi21  a=n1833_1 b=n2399 c=preset O=n834
+.gate nor2   a=nen3_10 b=ndn3_10 O=n2401
+.gate nor2   a=n2401 b=n2071 O=n839
+.gate oai21  a=n2201 b=n_n4351 c=n1827 O=n2403
+.gate oai21  a=n1834 b=n1677 c=n2403 O=n844
+.gate inv1   a=preset_0_0_ O=n2405
+.gate aoi21  a=nsr1_2 b=n2405 c=nlc1_2 O=n2406
+.gate nor2   a=n2406 b=n1824 O=n849
+.gate aoi21  a=n1833_1 b=n1404 c=preset O=n854
+.gate inv1   a=n_n4110 O=n2409
+.gate aoi21  a=n1833_1 b=n2409 c=preset O=n859
+.gate inv1   a=nlc3_3 O=n2411
+.gate nand3  a=n1831 b=n2072 c=nsr3_3 O=n2412
+.gate aoi21  a=n2412 b=n2411 c=n1824 O=n864
+.gate nand3  a=n1827 b=n_n3657 c=n_n4211 O=n2414
+.gate oai21  a=n1834 b=n1363_1 c=n2414 O=n869
+.gate inv1   a=n_n4129 O=n2416
+.gate aoi21  a=n1833_1 b=n2416 c=preset O=n874
+.gate oai22  a=n1834 b=n1590 c=n1826 d=n1917 O=n879
+.gate oai22  a=n1834 b=n1431 c=n1826 d=n1789 O=n884
+.gate inv1   a=pv4_2_2_ O=n2420
+.gate oai22  a=n2107 b=n1711 c=n2105 d=n2420 O=n889
+.gate nand2  a=n1832 b=n1829 O=n2422
+.gate inv1   a=n2422 O=n894
+.gate aoi21  a=n1833_1 b=n1557 c=preset O=n898
+.gate inv1   a=pv6_6_6_ O=n2425
+.gate oai22  a=n2058_1 b=n1918_1 c=n2056 d=n2425 O=n903
+.gate aoi21  a=n1833_1 b=n1680 c=preset O=n908
+.gate inv1   a=pdn O=n2428
+.gate oai21  a=ndn1_34 b=n2428 c=n_n3354 O=n2429
+.gate aoi21  a=n2429 b=n1833_1 c=preset O=n913
+.gate oai21  a=n1834 b=n1494 c=n2403 O=n918
+.gate aoi21  a=n2057 b=n2106 c=n2071 O=n923
+.gate aoi21  a=n1833_1 b=n1402 c=preset O=n928
+.gate aoi21  a=n1833_1 b=n1582 c=preset O=n933
+.gate inv1   a=n_n4012 O=n2435
+.gate oai22  a=n1834 b=n1683_1 c=n1828_1 d=n2435 O=n938
+.gate inv1   a=n_n4120 O=n2437
+.gate aoi21  a=n1833_1 b=n2437 c=preset O=n943
+.gate inv1   a=n_n3065 O=n2439
+.gate aoi21  a=n1833_1 b=n2439 c=preset O=n948
+.gate aoi21  a=n1833_1 b=n1609 c=preset O=n953
+.gate aoi21  a=n1833_1 b=n1527 c=preset O=n958
+.gate inv1   a=pv6_7_7_ O=n2443
+.gate oai22  a=n2058_1 b=n1919 c=n2056 d=n2443 O=n963
+.gate aoi21  a=n1833_1 b=n1347 c=preset O=n968
+.gate aoi21  a=n1833_1 b=n1512 c=preset O=n973
+.gate inv1   a=n_n4095 O=n2447
+.gate oai22  a=n1834 b=n1605 c=n1826 d=n2447 O=n978
+.gate inv1   a=n_n3872 O=n2449
+.gate aoi21  a=n1833_1 b=n2449 c=preset O=n983
+.gate aoi21  a=n1833_1 b=n1564 c=preset O=n988
+.gate oai21  a=n1834 b=n1329 c=n2414 O=n993
+.gate aoi21  a=n1833_1 b=n1432 c=preset O=n998
+.gate aoi21  a=n1937 b=n2057 c=n2071 O=n1003
+.gate aoi21  a=n1833_1 b=n1506 c=preset O=n1008
+.gate inv1   a=n_n3766 O=n2456
+.gate oai22  a=n1834 b=n1383_1 c=n1828_1 d=n2456 O=n1013
+.gate inv1   a=n_n4351 O=n2458
+.gate oai22  a=n1834 b=n1497 c=n1826 d=n2458 O=n1018
+.gate inv1   a=n_n4131 O=n2460
+.gate aoi21  a=n1833_1 b=n2460 c=preset O=n1023
+.gate nand2  a=n2201 b=n1827 O=n2462
+.gate oai21  a=n1834 b=n1660 c=n2462 O=n1028
+.gate oai21  a=n1834 b=n1437 c=n2345 O=n1033
+.gate oai21  a=n1834 b=n1488_1 c=n2343 O=n1038
+.gate inv1   a=n_n3886 O=n2466
+.gate nand2  a=n2081 b=pv1_4_4_ O=n2467
+.gate oai21  a=n2083_1 b=n2466 c=n2467 O=n1043
+.gate inv1   a=n_n3919 O=n2469
+.gate nand2  a=n2081 b=pv1_6_6_ O=n2470
+.gate oai21  a=n2083_1 b=n2469 c=n2470 O=n1048
+.gate inv1   a=n_n3608 O=n2472
+.gate oai22  a=n1834 b=n1368_1 c=n1826 d=n2472 O=n1053
+.gate nand3  a=n1863_1 b=n1860 c=n_n3995 O=n2474
+.gate nand2  a=n2134 b=n2109 O=n2475
+.gate nand3  a=n1867 b=n_n3946 c=n1829 O=n2476
+.gate nand3  a=n2476 b=n2475 c=n2474 O=n1058
+.gate aoi21  a=n1833_1 b=n1501 c=preset O=n1063
+.gate oai21  a=n1834 b=n1392 c=n1999 O=n1068
+.gate aoi21  a=n1840 b=n1937 c=n2071 O=n1073
+.gate aoi21  a=n1833_1 b=n1341 c=preset O=n1078
+.gate nand2  a=n1969 b=n1966 O=n2482
+.gate aoi21  a=n2482 b=n1988_1 c=n1986 O=n2483
+.gate nand2  a=n1988_1 b=n1946 O=n2484
+.gate oai22  a=n2484 b=n2482 c=n2483 d=n1946 O=n1083
+.gate inv1   a=n_n3328 O=n2486
+.gate inv1   a=pv2_1_1_ O=n2487
+.gate oai22  a=n2298 b=n2486 c=n2297 d=n2487 O=n1088
+.gate nand3  a=n1863_1 b=n1860 c=n_n3988 O=n2489
+.gate nand3  a=n1867 b=n_n4362 c=n1829 O=n2490
+.gate inv1   a=n1901 O=n2491
+.gate inv1   a=n_n3988 O=n2492
+.gate nand2  a=n1903_1 b=n1901 O=n2493
+.gate aoi21  a=n2493 b=n2492 c=n1876 O=n2494
+.gate oai21  a=n1904 b=n2491 c=n2494 O=n2495
+.gate nand3  a=n2495 b=n2490 c=n2489 O=n1093
+.gate inv1   a=n_n3348 O=n2497
+.gate aoi21  a=n1833_1 b=n2497 c=preset O=n1098
+.gate inv1   a=n_n3544 O=n2499
+.gate aoi21  a=n1833_1 b=n2499 c=preset O=n1103
+.gate inv1   a=n_n3101 O=n2501
+.gate aoi21  a=n1833_1 b=n2501 c=preset O=n1108
+.gate inv1   a=n_n4334 O=n2503
+.gate oai22  a=n1834 b=n1650 c=n1828_1 d=n2503 O=n1113
+.gate oai21  a=n1834 b=n1600 c=n2386 O=n1118
+.gate oai22  a=n1834 b=n1470 c=n1826 d=n2276 O=n1123
+.gate inv1   a=pv4_6_6_ O=n2507
+.gate oai22  a=n2107 b=n1694 c=n2105 d=n2507 O=n1128
+.gate aoi21  a=n1833_1 b=n1525 c=preset O=n1133
+.gate inv1   a=n_n3307 O=n2510
+.gate aoi21  a=n1833_1 b=n2510 c=preset O=n1138
+.gate inv1   a=n_n4294 O=n2512
+.gate nand2  a=n2081 b=pv1_3_3_ O=n2513
+.gate oai21  a=n2083_1 b=n2512 c=n2513 O=n1143
+.gate oai21  a=n1866 b=n1865 c=n1863_1 O=n2515
+.gate inv1   a=n_n4275 O=n2516
+.gate inv1   a=n_n4227 O=n2517
+.gate nor2   a=n2517 b=n1692 O=n2518
+.gate nand2  a=n2518 b=n_n3814 O=n2519
+.gate nor3   a=n2519 b=n2456 c=n2516 O=n2520
+.gate inv1   a=n2520 O=n2521
+.gate nand2  a=n2521 b=n2109 O=n2522
+.gate nand2  a=n2109 b=n2435 O=n2523
+.gate nand3  a=n2523 b=n2522 c=n2515 O=n2524
+.gate nand2  a=n2524 b=n_n4334 O=n2525
+.gate nor2   a=n2521 b=n2435 O=n2526
+.gate nand3  a=n2526 b=n2109 c=n2503 O=n2527
+.gate nand2  a=n2527 b=n2525 O=n1148
+.gate inv1   a=n2248_1 O=n2529
+.gate nor2   a=n2529 b=n1923_1 O=n2530
+.gate nand2  a=n1977 b=n_n3954 O=n2531
+.gate nor2   a=n2531 b=n_n3955 O=n2532
+.gate inv1   a=n_n3954 O=n2533
+.gate nand2  a=n1977 b=n2533 O=n2534
+.gate aoi21  a=n2534 b=n2263_1 c=n2250 O=n2535
+.gate nor3   a=n2535 b=n2532 c=n2530 O=n2536
+.gate oai22  a=n2536 b=n2244 c=n2266 d=n2250 O=n1153
+.gate inv1   a=n_n4164 O=n2538
+.gate aoi21  a=n1833_1 b=n2538 c=preset O=n1158
+.gate nand2  a=n1827 b=n_n4145 O=n2540
+.gate oai21  a=n1834 b=n1617 c=n2540 O=n1163
+.gate aoi21  a=n1833_1 b=n1498_1 c=preset O=n1168
+.gate inv1   a=n_n4233 O=n2543
+.gate oai22  a=n2384 b=n2097 c=n2101 d=n2543 O=n1173
+.gate inv1   a=n_n4347 O=n2545
+.gate aoi21  a=n1833_1 b=n2545 c=preset O=n1178
+.gate inv1   a=n_n3826 O=n2547
+.gate aoi21  a=n1833_1 b=n2547 c=preset O=n1183
+.gate inv1   a=n_n3360 O=n2549
+.gate aoi21  a=n1833_1 b=n2549 c=preset O=n1188
+.gate oai22  a=n2223_1 b=n2097 c=n2101 d=n1992 O=n1193
+.gate inv1   a=n_n3093 O=n2552
+.gate aoi21  a=n1833_1 b=n2552 c=preset O=n1198
+.gate aoi21  a=n1833_1 b=n1471 c=preset O=n1203
+.gate oai22  a=n1834 b=n1416 c=n1826 d=n1916 O=n1208
+.gate aoi21  a=n1833_1 b=n1485 c=preset O=n1213
+.gate oai22  a=n1834 b=n1668_1 c=n1826 d=n2543 O=n1218
+.gate oai22  a=n1834 b=n1653_1 c=n1826 d=n1918_1 O=n1223
+.gate oai22  a=n2005 b=n1948_1 c=n1834 d=n1513_1 O=n1228
+.gate oai21  a=n1834 b=n1551 c=n2293 O=n1233
+.gate inv1   a=n_n4270 O=n2561
+.gate inv1   a=pv4_7_7_ O=n2562
+.gate oai22  a=n2107 b=n2561 c=n2105 d=n2562 O=n1238
+.gate nand2  a=n2376 b=n2372 O=n2564
+.gate xnor2a a=n2564 b=n2375 O=n2565
+.gate oai22  a=n2565 b=n2097 c=n2101 d=n2065 O=n1243
+.gate oai21  a=n1834 b=n1674 c=n2311 O=n1248
+.gate aoi21  a=n1833_1 b=n1338_1 c=preset O=n1253
+.gate zero   O=n1258
+.gate aoi21  a=n1965 b=n1961 c=n_n3916 O=n2570
+.gate nand3  a=n1965 b=n1961 c=n_n3916 O=n2571
+.gate nand2  a=n2571 b=n1988_1 O=n2572
+.gate oai22  a=n2572 b=n2570 c=n1985 d=n1963_1 O=n1263
+.gate inv1   a=n_n3978 O=n2574
+.gate inv1   a=pv2_2_2_ O=n2575
+.gate oai22  a=n2298 b=n2574 c=n2297 d=n2575 O=n1268
+.gate aoi21  a=n1833_1 b=n1606 c=preset O=n1273
+.gate inv1   a=n2365 O=n2578
+.gate and2   a=n2378 b=n2365 O=n2579
+.gate oai22  a=n2579 b=n2377 c=n2379 d=n2578 O=n2580
+.gate oai22  a=n2580 b=n2010 c=n2053_1 d=n1749 O=n1278
+.gate aoi21  a=n1833_1 b=n1369 c=preset O=n1283
+.gate oai21  a=n1998_1 b=n_n3608 c=n1827 O=n2583
+.gate oai21  a=n1834 b=n1407 c=n2583 O=n1288
+.gate oai22  a=n1834 b=n1444 c=n1826 d=n2199 O=n1293
+.gate oai22  a=n1834 b=n1554 c=n1826 d=n2065 O=n1298
+.gate aoi21  a=n1833_1 b=n1629 c=preset O=n1303
+.gate inv1   a=n_n4052 O=n2588
+.gate nor2   a=n2255 b=n2588 O=n2589
+.gate oai21  a=n2589 b=n2257 c=n1977 O=n2590
+.gate oai21  a=n2263_1 b=n2588 c=n2590 O=n2591
+.gate aoi21  a=n2248_1 b=n_n4071 c=n2591 O=n2592
+.gate oai22  a=n2592 b=n2244 c=n2266 d=n2588 O=n1308
+.gate inv1   a=nsr4_2 O=n2594
+.gate nand3  a=n2594 b=n2428 c=n1829 O=n1313
+.gate inv1   a=n_n4099 O=n2596
+.gate nor2   a=n2260 b=n_n4099 O=n2597
+.gate oai21  a=n2259 b=n2596 c=n1977 O=n2598
+.gate oai22  a=n2598 b=n2597 c=n2263_1 d=n2596 O=n2599
+.gate aoi21  a=n2248_1 b=n_n4337 c=n2599 O=n2600
+.gate oai22  a=n2600 b=n2244 c=n2266 d=n2596 O=n1318
+.gate aoi21  a=n1833_1 b=n1584 c=preset O=n1323
+.gate inv1   a=n_n4093 O=n2603
+.gate aoi21  a=n2300 b=n1846 c=n2603 O=n2604
+.gate oai21  a=n1849 b=n2087 c=n1693_1 O=n2605
+.gate nand3  a=n2605 b=n2604 c=n1829 O=n2606
+.gate inv1   a=n2606 O=n1328
+.gate aoi21  a=n1833_1 b=n1555 c=preset O=n1333
+.gate oai22  a=n2565 b=n2010 c=n2053_1 d=n1743_1 O=n1338
+.gate oai22  a=n2580 b=n2198_1 c=n2225 d=n2359 O=n1343
+.gate inv1   a=n_n3774 O=n2611
+.gate aoi21  a=n1833_1 b=n2611 c=preset O=n1348
+.gate aoi21  a=n1833_1 b=n1623_1 c=preset O=n1353
+.gate aoi21  a=n1833_1 b=n1552 c=preset O=n1358
+.gate oai22  a=n1834 b=n1464 c=n1826 d=n1923_1 O=n1363
+.gate oai22  a=n1834 b=n1558_1 c=n1826 d=n1758_1 O=n1368
+.gate inv1   a=pv6_2_2_ O=n2617
+.gate oai22  a=n2058_1 b=n1921 c=n2056 d=n2617 O=n1373
+.gate inv1   a=pv6_4_4_ O=n2619
+.gate oai22  a=n2058_1 b=n1922 c=n2056 d=n2619 O=n1378
+.gate inv1   a=n_n3551 O=n2621
+.gate aoi21  a=n1833_1 b=n2621 c=preset O=n1383
+.gate aoi21  a=n1833_1 b=n1380 c=preset O=n1388
+.gate nand2  a=n2109 b=n2456 O=n2624
+.gate nand2  a=n2519 b=n2109 O=n2625
+.gate nand3  a=n2625 b=n2624 c=n2515 O=n2626
+.gate nand2  a=n2626 b=n_n4275 O=n2627
+.gate nor2   a=n2456 b=n_n4275 O=n2628
+.gate nand4  a=n2628 b=n2518 c=n2109 d=n_n3814 O=n2629
+.gate nand2  a=n2629 b=n2627 O=n1393
+.gate inv1   a=n_n3570 O=n2631
+.gate aoi21  a=n1833_1 b=n2631 c=preset O=n1398
+.gate inv1   a=n_n3854 O=n2633
+.gate inv1   a=pv2_5_5_ O=n2634
+.gate oai22  a=n2298 b=n2633 c=n2297 d=n2634 O=n1403
+.gate nand3  a=n2251 b=n2249 c=n2236 O=n2636
+.gate inv1   a=n_n3865 O=n2637
+.gate nand4  a=n2637 b=n2596 c=n2588 d=n2250 O=n2638
+.gate nor3   a=n2638 b=n2636 c=n2534 O=n2639
+.gate inv1   a=n2639 O=n2640
+.gate oai21  a=n2640 b=n1974 c=n_n4057 O=n2641
+.gate nand2  a=n2641 b=n2273 O=n1408
+.gate inv1   a=n_n3451 O=n2643
+.gate inv1   a=pv2_7_7_ O=n2644
+.gate oai22  a=n2298 b=n2643 c=n2297 d=n2644 O=n1413
+.gate aoi21  a=n1833_1 b=n1345 c=preset O=n1418
+.gate oai22  a=n1834 b=n1528_1 c=n1826 d=n1766 O=n1423
+.gate inv1   a=n2208_1 O=n2648
+.gate and2   a=n2209 b=n2208_1 O=n2649
+.gate oai22  a=n2649 b=n2211 c=n2212 d=n2648 O=n2650
+.gate oai22  a=n2650 b=n2010 c=n2053_1 d=n1731 O=n1428
+.gate inv1   a=pv6_1_1_ O=n2652
+.gate oai22  a=n2058_1 b=n1923_1 c=n2056 d=n2652 O=n1433
+.gate aoi21  a=n1833_1 b=n1423_1 c=preset O=n1438
+.gate inv1   a=pv10_5_5_ O=n2655
+.gate nand2  a=n_n4362 b=n1829 O=n2656
+.gate oai22  a=n2656 b=n1938_1 c=n1940 d=n2655 O=n1443
+.gate nand2  a=n2109 b=n2503 O=n2658
+.gate nand4  a=n2658 b=n2523 c=n2522 d=n2515 O=n2659
+.gate nand2  a=n2659 b=n_n3483 O=n2660
+.gate nand4  a=n2526 b=n2109 c=n2388 d=n_n4334 O=n2661
+.gate nand2  a=n2661 b=n2660 O=n1448
+.gate nor2   a=n2640 b=preset O=n1453
+.gate inv1   a=n_n4185 O=n2664
+.gate aoi21  a=n1833_1 b=n2664 c=preset O=n1458
+.gate oai22  a=n2005 b=n2030 c=n1834 d=n1486 O=n1463
+.gate inv1   a=n_n3643 O=n2667
+.gate aoi21  a=n1833_1 b=n2667 c=preset O=n1468
+.gate nand2  a=n1827 b=n_n4229 O=n2669
+.gate oai21  a=n1834 b=n1348_1 c=n2669 O=n1473
+.gate oai21  a=n1834 b=n1342 c=n2540 O=n1478
+.gate oai21  a=n2360 b=n_n4095 c=n1827 O=n2672
+.gate oai21  a=n1834 b=n1585 c=n2672 O=n1483
+.gate aoi21  a=n1833_1 b=n1459 c=preset O=n1488
+.gate oai21  a=n1834 b=n1332 c=n2462 O=n1493
+.gate oai22  a=n1834 b=n1491 c=n1826 d=n1921 O=n1498
+.gate oai21  a=n1830 b=ngfdn_3 c=n1823_1 O=n1503
+.gate oai22  a=n1834 b=n1545 c=n1826 d=n1922 O=n1508
+.gate oai22  a=n2005 b=n1946 c=n1834 d=n1339 O=n1513
+.gate nand2  a=n1827 b=n1806 O=n2680
+.gate oai21  a=n1834 b=n1372 c=n2680 O=n1518
+.gate oai22  a=n2650 b=n2097 c=n2101 d=n2458 O=n1523
+.gate inv1   a=n_n4059 O=n2683
+.gate aoi21  a=n1833_1 b=n2683 c=preset O=n1528
+.gate nand2  a=n1827 b=n_n3898 O=n2685
+.gate oai21  a=n1834 b=n1641 c=n2685 O=n1533
+.gate aoi21  a=n1838_1 b=n2008_1 c=n2071 O=n1538
+.gate aoi21  a=n1833_1 b=n1489 c=preset O=n1543
+.gate aoi22  a=n2521 b=n2109 c=n1863_1 d=n1860 O=n2689
+.gate nand3  a=n2520 b=n2109 c=n2435 O=n2690
+.gate oai21  a=n2689 b=n2435 c=n2690 O=n1548
+.gate aoi21  a=n1833_1 b=n1678_1 c=preset O=n1553
+.gate oai22  a=n2005 b=n1963_1 c=n1834 d=n1638_1 O=n1558
+.gate oai21  a=n1834 b=n1648_1 c=n2685 O=n1563
+.gate nand2  a=n1865 b=n1843_1 O=n2695
+.gate nand3  a=n2695 b=n2304 c=n1829 O=n2696
+.gate inv1   a=n2696 O=n1568
+.gate inv1   a=pv10_2_2_ O=n2698
+.gate nand2  a=n_n3946 b=n1829 O=n2699
+.gate oai22  a=n2699 b=n1938_1 c=n1940 d=n2698 O=n1573
+.gate oai22  a=n2650 b=n2198_1 c=n2225 d=n2199 O=n1578
+.gate inv1   a=n_n3259 O=n2702
+.gate nand2  a=n2081 b=pv1_7_7_ O=n2703
+.gate oai21  a=n2083_1 b=n2702 c=n2703 O=n1583
+.gate inv1   a=n_n3504 O=n2705
+.gate aoi21  a=n1833_1 b=n2705 c=preset O=n1588
+.gate nand3  a=n2641 b=n1983_1 c=n1829 O=n1593
+.gate oai21  a=n2529 b=n1916 c=n2531 O=n2708
+.gate nand2  a=n2533 b=n1829 O=n2709
+.gate aoi21  a=n2263_1 b=n2241 c=n2709 O=n2710
+.gate aoi21  a=n2708 b=n2243_1 c=n2710 O=n1598
+.gate inv1   a=n_n4324 O=n2712
+.gate oai22  a=n2005 b=n2712 c=n1834 d=n1455 O=n1603
+.gate oai22  a=n1834 b=n1689 c=n1826 d=n1711 O=n1608
+.gate oai22  a=n1834 b=n1474 c=n1826 d=n1783_1 O=n1613
+.gate aoi21  a=n1833_1 b=n1669 c=preset O=n1618
+.gate inv1   a=n_n3874 O=n2717
+.gate aoi21  a=n1833_1 b=n2717 c=preset O=n1623
+.gate inv1   a=n_n3999 O=n2719
+.gate aoi21  a=n1833_1 b=n2719 c=preset O=n1628
+.gate oai22  a=n1834 b=n1534 c=n1826 d=n2359 O=n1633
+.gate nand2  a=n1823_1 b=ndn1_34 O=n2722
+.gate inv1   a=n2722 O=n1638
+.gate inv1   a=pv10_1_1_ O=n2724
+.gate nand2  a=n_n3743 b=n1829 O=n2725
+.gate oai22  a=n1940 b=n2724 c=n1938_1 d=n2725 O=n1643
+.gate oai22  a=n2225 b=n2022 c=n2198_1 d=n2051 O=n1648
+.gate oai22  a=n1834 b=n1365 c=n1826 d=n1776 O=n1653
+.gate aoi21  a=n1833_1 b=n1480 c=preset O=n1658
+.gate aoi21  a=n1833_1 b=n1597 c=preset O=n1663
+.gate inv1   a=n_n3814 O=n2731
+.gate aoi22  a=n2109 b=n2731 c=n1863_1 d=n1860 O=n2732
+.gate nand3  a=n2109 b=n_n3814 c=n1692 O=n2733
+.gate oai21  a=n2732 b=n1692 c=n2733 O=n1668
+.gate aoi21  a=n1833_1 b=n1360 c=preset O=n1673
+.gate oai22  a=n1834 b=n1353_1 c=n1826 d=n1919 O=n1678
+.gate inv1   a=pv11_0_0_ O=n2737
+.gate oai22  a=n1841 b=n1997 c=n1839 d=n2737 O=n1683
+.gate inv1   a=pv11_4_4_ O=n2739
+.gate oai22  a=n1841 b=n2194 c=n1839 d=n2739 O=n1688
+.gate oai21  a=n1834 b=n1572 c=n2386 O=n1693
+.gate oai21  a=n1834 b=n1630 c=n2323 O=n1698
+.gate inv1   a=n_n3211 O=n2743
+.gate aoi21  a=n1833_1 b=n2743 c=preset O=n1703
+.gate aoi21  a=n1833_1 b=n1333_1 c=preset O=n1708
+.gate aoi21  a=n1833_1 b=n1438_1 c=preset O=n1713
+.gate oai21  a=n1834 b=n1656 c=n2319 O=n1718
+.gate oai21  a=n1834 b=n1611 c=n1999 O=n1723
+.gate oai22  a=n1834 b=n1335 c=n1826 d=n1768_1 O=n1728
+.gate aoi21  a=n1833_1 b=n1639 c=preset O=n1733
+.gate aoi21  a=n1833_1 b=n1686 c=preset O=n1738
+.gate aoi21  a=n1960 b=n1956 c=n_n4229 O=n2752
+.gate nand3  a=n1960 b=n1956 c=n_n4229 O=n2753
+.gate nand2  a=n2753 b=n1988_1 O=n2754
+.gate oai22  a=n2754 b=n2752 c=n1985 d=n1958_1 O=n1743
+.gate oai21  a=n1834 b=n1396 c=n2311 O=n1748
+.gate oai21  a=n2604 b=n2008_1 c=nsr3_17 O=n2757
+.gate nand2  a=n2757 b=n1823_1 O=n1753
+.gate aoi21  a=n1833_1 b=n1393_1 c=preset O=n1758
+.gate nor2   a=n1983_1 b=n_n3658 O=n2760
+.gate nor2   a=n2760 b=n2272 O=n1763
+.gate aoi21  a=nsr3_14 b=n2011 c=n2071 O=n1768
+.gate nand3  a=n1863_1 b=n1860 c=n_n3818 O=n2763
+.gate nand3  a=n1867 b=n_n4258 c=n1829 O=n2764
+.gate nand2  a=n1894 b=n1892 O=n2765
+.gate aoi21  a=n2765 b=n2143_1 c=n1876 O=n2766
+.gate oai21  a=n1895 b=n2142 c=n2766 O=n2767
+.gate nand3  a=n2767 b=n2764 c=n2763 O=n1773
+.gate inv1   a=pv6_3_3_ O=n2769
+.gate oai22  a=n2058_1 b=n1924 c=n2056 d=n2769 O=n1778
+.gate nand2  a=n1827 b=n_n4316 O=n2771
+.gate oai21  a=n1834 b=n1381 c=n2771 O=n1783
+.gate aoi21  a=n1833_1 b=n1663_1 c=preset O=n1788
+.gate oai22  a=n1834 b=n1387 c=n1826 d=n2022 O=n1793
+.gate oai21  a=n1834 b=n1467 c=n2351 O=n1798
+.gate oai21  a=n1834 b=n1593_1 c=n2672 O=n1803
+.gate aoi21  a=n1833_1 b=n1456 c=preset O=n1808
+.gate aoi21  a=n1833_1 b=n1642 c=preset O=n1813
+.gate aoi21  a=n1954 b=n1953_1 c=n_n4316 O=n2779
+.gate nand3  a=n1954 b=n1953_1 c=n_n4316 O=n2780
+.gate nand2  a=n2780 b=n1988_1 O=n2781
+.gate oai22  a=n2781 b=n2779 c=n1985 d=n2004 O=n1818
+.gate aoi21  a=n1988_1 b=n1716 c=n1986 O=n2783
+.gate nand4  a=n1977 b=n_n3976 c=n2030 d=n1829 O=n2784
+.gate oai21  a=n2783 b=n2030 c=n2784 O=n1823
+.gate oai22  a=n1834 b=n1413_1 c=n1828_1 d=n2517 O=n1828
+.gate oai22  a=n1834 b=n1626 c=n1826 d=n1710 O=n1833
+.gate oai22  a=n1834 b=n1389 c=n1826 d=n1696 O=n1838
+.gate inv1   a=pv4_0_0_ O=n2789
+.gate oai22  a=n2107 b=n1712 c=n2105 d=n2789 O=n1843
+.gate inv1   a=pv4_4_4_ O=n2791
+.gate oai22  a=n2107 b=n1695 c=n2105 d=n2791 O=n1848
+.gate inv1   a=n_n3836 O=n2793
+.gate aoi21  a=n1833_1 b=n2793 c=preset O=n1853
+.gate inv1   a=n_n3470 O=n2795
+.gate aoi21  a=n1833_1 b=n2795 c=preset O=n1858
+.gate oai22  a=n1834 b=n1507 c=n1826 d=n2066 O=n1863
+.gate oai22  a=n1834 b=n1687 c=n1826 d=n2044 O=n1868
+.gate inv1   a=pv10_6_6_ O=n2799
+.gate nand2  a=n_n4299 b=n1829 O=n2800
+.gate oai22  a=n2800 b=n1938_1 c=n1940 d=n2799 O=n1873
+.gate oai22  a=n2565 b=n2198_1 c=n2225 d=n2066 O=n1878
+.gate aoi21  a=n1838_1 b=n1840 c=n2071 O=n1883
+.gate inv1   a=n_n3208 O=n2804
+.gate nand2  a=n2081 b=pv1_1_1_ O=n2805
+.gate oai21  a=n2083_1 b=n2804 c=n2805 O=n1888
+.gate aoi21  a=n1833_1 b=n1515 c=preset O=n1893
+.gate nand2  a=n2532 b=n2251 O=n2808
+.gate aoi21  a=n2252 b=n1977 c=n2249 O=n2809
+.gate aoi22  a=n2809 b=n2263_1 c=n2808 d=n2249 O=n2810
+.gate aoi21  a=n2248_1 b=n_n3533 c=n2810 O=n2811
+.gate oai22  a=n2811 b=n2244 c=n2266 d=n2249 O=n1898
+.gate inv1   a=n_n3042 O=n2813
+.gate aoi21  a=n1833_1 b=n2813 c=preset O=n1903
+.gate aoi21  a=n1981 b=n_n4045 c=nsr3_17 O=n2815
+.gate oai21  a=n2815 b=n1927 c=n1823_1 O=n1908
+.gate inv1   a=nlc1_2 O=n2817
+.gate nand3  a=nsr1_2 b=n2817 c=n2405 O=n2818
+.gate nor2   a=n_n4151 b=preset O=n2819
+.gate nand2  a=n2819 b=n2818 O=n1913
+.gate aoi21  a=n1833_1 b=n1408_1 c=preset O=n1918
+.gate oai22  a=n2005 b=n1958_1 c=n1834 d=n1579 O=n1923
+.gate inv1   a=pv11_3_3_ O=n2823
+.gate oai22  a=n1841 b=n2200 c=n1839 d=n2823 O=n1928
+.gate inv1   a=pv11_7_7_ O=n2825
+.gate oai22  a=n1841 b=n2291 c=n1839 d=n2825 O=n1933
+.gate oai21  a=n1834 b=n1681 c=n2282 O=n1938
+.gate oai21  a=n1834 b=n1356 c=n2583 O=n1943
+.gate oai21  a=n2045 b=n_n4392 c=n1827 O=n2829
+.gate oai21  a=n1834 b=n1378_1 c=n2829 O=n1948
+.gate aoi21  a=n1833_1 b=n1411 c=preset O=n1953
+.gate oai22  a=n1834 b=n1624 c=n1826 d=n1996 O=n1958
+.gate inv1   a=pv10_7_7_ O=n2833
+.gate nand2  a=n_n4360 b=n1829 O=n2834
+.gate oai22  a=n1940 b=n2833 c=n1938_1 d=n2834 O=n1963
+.gate oai22  a=n1834 b=n1665 c=n1826 d=n1759 O=n1968
+.gate oai21  a=n1834 b=n1560 c=n2293 O=n1973
+.gate oai22  a=n1834 b=n1350 c=n1828_1 d=n2516 O=n1978
+.gate aoi22  a=n2519 b=n2109 c=n1863_1 d=n1860 O=n2839
+.gate or2    a=n2624 b=n2519 O=n2840
+.gate oai21  a=n2839 b=n2456 c=n2840 O=n1983
+.gate inv1   a=n_n4021 O=n2842
+.gate inv1   a=pv2_4_4_ O=n2843
+.gate oai22  a=n2298 b=n2842 c=n2297 d=n2843 O=n1988
+.gate inv1   a=n_n4062 O=n2845
+.gate inv1   a=pv2_6_6_ O=n2846
+.gate oai22  a=n2298 b=n2845 c=n2297 d=n2846 O=n1993
+.gate oai22  a=n1834 b=n1461 c=n1828_1 d=n2731 O=n1998
+.gate oai22  a=n1834 b=n1672 c=n1826 d=n1797 O=n2003
+.gate oai22  a=n1834 b=n1536 c=n1826 d=n2561 O=n2008
+.gate nand2  a=n_n3976 b=n1829 O=n2851
+.gate oai22  a=n2851 b=n2009 c=n2317 d=n2010 O=n2013
+.gate nand2  a=n1827 b=n_n3841 O=n2853
+.gate oai21  a=n1834 b=n1588_1 c=n2853 O=n2018
+.gate oai22  a=n2580 b=n2097 c=n2101 d=n2447 O=n2023
+.gate inv1   a=n_n3863 O=n2856
+.gate aoi21  a=n1833_1 b=n2856 c=preset O=n2028
+.gate aoi21  a=n1833_1 b=n1576 c=preset O=n2033
+.gate inv1   a=n2198_1 O=n2038
+.gate inv1   a=pv10_0_0_ O=n2860
+.gate nor2   a=n1794 b=preset O=n2861
+.gate inv1   a=n2861 O=n2862
+.gate oai22  a=n2862 b=n1938_1 c=n1940 d=n2860 O=n2043
+.gate oai21  a=n1834 b=n1645 c=n2196 O=n2048
+.gate nand2  a=n1827 b=n_n4299 O=n2865
+.gate oai21  a=n1834 b=n1635 c=n2865 O=n2053
+.gate aoi21  a=n1833_1 b=n1567 c=preset O=n2058
+.gate oai22  a=n1834 b=n1452 c=n1826 d=n1794 O=n2063
+.gate nand2  a=n1970 b=n1945 O=n2869
+.gate nand2  a=n2869 b=n1972 O=n2870
+.gate xor2a  a=n2870 b=n_n3841 O=n2871
+.gate aoi21  a=n2871 b=n1988_1 c=n1986 O=n2872
+.gate nand2  a=n1988_1 b=n2712 O=n2873
+.gate oai22  a=n2873 b=n2871 c=n2872 d=n2712 O=n2068
+.gate oai21  a=n1834 b=n1633_1 c=n1880 O=n2073
+.gate nand2  a=n2109 b=n2731 O=n2876
+.gate nand2  a=n2109 b=n1692 O=n2877
+.gate nand3  a=n2877 b=n2876 c=n2515 O=n2878
+.gate nand2  a=n2878 b=n_n4227 O=n2879
+.gate nand4  a=n2109 b=n_n3814 c=n2517 d=n_n3724 O=n2880
+.gate nand2  a=n2880 b=n2879 O=n2078
+.gate aoi21  a=n1833_1 b=n1330 c=preset O=n2083
+.gate nand2  a=n1859 b=n1850 O=n2883
+.gate aoi21  a=n2304 b=n1820 c=n2883 O=n2884
+.gate oai21  a=n2884 b=n1851 c=n2303 O=n2088
+.gate inv1   a=n_n3233 O=n2886
+.gate aoi21  a=n1833_1 b=n2886 c=preset O=n2093
+.gate inv1   a=n2412 O=n2888
+.gate aoi21  a=n2888 b=n2411 c=n_n4263 O=n2889
+.gate nor2   a=n2889 b=preset O=n2098
+.gate oai22  a=n1834 b=n1509 c=n1826 d=n1694 O=n2103
+.gate inv1   a=pv4_3_3_ O=n2892
+.gate oai22  a=n2107 b=n1696 c=n2105 d=n2892 O=n2108
+.gate nand2  a=n2052 b=n_n3841 O=n2894
+.gate oai21  a=n2384 b=n2010 c=n2894 O=n2113
+.gate inv1   a=n_n3441 O=n2896
+.gate aoi21  a=n1833_1 b=n2896 c=preset O=n2118
+.gate nand2  a=n1865 b=n1852 O=n2898
+.gate nand3  a=n2898 b=n2604 c=n1829 O=n2899
+.gate inv1   a=n2899 O=n2123
+.gate oai21  a=n1834 b=n1543_1 c=n2669 O=n2128
+.gate oai21  a=n1834 b=n1405 c=n2853 O=n2133
+.gate oai21  a=n1834 b=n1614 c=n2068_1 O=n2138
+.gate oai21  a=n1834 b=n1434 c=n2462 O=n2143
+.gate inv1   a=n_n3878 O=n2905
+.gate nand2  a=n2081 b=pv1_0_0_ O=n2906
+.gate oai21  a=n2083_1 b=n2905 c=n2906 O=n2148
+.gate inv1   a=n_n3931 O=n2908
+.gate inv1   a=pv2_0_0_ O=n2909
+.gate oai22  a=n2298 b=n2908 c=n2297 d=n2909 O=n2153
+.gate aoi21  a=n_n3954 b=n2250 c=n1976 O=n2911
+.gate oai21  a=n2911 b=n2262 c=n_n3845 O=n2912
+.gate nand2  a=n2912 b=n2808 O=n2913
+.gate aoi21  a=n2248_1 b=n_n3968 c=n2913 O=n2914
+.gate oai22  a=n2914 b=n2244 c=n2266 d=n2251 O=n2158
+.gate nand2  a=n2254 b=n1977 O=n2916
+.gate inv1   a=n2916 O=n2917
+.gate oai21  a=n2917 b=n2262 c=n_n3865 O=n2918
+.gate oai21  a=n2256 b=n1976 c=n2918 O=n2919
+.gate aoi21  a=n2248_1 b=n_n3922 c=n2919 O=n2920
+.gate oai22  a=n2920 b=n2244 c=n2266 d=n2637 O=n2163
+.gate oai22  a=n1834 b=n1518_1 c=n1826 d=n1924 O=n2168
+.gate nor2   a=n1983_1 b=n_n4056 O=n2923
+.gate nor3   a=n2923 b=n2641 c=preset O=n2173
+.gate aoi21  a=n1833_1 b=n1615 c=preset O=n2178
+.gate nand2  a=n2109 b=n1797 O=n2926
+.gate nand2  a=n2926 b=n2515 O=n2927
+.gate nand2  a=n2927 b=n_n3959 O=n2928
+.gate aoi22  a=n2861 b=n1867 c=n2109 d=n1869 O=n2929
+.gate nand2  a=n2929 b=n2928 O=n2183
+.gate oai22  a=n2317 b=n2097 c=n2101 d=n2472 O=n2188
+.gate nand3  a=n1863_1 b=n1860 c=n_n4080 O=n2932
+.gate nand3  a=n1867 b=n_n4299 c=n1829 O=n2933
+.gate xnor2a a=n2111 b=n1758_1 O=n2934
+.gate nand2  a=n2934 b=n2109 O=n2935
+.gate nand3  a=n2935 b=n2933 c=n2932 O=n2193
+.gate inv1   a=n_n4018 O=n2937
+.gate aoi21  a=n1833_1 b=n2937 c=preset O=n2198
+.gate inv1   a=n_n4354 O=n2939
+.gate aoi21  a=n1833_1 b=n2939 c=preset O=n2203
+.gate aoi21  a=n1833_1 b=n1618_1 c=preset O=n2208
+.gate oai21  a=n1834 b=n1516 c=n2771 O=n2213
+.gate oai21  a=n1834 b=n1419 c=n2829 O=n2218
+.gate oai22  a=n2225 b=n2044 c=n2198_1 d=n2099 O=n2223
+.gate oai21  a=n1834 b=n1374 c=n2414 O=n2228
+.gate oai21  a=n1834 b=n1476 c=n2323 O=n2233
+.gate inv1   a=n_n3087 O=n2947
+.gate aoi21  a=n1833_1 b=n2947 c=preset O=n2238
+.gate aoi21  a=n1833_1 b=n1540 c=preset O=n2243
+.gate aoi21  a=n1833_1 b=n1573_1 c=preset O=n2248
+.gate nor2   a=n1949 b=n1947 O=n2951
+.gate xor2a  a=n2951 b=n1951 O=n2952
+.gate oai22  a=n2952 b=n1987 c=n1985 d=n1948_1 O=n2253
+.gate oai21  a=n2515 b=n2731 c=n2876 O=n2258
+.gate nand3  a=n2304 b=n1858_1 c=n1844 O=n2955
+.gate nand4  a=n2955 b=n1859 c=n1850 d=n1829 O=n2263
+.gate nor2   a=pready_0_0_ b=n2594 O=n2957
+.gate oai21  a=n2957 b=n1830 c=nsr3_3 O=n2958
+.gate nand2  a=n2958 b=n1823_1 O=n2268
+.end

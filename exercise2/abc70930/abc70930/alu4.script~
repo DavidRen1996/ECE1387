@@ -1,0 +1,2 @@
+r alu4.blif; resyn2; print_stats; if -K 6; print_stats;
+make abc 2>alu.txt

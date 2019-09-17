@@ -1,0 +1,1214 @@
+________________________________________________________________________
+                       VPR - The Next Generation                        
+                     Version 0.A15.0 (Linux X86/64)                     
+            This is free open source code under MIT license.            
+________________________________________________________________________
+
+VPR FPGA Placement and Routing.
+Version: Version 7.0
+Compiled: Nov  7 2018.
+University of Toronto
+vpr@eecg.utoronto.ca
+This is free open source code under MIT license.
+
+Architecture file: k6_frac_N10_mem32K_40nm.xml
+Circuit name: diffeq1.blif
+
+Building complex block graph.
+WARNING(1): io[0].clock[0] unconnected pin in architecture.
+Loop for doall = 0, init_parse took 0 seconds.
+Loop for doall = 0 took 0 seconds.
+Loop for doall = 1, init_parse took 0.01 seconds.
+Loop for doall = 1 took 0 seconds.
+Swept away 196 nets with no fanout.
+Net is a constant generator: vcc.
+WARNING(2): logical_block #456 with output vcc has only 0 pin.
+WARNING(3): Block contains output -- may be a constant generator.
+0 unconnected blocks in input netlist.
+Removed 96 LUT buffers.
+Sweeped away 96 nodes.
+BLIF circuit stats:
+	1 LUTs of size 0
+	0 LUTs of size 1
+	64 LUTs of size 2
+	131 LUTs of size 3
+	40 LUTs of size 4
+	59 LUTs of size 5
+	190 LUTs of size 6
+	162 of type input
+	96 of type output
+	193 of type latch
+	485 of type names
+	0 of type dual_port_ram
+	0 of type single_port_ram
+	5 of type multiply
+Timing analysis: ON
+Circuit netlist file: diffeq1.net
+Circuit placement file: diffeq1.place
+Circuit routing file: diffeq1.route
+Circuit SDC file: diffeq1.sdc
+Operation: RUN_FLOW
+
+Packer: ENABLED
+Placer: ENABLED
+Router: DISABLED
+PackerOpts.allow_early_exit: FALSE
+PackerOpts.allow_unrelated_clustering: TRUE
+PackerOpts.alpha_clustering: 0.750000
+PackerOpts.aspect: 1.000000
+PackerOpts.beta_clustering: 0.900000
+PackerOpts.block_delay: 0.000000
+PackerOpts.cluster_seed_type: TIMING
+PackerOpts.connection_driven: TRUE
+PackerOpts.global_clocks: TRUE
+PackerOpts.hill_climbing_flag: FALSE
+PackerOpts.inter_cluster_net_delay: 1.000000
+PackerOpts.intra_cluster_net_delay: 0.000000
+PackerOpts.recompute_timing_after: 32767
+PackerOpts.sweep_hanging_nets_and_inputs: TRUE
+PackerOpts.timing_driven: TRUE
+
+PlacerOpts.place_freq: PLACE_ONCE
+PlacerOpts.place_algorithm: BOUNDING_BOX_PLACE
+PlacerOpts.pad_loc_type: FREE
+PlacerOpts.place_cost_exp: 1.000000
+PlaceOpts.seed: 14
+AnnealSched.type: AUTO_SCHED
+AnnealSched.inner_num: 1.000000
+
+RoutingArch.directionality: UNI_DIRECTIONAL
+RoutingArch.switch_block_type: WILTON
+RoutingArch.Fs: 3
+
+Initialize packing.
+Begin packing 'diffeq1.blif'.
+
+After removing unused inputs...
+	total blocks: 941, total nets: 1004, total inputs: 162, total outputs: 96
+Begin prepacking.
+Finish prepacking.
+Using inter-cluster delay: 1.33777e-09
+
+SDC file 'diffeq1.sdc' blank or not found.
+
+Defaulting to: constrain all 0 inputs and 0 outputs on the netlist clock.
+Optimize this clock to run as fast as possible.
+Not enough resources expand FPGA size to x = 2 y = 2.
+Complex block 0: cb.n1416, type: clb
+	.............
+Passed route at end.
+Complex block 1: cb.n1719, type: clb
+	..........................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 3 y = 3.
+Complex block 2: cb.n1406, type: clb
+	........................................
+Passed route at end.
+Complex block 3: cb.n1688, type: clb
+	...............................................
+Passed route at end.
+Complex block 4: cb.n1660, type: clb
+	.......................
+Passed route at end.
+Complex block 5: cb.n1621_1, type: clb
+	...........................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 4 y = 4.
+Complex block 6: cb.n1602_1, type: clb
+	........................
+Passed route at end.
+Complex block 7: cb.n1581_1, type: clb
+	..........................................
+Passed route at end.
+Complex block 8: cb.n1672_1, type: clb
+	........................................
+Passed route at end.
+Complex block 9: cb.n1640, type: clb
+	........................................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 5 y = 5.
+Not enough resources expand FPGA size to x = 6 y = 6.
+Complex block 10: cb.top^MULTIPLY~0[0], type: mult_36
+	
+Passed route at end.
+Complex block 11: cb.n1266, type: clb
+	................................................
+Passed route at end.
+Complex block 12: cb.n1341, type: clb
+	.........................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 7 y = 7.
+Not enough resources expand FPGA size to x = 8 y = 8.
+Complex block 13: cb.top^MULTIPLY~43[0], type: mult_36
+	
+Passed route at end.
+Not enough resources expand FPGA size to x = 9 y = 9.
+Not enough resources expand FPGA size to x = 10 y = 10.
+Not enough resources expand FPGA size to x = 11 y = 11.
+Not enough resources expand FPGA size to x = 12 y = 12.
+Complex block 14: cb.top^MULTIPLY~42[0], type: mult_36
+	
+Passed route at end.
+Complex block 15: cb.top^DXport~5, type: io
+	
+Passed route at end.
+Complex block 16: cb.top^DXport~7, type: io
+	
+Passed route at end.
+Complex block 17: cb.top^DXport~24, type: io
+	
+Passed route at end.
+Complex block 18: cb.top^DXport~29, type: io
+	
+Passed route at end.
+Complex block 19: cb.top^DXport~21, type: io
+	
+Passed route at end.
+Complex block 20: cb.top^DXport~27, type: io
+	
+Passed route at end.
+Complex block 21: cb.top^DXport~3, type: io
+	
+Passed route at end.
+Complex block 22: cb.top^DXport~18, type: io
+	
+Passed route at end.
+Complex block 23: cb.top^DXport~28, type: io
+	
+Passed route at end.
+Complex block 24: cb.top^DXport~31, type: io
+	
+Passed route at end.
+Complex block 25: cb.top^DXport~20, type: io
+	
+Passed route at end.
+Complex block 26: cb.top^DXport~30, type: io
+	
+Passed route at end.
+Complex block 27: cb.top^DXport~26, type: io
+	
+Passed route at end.
+Complex block 28: cb.top^DXport~1, type: io
+	
+Passed route at end.
+Complex block 29: cb.top^DXport~22, type: io
+	
+Passed route at end.
+Complex block 30: cb.top^DXport~19, type: io
+	
+Passed route at end.
+Complex block 31: cb.top^DXport~25, type: io
+	
+Passed route at end.
+Complex block 32: cb.top^DXport~16, type: io
+	
+Passed route at end.
+Complex block 33: cb.top^DXport~15, type: io
+	
+Passed route at end.
+Complex block 34: cb.top^DXport~13, type: io
+	
+Passed route at end.
+Complex block 35: cb.top^DXport~14, type: io
+	
+Passed route at end.
+Complex block 36: cb.top^DXport~12, type: io
+	
+Passed route at end.
+Complex block 37: cb.top^DXport~9, type: io
+	
+Passed route at end.
+Complex block 38: cb.top^DXport~4, type: io
+	
+Passed route at end.
+Complex block 39: cb.top^DXport~10, type: io
+	
+Passed route at end.
+Complex block 40: cb.top^DXport~8, type: io
+	
+Passed route at end.
+Complex block 41: cb.top^DXport~11, type: io
+	
+Passed route at end.
+Complex block 42: cb.top^DXport~6, type: io
+	
+Passed route at end.
+Complex block 43: cb.top^DXport~2, type: io
+	
+Passed route at end.
+Complex block 44: cb.top^DXport~17, type: io
+	
+Passed route at end.
+Complex block 45: cb.top^DXport~23, type: io
+	
+Passed route at end.
+Complex block 46: cb.top^DXport~0, type: io
+	
+Passed route at end.
+Complex block 47: cb.n1695, type: clb
+	........................
+Passed route at end.
+Complex block 48: cb.n1609, type: clb
+	...............................................
+Passed route at end.
+Complex block 49: cb.n1691_1, type: clb
+	..........................................
+Passed route at end.
+Not enough resources expand FPGA size to x = 13 y = 13.
+Not enough resources expand FPGA size to x = 14 y = 14.
+Complex block 50: cb.top^MULTIPLY~46[0], type: mult_36
+	
+Passed route at end.
+Complex block 51: cb.top^MULTIPLY~45[0], type: mult_36
+	
+Passed route at end.
+Complex block 52: cb.n1611, type: clb
+	.......................
+Passed route at end.
+Complex block 53: cb.n1716, type: clb
+	............................................
+Passed route at end.
+Complex block 54: cb.n1656, type: clb
+	........................................
+Passed route at end.
+Complex block 55: cb.n1671, type: clb
+	.........................................
+Passed route at end.
+Complex block 56: cb.n1696, type: clb
+	...........................................
+Passed route at end.
+Complex block 57: cb.n1741, type: clb
+	.....................................
+Passed route at end.
+Complex block 58: cb.n1601, type: clb
+	......................................
+Passed route at end.
+Complex block 59: cb.n1496, type: clb
+	.........................
+Passed route at end.
+Complex block 60: cb.n1426, type: clb
+	............
+Passed route at end.
+Complex block 61: cb.n1571, type: clb
+	.............................
+Passed route at end.
+Complex block 62: cb.n1461, type: clb
+	..............
+Passed route at end.
+Complex block 63: cb.n1581, type: clb
+	...........................................
+Passed route at end.
+Complex block 64: cb.n1662_1, type: clb
+	.............................................
+Passed route at end.
+Complex block 65: cb.n1633, type: clb
+	............................................
+Passed route at end.
+Complex block 66: cb.n1885, type: clb
+	......................
+Passed route at end.
+Complex block 67: cb.n1797, type: clb
+	...............
+Passed route at end.
+Complex block 68: cb.n1751, type: clb
+	...........................................
+Passed route at end.
+Complex block 69: cb.n1583, type: clb
+	............................................
+Passed route at end.
+Complex block 70: cb.n1256, type: clb
+	...........................................
+Passed route at end.
+Complex block 71: cb.n1056, type: clb
+	...................
+Passed route at end.
+Complex block 72: cb.n796, type: clb
+	............
+Passed route at end.
+Complex block 73: cb.top^Aport~29, type: io
+	
+Passed route at end.
+Complex block 74: cb.top^Aport~28, type: io
+	
+Passed route at end.
+Complex block 75: cb.top^Aport~31, type: io
+	
+Passed route at end.
+Complex block 76: cb.top^Aport~30, type: io
+	
+Passed route at end.
+Complex block 77: cb.top^Aport~26, type: io
+	
+Passed route at end.
+Complex block 78: cb.top^Aport~25, type: io
+	
+Passed route at end.
+Complex block 79: cb.top^Aport~27, type: io
+	
+Passed route at end.
+Complex block 80: cb.top^Aport~23, type: io
+	
+Passed route at end.
+Complex block 81: cb.top^Aport~22, type: io
+	
+Passed route at end.
+Complex block 82: cb.top^Aport~24, type: io
+	
+Passed route at end.
+Complex block 83: cb.top^Aport~21, type: io
+	
+Passed route at end.
+Complex block 84: cb.top^Aport~20, type: io
+	
+Passed route at end.
+Complex block 85: cb.top^Aport~19, type: io
+	
+Passed route at end.
+Complex block 86: cb.top^Aport~18, type: io
+	
+Passed route at end.
+Complex block 87: cb.top^Aport~2, type: io
+	
+Passed route at end.
+Complex block 88: cb.top^Aport~1, type: io
+	
+Passed route at end.
+Complex block 89: cb.top^Aport~0, type: io
+	
+Passed route at end.
+Complex block 90: cb.top^Aport~17, type: io
+	
+Passed route at end.
+Complex block 91: cb.top^Aport~16, type: io
+	
+Passed route at end.
+Complex block 92: cb.top^Aport~4, type: io
+	
+Passed route at end.
+Complex block 93: cb.top^Aport~3, type: io
+	
+Passed route at end.
+Complex block 94: cb.top^Aport~15, type: io
+	
+Passed route at end.
+Complex block 95: cb.top^Aport~14, type: io
+	
+Passed route at end.
+Complex block 96: cb.top^Aport~9, type: io
+	
+Passed route at end.
+Complex block 97: cb.top^Aport~8, type: io
+	
+Passed route at end.
+Complex block 98: cb.top^Aport~6, type: io
+	
+Passed route at end.
+Complex block 99: cb.top^Aport~5, type: io
+	
+Passed route at end.
+Complex block 100: cb.top^Aport~13, type: io
+	
+Passed route at end.
+Complex block 101: cb.top^Aport~12, type: io
+	
+Passed route at end.
+Complex block 102: cb.top^Aport~11, type: io
+	
+Passed route at end.
+Complex block 103: cb.top^Aport~10, type: io
+	
+Passed route at end.
+Complex block 104: cb.top^Aport~7, type: io
+	
+Passed route at end.
+Complex block 105: cb.top^Yinport~30, type: io
+	
+Passed route at end.
+Complex block 106: cb.top^Yinport~29, type: io
+	
+Passed route at end.
+Complex block 107: cb.top^Xinport~14, type: io
+	
+Passed route at end.
+Complex block 108: cb.top^Xinport~29, type: io
+	
+Passed route at end.
+Complex block 109: cb.top^Yinport~27, type: io
+	
+Passed route at end.
+Complex block 110: cb.top^Yinport~25, type: io
+	
+Passed route at end.
+Complex block 111: cb.top^Xinport~27, type: io
+	
+Passed route at end.
+Complex block 112: cb.top^Yinport~22, type: io
+	
+Passed route at end.
+Complex block 113: cb.top^Yinport~21, type: io
+	
+Passed route at end.
+Complex block 114: cb.top^Xinport~12, type: io
+	
+Passed route at end.
+Complex block 115: cb.top^Xinport~25, type: io
+	
+Passed route at end.
+Complex block 116: cb.top^Yinport~17, type: io
+	
+Passed route at end.
+Complex block 117: cb.top^Yinport~16, type: io
+	
+Passed route at end.
+Complex block 118: cb.top^Xinport~11, type: io
+	
+Passed route at end.
+Complex block 119: cb.top^Yinport~14, type: io
+	
+Passed route at end.
+Complex block 120: cb.top^Uinport~28, type: io
+	
+Passed route at end.
+Complex block 121: cb.top^Xinport~10, type: io
+	
+Passed route at end.
+Complex block 122: cb.top^Xinport~22, type: io
+	
+Passed route at end.
+Complex block 123: cb.top^Yinport~12, type: io
+	
+Passed route at end.
+Complex block 124: cb.top^Xinport~21, type: io
+	
+Passed route at end.
+Complex block 125: cb.top^Yinport~11, type: io
+	
+Passed route at end.
+Complex block 126: cb.top^Uinport~22, type: io
+	
+Passed route at end.
+Complex block 127: cb.top^Yinport~10, type: io
+	
+Passed route at end.
+Complex block 128: cb.top^Yinport~9, type: io
+	
+Passed route at end.
+Complex block 129: cb.top^Xinport~9, type: io
+	
+Passed route at end.
+Complex block 130: cb.top^Uinport~9, type: io
+	
+Passed route at end.
+Complex block 131: cb.top^Xinport~17, type: io
+	
+Passed route at end.
+Complex block 132: cb.top^Xinport~16, type: io
+	
+Passed route at end.
+Complex block 133: cb.top^reset, type: io
+	
+Passed route at end.
+Complex block 134: cb.top^Xinport~30, type: io
+	
+Passed route at end.
+Complex block 135: cb.top^Yinport~28, type: io
+	
+Passed route at end.
+Complex block 136: cb.top^Yinport~26, type: io
+	
+Passed route at end.
+Complex block 137: cb.top^Xinport~28, type: io
+	
+Passed route at end.
+Complex block 138: cb.top^Yinport~24, type: io
+	
+Passed route at end.
+Complex block 139: cb.top^Xinport~6, type: io
+	
+Passed route at end.
+Complex block 140: cb.top^Xinport~2, type: io
+	
+Passed route at end.
+Complex block 141: cb.top^Yinport~23, type: io
+	
+Passed route at end.
+Complex block 142: cb.top^Yinport~20, type: io
+	
+Passed route at end.
+Complex block 143: cb.top^Xinport~26, type: io
+	
+Passed route at end.
+Complex block 144: cb.top^Yinport~19, type: io
+	
+Passed route at end.
+Complex block 145: cb.top^Xinport~24, type: io
+	
+Passed route at end.
+Complex block 146: cb.top^Xinport~23, type: io
+	
+Passed route at end.
+Complex block 147: cb.top^Xinport~5, type: io
+	
+Passed route at end.
+Complex block 148: cb.top^Xinport~0, type: io
+	
+Passed route at end.
+Complex block 149: cb.top^Uinport~31, type: io
+	
+Passed route at end.
+Complex block 150: cb.top^Yinport~15, type: io
+	
+Passed route at end.
+Complex block 151: cb.top^Uinport~30, type: io
+	
+Passed route at end.
+Complex block 152: cb.top^Uinport~29, type: io
+	
+Passed route at end.
+Complex block 153: cb.top^Xinport~4, type: io
+	
+Passed route at end.
+Complex block 154: cb.top^Uinport~26, type: io
+	
+Passed route at end.
+Complex block 155: cb.top^Uinport~25, type: io
+	
+Passed route at end.
+Complex block 156: cb.top^Uinport~24, type: io
+	
+Passed route at end.
+Complex block 157: cb.top^Uinport~23, type: io
+	
+Passed route at end.
+Complex block 158: cb.top^Uinport~21, type: io
+	
+Passed route at end.
+Complex block 159: cb.top^Uinport~20, type: io
+	
+Passed route at end.
+Complex block 160: cb.top^Uinport~19, type: io
+	
+Passed route at end.
+Complex block 161: cb.top^Xinport~20, type: io
+	
+Passed route at end.
+Complex block 162: cb.top^Yinport~8, type: io
+	
+Passed route at end.
+Complex block 163: cb.top^Yinport~7, type: io
+	
+Passed route at end.
+Complex block 164: cb.top^Uinport~17, type: io
+	
+Passed route at end.
+Complex block 165: cb.top^Uinport~16, type: io
+	
+Passed route at end.
+Complex block 166: cb.top^Xinport~19, type: io
+	
+Passed route at end.
+Complex block 167: cb.top^Uinport~15, type: io
+	
+Passed route at end.
+Complex block 168: cb.top^Uinport~14, type: io
+	
+Passed route at end.
+Complex block 169: cb.top^Yinport~6, type: io
+	
+Passed route at end.
+Complex block 170: cb.top^Xinport~8, type: io
+	
+Passed route at end.
+Complex block 171: cb.top^Uinport~12, type: io
+	
+Passed route at end.
+Complex block 172: cb.top^Uinport~11, type: io
+	
+Passed route at end.
+Complex block 173: cb.top^Yinport~5, type: io
+	
+Passed route at end.
+Complex block 174: cb.top^Yinport~4, type: io
+	
+Passed route at end.
+Complex block 175: cb.top^Xinport~3, type: io
+	
+Passed route at end.
+Complex block 176: cb.top^Uinport~7, type: io
+	
+Passed route at end.
+Complex block 177: cb.top^Yinport~3, type: io
+	
+Passed route at end.
+Complex block 178: cb.top^Uinport~6, type: io
+	
+Passed route at end.
+Complex block 179: cb.top^Uinport~5, type: io
+	
+Passed route at end.
+Complex block 180: cb.top^Yinport~2, type: io
+	
+Passed route at end.
+Complex block 181: cb.top^Uinport~4, type: io
+	
+Passed route at end.
+Complex block 182: cb.top^Uinport~3, type: io
+	
+Passed route at end.
+Complex block 183: cb.top^Yinport~1, type: io
+	
+Passed route at end.
+Complex block 184: cb.top^Uinport~2, type: io
+	
+Passed route at end.
+Complex block 185: cb.top^Uinport~1, type: io
+	
+Passed route at end.
+Complex block 186: cb.top^Yinport~0, type: io
+	
+Passed route at end.
+Complex block 187: cb.top^Uinport~0, type: io
+	
+Passed route at end.
+Complex block 188: cb.top^Xinport~1, type: io
+	
+Passed route at end.
+Complex block 189: cb.top^Xinport~15, type: io
+	
+Passed route at end.
+Complex block 190: cb.top^Xinport~7, type: io
+	
+Passed route at end.
+Complex block 191: cb.top^Yinport~18, type: io
+	
+Passed route at end.
+Complex block 192: cb.top^Uinport~27, type: io
+	
+Passed route at end.
+Complex block 193: cb.top^Xinport~18, type: io
+	
+Passed route at end.
+Complex block 194: cb.top^Xinport~13, type: io
+	
+Passed route at end.
+Complex block 195: cb.top^Yinport~13, type: io
+	
+Passed route at end.
+Complex block 196: cb.top^Uinport~18, type: io
+	
+Passed route at end.
+Complex block 197: cb.top^Uinport~13, type: io
+	
+Passed route at end.
+Complex block 198: cb.top^Uinport~10, type: io
+	
+Passed route at end.
+Complex block 199: cb.top^Uinport~8, type: io
+	
+Passed route at end.
+Complex block 200: cb.top^Yinport~31, type: io
+	
+Passed route at end.
+Complex block 201: cb.top^Xinport~31, type: io
+	
+Passed route at end.
+Complex block 202: cb.out:top^Uoutport~28, type: io
+	
+Passed route at end.
+Complex block 203: cb.out:top^Uoutport~27, type: io
+	
+Passed route at end.
+Complex block 204: cb.out:top^Uoutport~26, type: io
+	
+Passed route at end.
+Complex block 205: cb.out:top^Uoutport~25, type: io
+	
+Passed route at end.
+Complex block 206: cb.out:top^Uoutport~24, type: io
+	
+Passed route at end.
+Complex block 207: cb.out:top^Uoutport~23, type: io
+	
+Passed route at end.
+Complex block 208: cb.out:top^Uoutport~22, type: io
+	
+Passed route at end.
+Complex block 209: cb.out:top^Uoutport~21, type: io
+	
+Passed route at end.
+Complex block 210: cb.out:top^Uoutport~20, type: io
+	
+Passed route at end.
+Complex block 211: cb.out:top^Uoutport~19, type: io
+	
+Passed route at end.
+Complex block 212: cb.out:top^Uoutport~18, type: io
+	
+Passed route at end.
+Complex block 213: cb.out:top^Uoutport~17, type: io
+	
+Passed route at end.
+Complex block 214: cb.out:top^Uoutport~16, type: io
+	
+Passed route at end.
+Complex block 215: cb.out:top^Uoutport~15, type: io
+	
+Passed route at end.
+Complex block 216: cb.out:top^Uoutport~14, type: io
+	
+Passed route at end.
+Complex block 217: cb.out:top^Uoutport~13, type: io
+	
+Passed route at end.
+Complex block 218: cb.out:top^Uoutport~12, type: io
+	
+Passed route at end.
+Complex block 219: cb.out:top^Uoutport~11, type: io
+	
+Passed route at end.
+Complex block 220: cb.out:top^Uoutport~10, type: io
+	
+Passed route at end.
+Complex block 221: cb.out:top^Uoutport~9, type: io
+	
+Passed route at end.
+Complex block 222: cb.out:top^Uoutport~8, type: io
+	
+Passed route at end.
+Complex block 223: cb.out:top^Uoutport~7, type: io
+	
+Passed route at end.
+Complex block 224: cb.out:top^Uoutport~6, type: io
+	
+Passed route at end.
+Complex block 225: cb.out:top^Uoutport~5, type: io
+	
+Passed route at end.
+Complex block 226: cb.out:top^Uoutport~4, type: io
+	
+Passed route at end.
+Complex block 227: cb.out:top^Uoutport~3, type: io
+	
+Passed route at end.
+Complex block 228: cb.out:top^Uoutport~2, type: io
+	
+Passed route at end.
+Complex block 229: cb.out:top^Uoutport~1, type: io
+	
+Passed route at end.
+Complex block 230: cb.out:top^Youtport~31, type: io
+	
+Passed route at end.
+Complex block 231: cb.out:top^Uoutport~0, type: io
+	
+Passed route at end.
+Complex block 232: cb.out:top^Youtport~30, type: io
+	
+Passed route at end.
+Complex block 233: cb.out:top^Youtport~29, type: io
+	
+Passed route at end.
+Complex block 234: cb.out:top^Xoutport~29, type: io
+	
+Passed route at end.
+Complex block 235: cb.out:top^Youtport~28, type: io
+	
+Passed route at end.
+Complex block 236: cb.out:top^Youtport~27, type: io
+	
+Passed route at end.
+Complex block 237: cb.out:top^Youtport~26, type: io
+	
+Passed route at end.
+Complex block 238: cb.out:top^Youtport~25, type: io
+	
+Passed route at end.
+Complex block 239: cb.out:top^Youtport~24, type: io
+	
+Passed route at end.
+Complex block 240: cb.out:top^Youtport~23, type: io
+	
+Passed route at end.
+Complex block 241: cb.out:top^Youtport~22, type: io
+	
+Passed route at end.
+Complex block 242: cb.out:top^Youtport~21, type: io
+	
+Passed route at end.
+Complex block 243: cb.out:top^Youtport~20, type: io
+	
+Passed route at end.
+Complex block 244: cb.out:top^Youtport~19, type: io
+	
+Passed route at end.
+Complex block 245: cb.out:top^Youtport~18, type: io
+	
+Passed route at end.
+Complex block 246: cb.out:top^Youtport~17, type: io
+	
+Passed route at end.
+Complex block 247: cb.out:top^Youtport~16, type: io
+	
+Passed route at end.
+Complex block 248: cb.out:top^Youtport~15, type: io
+	
+Passed route at end.
+Complex block 249: cb.out:top^Youtport~14, type: io
+	
+Passed route at end.
+Complex block 250: cb.out:top^Youtport~13, type: io
+	
+Passed route at end.
+Complex block 251: cb.out:top^Youtport~12, type: io
+	
+Passed route at end.
+Complex block 252: cb.out:top^Youtport~11, type: io
+	
+Passed route at end.
+Complex block 253: cb.out:top^Youtport~10, type: io
+	
+Passed route at end.
+Complex block 254: cb.out:top^Youtport~9, type: io
+	
+Passed route at end.
+Complex block 255: cb.out:top^Youtport~8, type: io
+	
+Passed route at end.
+Complex block 256: cb.out:top^Youtport~7, type: io
+	
+Passed route at end.
+Complex block 257: cb.out:top^Youtport~6, type: io
+	
+Passed route at end.
+Complex block 258: cb.out:top^Youtport~5, type: io
+	
+Passed route at end.
+Complex block 259: cb.out:top^Youtport~4, type: io
+	
+Passed route at end.
+Complex block 260: cb.out:top^Youtport~3, type: io
+	
+Passed route at end.
+Complex block 261: cb.out:top^Youtport~2, type: io
+	
+Passed route at end.
+Complex block 262: cb.out:top^Youtport~1, type: io
+	
+Passed route at end.
+Complex block 263: cb.out:top^Youtport~0, type: io
+	
+Passed route at end.
+Complex block 264: cb.out:top^Xoutport~31, type: io
+	
+Passed route at end.
+Complex block 265: cb.out:top^Xoutport~30, type: io
+	
+Passed route at end.
+Complex block 266: cb.out:top^Xoutport~28, type: io
+	
+Passed route at end.
+Complex block 267: cb.out:top^Xoutport~27, type: io
+	
+Passed route at end.
+Complex block 268: cb.out:top^Xoutport~26, type: io
+	
+Passed route at end.
+Complex block 269: cb.out:top^Xoutport~25, type: io
+	
+Passed route at end.
+Complex block 270: cb.out:top^Xoutport~24, type: io
+	
+Passed route at end.
+Complex block 271: cb.out:top^Xoutport~23, type: io
+	
+Passed route at end.
+Complex block 272: cb.out:top^Xoutport~22, type: io
+	
+Passed route at end.
+Complex block 273: cb.out:top^Xoutport~21, type: io
+	
+Passed route at end.
+Complex block 274: cb.out:top^Xoutport~20, type: io
+	
+Passed route at end.
+Complex block 275: cb.out:top^Xoutport~19, type: io
+	
+Passed route at end.
+Complex block 276: cb.out:top^Xoutport~18, type: io
+	
+Passed route at end.
+Complex block 277: cb.out:top^Xoutport~17, type: io
+	
+Passed route at end.
+Complex block 278: cb.out:top^Xoutport~16, type: io
+	
+Passed route at end.
+Complex block 279: cb.out:top^Xoutport~15, type: io
+	
+Passed route at end.
+Complex block 280: cb.out:top^Xoutport~14, type: io
+	
+Passed route at end.
+Complex block 281: cb.out:top^Xoutport~13, type: io
+	
+Passed route at end.
+Complex block 282: cb.out:top^Xoutport~12, type: io
+	
+Passed route at end.
+Complex block 283: cb.out:top^Xoutport~11, type: io
+	
+Passed route at end.
+Complex block 284: cb.out:top^Xoutport~10, type: io
+	
+Passed route at end.
+Complex block 285: cb.out:top^Xoutport~9, type: io
+	
+Passed route at end.
+Complex block 286: cb.out:top^Xoutport~8, type: io
+	
+Passed route at end.
+Complex block 287: cb.out:top^Xoutport~7, type: io
+	
+Passed route at end.
+Complex block 288: cb.out:top^Xoutport~6, type: io
+	
+Passed route at end.
+Complex block 289: cb.out:top^Xoutport~5, type: io
+	
+Passed route at end.
+Complex block 290: cb.out:top^Xoutport~4, type: io
+	
+Passed route at end.
+Complex block 291: cb.out:top^Xoutport~3, type: io
+	
+Passed route at end.
+Complex block 292: cb.out:top^Xoutport~2, type: io
+	
+Passed route at end.
+Complex block 293: cb.out:top^Xoutport~1, type: io
+	
+Passed route at end.
+Complex block 294: cb.out:top^Uoutport~31, type: io
+	
+Passed route at end.
+Complex block 295: cb.out:top^Uoutport~30, type: io
+	
+Passed route at end.
+Complex block 296: cb.out:top^Uoutport~29, type: io
+	
+Passed route at end.
+Complex block 297: cb.out:top^Xoutport~0, type: io
+	
+Passed route at end.
+Complex block 298: cb.top^clk, type: io
+	
+Passed route at end.
+	<EMPTY>: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+	io: # blocks: 258, average # input + clock pins used: 0.372093, average # output pins used: 0.627907
+	clb: # blocks: 36, average # input + clock pins used: 26.25, average # output pins used: 10.8611
+	mult_36: # blocks: 5, average # input + clock pins used: 52.8, average # output pins used: 32.8
+	memory: # blocks: 0, average # input + clock pins used: 0, average # output pins used: 0
+Absorbed logical nets 287 out of 1004 nets, 717 nets not absorbed.
+
+Netlist conversion complete.
+
+Packing took 0.4 seconds.
+Packing completed.
+Begin parsing packed FPGA netlist file.
+Finished parsing packed FPGA netlist file.
+Netlist generated from file 'diffeq1.net'.
+vcc is a constant generator.
+
+Netlist num_nets: 717
+Netlist num_blocks: 299
+Netlist <EMPTY> blocks: 0.
+Netlist clb blocks: 36.
+Netlist mult_36 blocks: 5.
+Netlist memory blocks: 0.
+Netlist inputs pins: 162
+Netlist output pins: 96
+
+Auto-sizing FPGA at x = 17 y = 17
+Auto-sizing FPGA at x = 9 y = 9
+Auto-sizing FPGA at x = 13 y = 13
+Auto-sizing FPGA at x = 15 y = 15
+Auto-sizing FPGA at x = 14 y = 14
+Auto-sizing FPGA at x = 13 y = 13
+FPGA auto-sized to x = 14 y = 14
+The circuit will be mapped into a 14 x 14 array of clbs.
+
+Resource usage...
+	Netlist      0	blocks of type: <EMPTY>
+	Architecture 12	blocks of type: <EMPTY>
+	Netlist      258	blocks of type: io
+	Architecture 448	blocks of type: io
+	Netlist      36	blocks of type: clb
+	Architecture 140	blocks of type: clb
+	Netlist      5	blocks of type: mult_36
+	Architecture 6	blocks of type: mult_36
+	Netlist      0	blocks of type: memory
+	Architecture 4	blocks of type: memory
+
+Initial placement cost: 102.065 bb_cost: 102.065 td_cost: 0 delay_cost: 0
+
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+        T      Cost  Av BB Cost  Av TD Cost  Av Tot Del  P to P Del    d_max  Ac Rate Std Dev R limit     Exp Tot Moves   Alpha
+--------- --------- ----------- ----------- ----------- ----------- -------- -------- ------- ------- ------- --------- -------
+ 35.39272    105.52     105.518           0           0           0  34.0656   0.9980  3.4444 15.0000  0.0000      1998  0.5000
+ 17.69636    104.08     104.077           0           0           0  34.0656   0.9960  2.5443 15.0000  0.0000      3996  0.5000
+  8.84818    105.43     105.434           0           0           0  34.0656   0.9895  2.6501 15.0000  0.0000      5994  0.5000
+  4.42409    103.45     103.447           0           0           0  34.0656   0.9765  4.0222 15.0000  0.0000      7992  0.5000
+  2.21205    101.68     101.677           0           0           0  34.0656   0.9630  2.8407 15.0000  0.0000      9990  0.5000
+  1.10602     96.85     96.8495           0           0           0  34.0656   0.9264  2.5296 15.0000  0.0000     11988  0.9000
+  0.99542    95.849     95.8489           0           0           0  34.0656   0.9359  2.8647 15.0000  0.0000     13986  0.9000
+  0.89588    93.792     93.7915           0           0           0  34.0656   0.9334  2.0989 15.0000  0.0000     15984  0.9000
+  0.80629    94.768     94.7684           0           0           0  34.0656   0.9254  1.8970 15.0000  0.0000     17982  0.9000
+  0.72566     92.33     92.3299           0           0           0  34.0656   0.9149  2.2537 15.0000  0.0000     19980  0.9000
+  0.65310    90.981     90.9814           0           0           0  34.0656   0.9004  1.3921 15.0000  0.0000     21978  0.9000
+  0.58779    91.491     91.4913           0           0           0  34.0656   0.8874  1.6276 15.0000  0.0000     23976  0.9000
+  0.52901    89.735     89.7347           0           0           0  34.0656   0.8904  1.1520 15.0000  0.0000     25974  0.9000
+  0.47611    86.398     86.3981           0           0           0  34.0656   0.8764  1.5125 15.0000  0.0000     27972  0.9000
+  0.42850    84.765     84.7648           0           0           0  34.0656   0.8569  0.8201 15.0000  0.0000     29970  0.9000
+  0.38565    84.624     84.6237           0           0           0  34.0656   0.8478  0.9376 15.0000  0.0000     31968  0.9000
+  0.34708    83.864     83.8641           0           0           0  34.0656   0.8458  1.5523 15.0000  0.0000     33966  0.9000
+  0.31237    81.216     81.2164           0           0           0  34.0656   0.8218  0.9437 15.0000  0.0000     35964  0.9000
+  0.28114    82.254     82.2542           0           0           0  34.0656   0.8233  0.9218 15.0000  0.0000     37962  0.9000
+  0.25302    81.323     81.3225           0           0           0  34.0656   0.8098  0.6963 15.0000  0.0000     39960  0.9000
+  0.22772    79.262     79.2621           0           0           0  34.0656   0.8188  1.0313 15.0000  0.0000     41958  0.9000
+  0.20495    79.183     79.1833           0           0           0  34.0656   0.8148  0.7146 15.0000  0.0000     43956  0.9000
+  0.18445    78.164     78.1642           0           0           0  34.0656   0.7938  1.3388 15.0000  0.0000     45954  0.9500
+  0.17523    75.298      75.298           0           0           0  34.0656   0.7788  0.7631 15.0000  0.0000     47952  0.9500
+  0.16647    74.566     74.5663           0           0           0  34.0656   0.7758  0.6838 15.0000  0.0000     49950  0.9500
+  0.15815    74.892     74.8918           0           0           0  34.0656   0.7578  0.3894 15.0000  0.0000     51948  0.9500
+  0.15024    75.061      75.061           0           0           0  34.0656   0.7668  0.6517 15.0000  0.0000     53946  0.9500
+  0.14273    73.329     73.3287           0           0           0  34.0656   0.7472  0.3328 15.0000  0.0000     55944  0.9500
+  0.13559    74.006     74.0056           0           0           0  34.0656   0.7347  0.5490 15.0000  0.0000     57942  0.9500
+  0.12881    73.378     73.3779           0           0           0  34.0656   0.7528  0.3666 15.0000  0.0000     59940  0.9500
+  0.12237     73.47     73.4697           0           0           0  34.0656   0.7603  0.3820 15.0000  0.0000     61938  0.9500
+  0.11625    73.335      73.335           0           0           0  34.0656   0.7312  0.4638 15.0000  0.0000     63936  0.9500
+  0.11044    72.399     72.3992           0           0           0  34.0656   0.7322  0.5928 15.0000  0.0000     65934  0.9500
+  0.10492    70.248     70.2481           0           0           0  34.0656   0.6922  0.3063 15.0000  0.0000     67932  0.9500
+  0.09967    70.062     70.0618           0           0           0  34.0656   0.7067  0.5139 15.0000  0.0000     69930  0.9500
+  0.09469    69.921     69.9208           0           0           0  34.0656   0.6897  0.4991 15.0000  0.0000     71928  0.9500
+  0.08995    70.491     70.4907           0           0           0  34.0656   0.7052  0.3658 15.0000  0.0000     73926  0.9500
+  0.08546    69.807     69.8069           0           0           0  34.0656   0.6802  0.3696 15.0000  0.0000     75924  0.9500
+  0.08118    69.405     69.4053           0           0           0  34.0656   0.6632  0.3978 15.0000  0.0000     77922  0.9500
+  0.07712    69.117      69.117           0           0           0  34.0656   0.6722  0.2593 15.0000  0.0000     79920  0.9500
+  0.07327     68.43     68.4296           0           0           0  34.0656   0.6522  0.5031 15.0000  0.0000     81918  0.9500
+  0.06960    68.224     68.2242           0           0           0  34.0656   0.6592  0.6504 15.0000  0.0000     83916  0.9500
+  0.06612    67.821     67.8212           0           0           0  34.0656   0.6201  0.3865 15.0000  0.0000     85914  0.9500
+  0.06282    67.567     67.5672           0           0           0  34.0656   0.6106  0.2547 15.0000  0.0000     87912  0.9500
+  0.05968    67.799     67.7988           0           0           0  34.0656   0.6226  0.3255 15.0000  0.0000     89910  0.9500
+  0.05669     67.34     67.3395           0           0           0  34.0656   0.5776  0.3725 15.0000  0.0000     91908  0.9500
+  0.05386    67.349     67.3485           0           0           0  34.0656   0.5806  0.3354 15.0000  0.0000     93906  0.9500
+  0.05117    66.572     66.5721           0           0           0  34.0656   0.5606  0.3027 15.0000  0.0000     95904  0.9500
+  0.04861    65.633     65.6328           0           0           0  34.0656   0.5195  0.4177 15.0000  0.0000     97902  0.9500
+  0.04618    65.624     65.6236           0           0           0  34.0656   0.5350  0.5351 15.0000  0.0000     99900  0.9500
+  0.04387    65.605     65.6055           0           0           0  34.0656   0.5085  0.3408 15.0000  0.0000    101898  0.9500
+  0.04167    65.199     65.1985           0           0           0  34.0656   0.4725  0.4407 15.0000  0.0000    103896  0.9500
+  0.03959    65.401     65.4005           0           0           0  34.0656   0.4815  0.1994 15.0000  0.0000    105894  0.9500
+  0.03761    65.233     65.2329           0           0           0  34.0656   0.4515  0.2645 15.0000  0.0000    107892  0.9500
+  0.03573    64.006     64.0059           0           0           0  34.0656   0.4565  0.4539 15.0000  0.0000    109890  0.9500
+  0.03394    64.008     64.0084           0           0           0  34.0656   0.4199  0.2141 15.0000  0.0000    111888  0.9500
+  0.03225    63.582     63.5816           0           0           0  34.0656   0.4575  0.2424 14.6988  0.0000    113886  0.9500
+  0.03063    63.035     63.0355           0           0           0  34.0656   0.4284  0.1859 14.9554  0.0000    115884  0.9500
+  0.02910    62.896     62.8956           0           0           0  34.0656   0.4179  0.1939 14.7823  0.0000    117882  0.9500
+  0.02765    62.878     62.8775           0           0           0  34.0656   0.4209  0.2224 14.4559  0.0000    119880  0.9500
+  0.02627    62.376     62.3758           0           0           0  34.0656   0.3819  0.1965 14.1801  0.0000    121878  0.9500
+  0.02495    62.056     62.0564           0           0           0  34.0656   0.3934  0.2013 13.3560  0.0000    123876  0.9500
+  0.02370    61.686     61.6859           0           0           0  34.0656   0.3879  0.4249 12.7335  0.0000    125874  0.9500
+  0.02252    61.374     61.3738           0           0           0  34.0656   0.3994  0.2620 12.0699  0.0000    127872  0.9500
+  0.02139    60.719     60.7186           0           0           0  34.0656   0.3904  0.1075 11.5799  0.0000    129870  0.9500
+  0.02032    60.766     60.7659           0           0           0  34.0656   0.3754  0.2073 11.0054  0.0000    131868  0.9500
+  0.01931    60.368     60.3678           0           0           0  34.0656   0.3769  0.1180 10.2942  0.0000    133866  0.9500
+  0.01834    60.169     60.1686           0           0           0  34.0656   0.3839  0.2181  9.6444  0.0000    135864  0.9500
+  0.01742    59.796     59.7962           0           0           0  34.0656   0.3634  0.1130  9.1032  0.0000    137862  0.9500
+  0.01655    60.018      60.018           0           0           0  34.0656   0.4044  0.2041  8.4056  0.0000    139860  0.9500
+  0.01573    59.342     59.3415           0           0           0  34.0656   0.3604  0.1150  8.1064  0.0000    141858  0.9500
+  0.01494    59.275     59.2752           0           0           0  34.0656   0.4044  0.1873  7.4608  0.0000    143856  0.9500
+  0.01419    58.604     58.6036           0           0           0  34.0656   0.3609  0.2270  7.1952  0.0000    145854  0.9500
+  0.01348    58.249     58.2489           0           0           0  34.0656   0.3824  0.0759  6.6258  0.0000    147852  0.9500
+  0.01281    58.314     58.3138           0           0           0  34.0656   0.3819  0.0742  6.2440  0.0000    149850  0.9500
+  0.01217    58.453     58.4531           0           0           0  34.0656   0.4069  0.1584  5.8811  0.0000    151848  0.9500
+  0.01156     58.43     58.4298           0           0           0  34.0656   0.4164  0.0609  5.6865  0.0000    153846  0.9500
+  0.01098    58.079     58.0786           0           0           0  34.0656   0.4024  0.1939  5.5524  0.0000    155844  0.9500
+  0.01043    57.748     57.7479           0           0           0  34.0656   0.3734  0.0661  5.3436  0.0000    157842  0.9500
+  0.00991    57.564     57.5636           0           0           0  34.0656   0.4054  0.1049  4.9876  0.0000    159840  0.9500
+  0.00942     57.41     57.4101           0           0           0  34.0656   0.3974  0.0944  4.8151  0.0000    161838  0.9500
+  0.00894    57.376     57.3763           0           0           0  34.0656   0.3709  0.0637  4.6099  0.0000    163836  0.9500
+  0.00850    57.104     57.1041           0           0           0  34.0656   0.3478  0.0895  4.2912  0.0000    165834  0.9500
+  0.00807    56.934     56.9337           0           0           0  34.0656   0.3679  0.0985  3.8958  0.0000    167832  0.9500
+  0.00767    56.731     56.7308           0           0           0  34.0656   0.3614  0.0751  3.6148  0.0000    169830  0.9500
+  0.00729    56.822     56.8218           0           0           0  34.0656   0.3594  0.0649  3.3305  0.0000    171828  0.9500
+  0.00692    56.665     56.6651           0           0           0  34.0656   0.3504  0.0829  3.0619  0.0000    173826  0.9500
+  0.00658    56.421     56.4213           0           0           0  34.0656   0.4019  0.0568  2.7874  0.0000    175824  0.9500
+  0.00625    56.364     56.3635           0           0           0  34.0656   0.3924  0.0624  2.6813  0.0000    177822  0.9500
+  0.00593    56.306     56.3063           0           0           0  34.0656   0.3879  0.0538  2.5536  0.0000    179820  0.9500
+  0.00564    56.187     56.1873           0           0           0  34.0656   0.3594  0.0428  2.4205  0.0000    181818  0.9500
+  0.00536    56.078     56.0779           0           0           0  34.0656   0.3674  0.0912  2.2253  0.0000    183816  0.9500
+  0.00509    55.857     55.8566           0           0           0  34.0656   0.3383  0.0640  2.0637  0.0000    185814  0.9500
+  0.00483    55.738     55.7375           0           0           0  34.0656   0.4224  0.0355  1.8539  0.0000    187812  0.9500
+  0.00459    55.777     55.7771           0           0           0  34.0656   0.4149  0.0521  1.8213  0.0000    189810  0.9500
+  0.00436    55.818     55.8175           0           0           0  34.0656   0.4339  0.0182  1.7756  0.0000    191808  0.9500
+  0.00414    55.646     55.6455           0           0           0  34.0656   0.4344  0.0673  1.7649  0.0000    193806  0.9500
+  0.00394      55.6     55.6004           0           0           0  34.0656   0.4149  0.0338  1.7550  0.0000    195804  0.9500
+  0.00374     55.56     55.5599           0           0           0  34.0656   0.4069  0.0317  1.7110  0.0000    197802  0.9500
+  0.00355    55.557     55.5571           0           0           0  34.0656   0.3954  0.0181  1.6544  0.0000    199800  0.9500
+  0.00338    55.532     55.5323           0           0           0  34.0656   0.3894  0.0213  1.5806  0.0000    201798  0.9500
+  0.00321    55.593     55.5929           0           0           0  34.0656   0.3959  0.0269  1.5006  0.0000    203796  0.9500
+  0.00305     55.56     55.5603           0           0           0  34.0656   0.3694  0.0321  1.4344  0.0000    205794  0.9500
+  0.00289    55.479     55.4792           0           0           0  34.0656   0.3904  0.0259  1.3331  0.0000    207792  0.9500
+  0.00275    55.466     55.4662           0           0           0  34.0656   0.3799  0.0211  1.2670  0.0000    209790  0.9500
+  0.00261    55.459     55.4586           0           0           0  34.0656   0.3684  0.0104  1.1908  0.0000    211788  0.9500
+  0.00248    55.459     55.4589           0           0           0  34.0656   0.3859  0.0093  1.1055  0.0000    213786  0.9500
+  0.00236     55.47     55.4705           0           0           0  34.0656   0.3799  0.0122  1.0457  0.0000    215784  0.9500
+  0.00224    55.473     55.4732           0           0           0  34.0656   0.3754  0.0134  1.0000  0.0000    217782  0.9500
+  0.00213    55.418     55.4179           0           0           0  34.0656   0.3809  0.0151  1.0000  0.0000    219780  0.9500
+  0.00202      55.4     55.3996           0           0           0  34.0656   0.3569  0.0050  1.0000  0.0000    221778  0.9500
+  0.00192      55.4     55.4001           0           0           0  34.0656   0.3504  0.0061  1.0000  0.0000    223776  0.9500
+  0.00182    55.397     55.3974           0           0           0  34.0656   0.3579  0.0022  1.0000  0.0000    225774  0.9500
+  0.00173    55.393     55.3932           0           0           0  34.0656   0.3544  0.0041  1.0000  0.0000    227772  0.9500
+  0.00165    55.388     55.3875           0           0           0  34.0656   0.3514  0.0042  1.0000  0.0000    229770  0.9500
+  0.00156    55.389     55.3891           0           0           0  34.0656   0.3599  0.0068  1.0000  0.0000    231768  0.9500
+  0.00149    55.393     55.3933           0           0           0  34.0656   0.3423  0.0077  1.0000  0.0000    233766  0.9500
+  0.00141    55.386      55.386           0           0           0  34.0656   0.3273  0.0053  1.0000  0.0000    235764  0.9500
+  0.00134    55.386     55.3863           0           0           0  34.0656   0.3423  0.0000  1.0000  0.0000    237762  0.9500
+  0.00127    55.387     55.3869           0           0           0  34.0656   0.3328  0.0000  1.0000  0.0000    239760  0.9500
+  0.00121    55.385     55.3846           0           0           0  34.0656   0.3468  0.0000  1.0000  0.0000    241758  0.9500
+  0.00115    55.388     55.3885           0           0           0  34.0656   0.3463  0.0052  1.0000  0.0000    243756  0.9500
+  0.00109    55.393      55.393           0           0           0  34.0656   0.3438  0.0024  1.0000  0.0000    245754  0.9500
+  0.00104    55.386     55.3855           0           0           0  34.0656   0.3258  0.0000  1.0000  0.0000    247752  0.9500
+  0.00099    55.384     55.3836           0           0           0  34.0656   0.3664  0.0000  1.0000  0.0000    249750  0.9500
+  0.00094    55.385     55.3853           0           0           0  34.0656   0.3383  0.0000  1.0000  0.0000    251748  0.9500
+  0.00089    55.383     55.3826           0           0           0  34.0656   0.3283  0.0000  1.0000  0.0000    253746  0.9500
+  0.00085    55.383     55.3825           0           0           0  34.0656   0.3584  0.0000  1.0000  0.0000    255744  0.9500
+  0.00080    55.384      55.384           0           0           0  34.0656   0.3574  0.0000  1.0000  0.0000    257742  0.9500
+  0.00076    55.382     55.3823           0           0           0  34.0656   0.3258  0.0026  1.0000  0.0000    259740  0.9500
+  0.00072    55.382     55.3818           0           0           0  34.0656   0.3358  0.0000  1.0000  0.0000    261738  0.9500
+  0.00069    55.383     55.3831           0           0           0  34.0656   0.3248  0.0031  1.0000  0.0000    263736  0.9500
+  0.00065    55.383     55.3828           0           0           0  34.0656   0.3268  0.0046  1.0000  0.0000    265734  0.9500
+  0.00062    55.382     55.3822           0           0           0  34.0656   0.3388  0.0000  1.0000  0.0000    267732  0.9500
+  0.00059    55.381     55.3814           0           0           0  34.0656   0.3263  0.0036  1.0000  0.0000    269730  0.9500
+  0.00056    55.381     55.3813           0           0           0  34.0656   0.3273  0.0000  1.0000  0.0000    271728  0.9500
+  0.00053    55.382     55.3816           0           0           0  34.0656   0.3253  0.0000  1.0000  0.0000    273726  0.9500
+  0.00051    55.381     55.3812           0           0           0  34.0656   0.3268  0.0042  1.0000  0.0000    275724  0.9500
+  0.00048     55.38     55.3798           0           0           0  34.0656   0.3188  0.0022  1.0000  0.0000    277722  0.9500
+  0.00046     55.38     55.3802           0           0           0  34.0656   0.3228  0.0014  1.0000  0.0000    279720  0.9500
+  0.00043    55.381     55.3813           0           0           0  34.0656   0.3263  0.0000  1.0000  0.0000    281718  0.9500
+  0.00041     55.38     55.3798           0           0           0  34.0656   0.3288  0.0000  1.0000  0.0000    283716  0.9500
+  0.00039     55.38     55.3805           0           0           0  34.0656   0.3328  0.0000  1.0000  0.0000    285714  0.9500
+  0.00000     55.38     55.3797           0           0           0            0.1792  0.0000  1.0000  0.0000    287712
+
+BB estimate of min-dist (placement) wirelength: 5538
+bb_cost recomputed from scratch: 55.3797
+
+Completed placement consistency check successfully.
+
+Swaps called: 288011
+Placement cost: 55.3797, bb_cost: 55.3797, td_cost: 0, delay_cost: 0
+Placement total # of swap attempts: 288011
+	Swap reject rate: 0
+	Swap accept rate: 0
+	Swap abort rate: 0
+Placement took 0.2 seconds.
+The entire flow of VPR took 0.69 seconds.

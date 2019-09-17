@@ -1,0 +1,7 @@
+diffeq1.blif 0.1
+Final critical path: 22.8238 ns
+diffeq1.blif 0.5
+Final critical path: 22.4823 ns
+diffeq1.blif 1
+diffeq1.blif 1.5
+Final critical path: 22.5199 ns

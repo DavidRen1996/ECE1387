@@ -1,0 +1,24 @@
+for present in 0.1 0.5 1 1.5
+do
+	echo "diffeq1.blif initial_pres_fac $present" >> B2result.txt
+	./vpr k6_frac_N10_mem32K_40nm.xml diffeq1.blif --route_chan_width 56 --initial_pres_fac $present --nodisp
+	grep "Final critical path" vpr_stdout.log >> B2result.txt
+done
+for present in 0.1 0.5 1 1.5
+do
+	echo "sha.blif initial_pres_fac $present" >> B2result.txt
+	./vpr k6_frac_N10_mem32K_40nm.xml sha.blif --route_chan_width 54 --initial_pres_fac $present --nodisp
+	grep "Final critical path" vpr_stdout.log >> B2result.txt
+done
+for present in 0.1 0.5 1 1.5
+do
+	echo "raygentop.blif initial_pres_fac $present" >> B2result.txt
+	./vpr k6_frac_N10_mem32K_40nm.xml raygentop.blif --route_chan_width 72 --initial_pres_fac $present --nodisp
+	grep "Final critical path" vpr_stdout.log >> B2result.txt
+done
+for present in 0.1 0.5 1 1.5
+do
+	echo "or1200.blif initial_pres_fac $present" >> B2result.txt
+	./vpr k6_frac_N10_mem32K_40nm.xml or1200.blif --route_chan_width 78 --initial_pres_fac $present --nodisp
+	grep "Final critical path" vpr_stdout.log >> B2result.txt
+done

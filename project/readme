@@ -1,0 +1,12 @@
+The project mainly consists of 4.cpp files and 4.h files and a makefile to run the program.
+Router.cpp contains the code to extract file contents from circuit.txt which is C1, at the same time router.cpp also return the number of connection wires in the circuit.
+
+a_project.cpp is used to locate the minimal path between source and target, I have explanation after each line, describing its purpose.
+
+a_test.cpp is the code for tracing back to original source and marking the path.
+
+example.cpp is the main function, all the functions are called in this file and all functions are included by a header file.
+
+example is the executable file to draw the graphic, however, under linux environment the graphic cannot stay on the screen, during the testing phase, I use system("pause") in Visual studioto keep the graphic, thus, I call the delay function after drawing each line, this can make the graphic stay a little longer, but cannot stop it from disappearing, I will keep looking for other solutions on that issue. 
+
+From the output window you can see information about the running process, the number before " about to start graphics" is the total length of connection.
