@@ -33,11 +33,6 @@ content file_extract::extraction(){
 
 
 	}
-	/*for (int i = 0; i < temp.size(); i++){
-		for (int n = 0; n < temp[i].size(); n++){
-			cout << temp[i][n] << endl;
-		}
-	}*/
 	cout << "k=" << k <<endl;
 	for (int i = 0; i < k-1; i++){
 		newfile.file_content.insert(pair<int, vector<int>>(i, temp[i]));
@@ -47,8 +42,6 @@ content file_extract::extraction(){
 	int nsize = newfile.file_content.size();
 	newfile.total_blocks = nsize - 1;//get total blocks
 	vector<int>fanouts;
-	//int y = newfile.file_content[0].size();
-	//cout << "y=" << y << endl;
 	for (int m = 0; m < nsize-1; m++){
 		int a = 0;
 		a = newfile.file_content[m].size();

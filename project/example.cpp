@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "graphics.h"
-#include "a_project.h"
+#include "pathRender.h"
 #include "a_test.h"
 #include "router.h"
 #include <stdio.h>
@@ -42,12 +42,9 @@ int main() {
 			if (i % 2 == 0){
 				if (j % 2 == 0){
 					a[i][j] = 0;//switch blocks are 0
-					//	cout << a[i][j];
-					//cout << j;
 				}
 				else
 					a[i][j] = 1;//pathes are 1
-				//cout << a[i][j];
 			}
 			else {
 				if (j % 2 == 1){
@@ -59,7 +56,7 @@ int main() {
 		}
 
 	}
-	//cout << a[1][0] << endl;
+	
 	a[2 * p + 2][2 * q] = 's';//we use the swicth behind source logic to be source
 	a[2 * x + 2][2 * y] = 't';//we use the swicth behind target logic to be target
 	cout << a[2 * x + 2][2 * y] << endl;
@@ -67,7 +64,7 @@ int main() {
 	int *rng = new int[2];
 	rng[0] = 2 * p + 2;// need improve to auto assign
 	rng[1] = 2 * q;
-	van recv;
+	path recv;
 	recv.n = 0;
 	recv.fifo = a;//bad naming fifo is used to receive 2n+1,2n+1 matrix
 	recv.grid = rng;//used to recive expansion list
@@ -77,14 +74,10 @@ int main() {
 	recv.n_con = 2;
 	recv.w_con = 0;
 	recv.t_con = 0;
-	//van ne;
-	//ne.n = 5;
-	//ne.fifo = recv.fifo;
-	//ne.grid = recv.grid;
+
 	for (recv.con_num = 0; recv.n == 0; recv.con_num = recv.con_num + 2){
-		recv = path(recv, n);
+		recv = pathRender(recv, n);
 		cout << "finish a loop" << endl;
-		//cout << recv.n << endl;
 	}
 	int source[2] = { 2 * p + 2, 2 * q };
 	int init_arr[2] = { 2 * x + 2, 2 * y };
@@ -140,10 +133,6 @@ int main() {
 
 
 	/* Draw an interactive still picture again.  I'm also creating one new button. */
-
-
-
-
 	//close_graphics();
 	printf("Graphics closed down.\n");
 	//system("pause");

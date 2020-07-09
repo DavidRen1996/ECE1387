@@ -54,26 +54,25 @@ vector<int> net::get_num(int i){
 	int net = i;// net number for search
 	int block = 0;//store the value of block number
 	extern vec_rec rec_val;
-	vec_rec joker = rec_val;
+	vec_rec globalVector = rec_val;
 	vector<int>net_content;//return the net i's content in a vector
-	int stop = joker.total_numbers - joker.fixed_numbers - 2;//count stop when finished cheking all blocks
-	//cout << joker.fixed_numbers << " " << joker.total_numbers << " " << joker.totoal_nets << " " << endl;
-	//cout << joker.a[stop] << endl;
+	int stop = globalVector.total_numbers - globalVector.fixed_numbers - 2;//count stop when finished cheking all blocks
+	
 	int begin = 1;//tell the for loop the number is node or net
 	for (int i = 0; i < stop; i++){
-		if (joker.a[i] == -1){//judge if is the end of line
+		if (globalVector.a[i] == -1){//judge if is the end of line
 			begin = 1;
 			continue;//move to next line
 		}
 		else{
 			if (begin == 1){//if the number is the block?
-				block = joker.a[i];//assign the block number to store
+				block = globalVector.a[i];//assign the block number to store
 				begin = 0;//start searching for net i
 				i = i + 1;
 				continue;
 			}
 			else{//number is for a net
-				if (joker.a[i] == net){
+				if (globalVector.a[i] == net){
 					net_content.push_back(block);
 				}
 			}

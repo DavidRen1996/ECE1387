@@ -76,14 +76,7 @@ void low_bound_first::lbf(){
 r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector<int>>*x2, map<int, vector<int>>*results, int n, int b, int signal, int count, int set){
 	//cout << "number at input" << n << endl;
 	DG.draw_lbf((*x2));
-	/*for (int i = 0; i < (*x2).size(); i++){
-		vector<int>t = (*x2)[i];
-		for (int k = 0; k < t.size(); k++){
-			cout << t[k];
-		}
-		cout << "" << endl;
-	}*/
-	//cout<<"I should draw"<<endl;
+	
 	extern content file_reclaim;
 	extern map<int, vector<int>>order;
 	extern vector<int>branching_o;
@@ -102,31 +95,31 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 			}
 		}
 		cout << "best= " << best << endl;
-		r van;
-		van.b = b;
-		van.count = 0;
-		van.n = n;
-		van.results = results;
-		van.set = 1;
-		van.signal = signal;
-		van.x1 = x1;
-		van.x2 = x2;
-		return van;
+		r result;
+		result.b = b;
+		result.count = 0;
+		result.n = n;
+		result.results = results;
+		result.set = 1;
+		result.signal = signal;
+		result.x1 = x1;
+		result.x2 = x2;
+		return result;
 	}
 
 	else{
 		if (count == 2000){
-			r van;
-			van.b = b;
-			van.count = 0;
-			van.n = n;
-			van.results = results;
-			van.set = 0;
-			van.signal = signal;
-			van.x1 = x1;
-			van.x2 = x2;
+			r result;
+			result.b = b;
+			result.count = 0;
+			result.n = n;
+			result.results = results;
+			result.set = 0;
+			result.signal = signal;
+			result.x1 = x1;
+			result.x2 = x2;
 			cout << "intermediate return" << endl;
-			return van;
+			return result;
 		}
 		else{
 			/*have not reached end yet*/
@@ -145,11 +138,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 					vector<int>old_partial_r = size_c[k];
 					old_partial_l[n + 1] = 1;
 					old_partial_l[file_reclaim.total_blocks] = old_partial_l[file_reclaim.total_blocks] + 1;
-					/*cout << "old";
-					for (int m = 0; m < old_partial_l.size(); m++){
-					cout << old_partial_l[m];
-					}
-					cout << ""<<endl;*/
+					
 					if (old_partial_l[file_reclaim.total_blocks] <= file_reclaim.total_blocks / 3){
 						vector<int>new_partial_l = old_partial_l;
 						int costl = c_sample.cost_increase(new_partial_l, n + 1);
@@ -159,10 +148,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 							new_primier[new_count] = new_partial_l;
 							new_count = new_count + 1;
 						}
-						//cout << "" <<endl;
-						/*for (int m = 0; m < new_partial_l.size(); m++){
-						cout << new_partial_l[m];
-						}*/
+						
 					}
 
 
@@ -180,11 +166,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 							new_primier[new_count] = new_partial_m;
 							new_count = new_count + 1;
 						}
-						/*cout << "new";
-						for (int m = 0; m < new_partial_m.size(); m++){
-						cout << new_partial_m[m];
-						}
-						cout << "" << endl;*/
+					
 					}
 
 					old_partial_r[n + 1] = 3;
@@ -222,16 +204,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 					//int count_nz_new_primier = new_primier.size();
 					map<int, vector<int>>temp = new_primier;
 					map<int, vector<int>>reclaim;
-					/*for (int i = 0; i <npsize; i++){
-						//vector<int>t = temp[i];
-
-						vector<int>t = temp[i];
-						for (int k = 0; k < t.size(); k++){
-							cout << t[k];
-						}
-						cout << "" << endl;
-					}
-					cout << "new_primier content" << endl;*/
+					
 					for (int i = 0; i <npsize; i++){
 						vector<int>temp;
 						temp = new_primier[i];
@@ -253,15 +226,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 					(*x2) = new_x2;
 				//	cout << "x2 size at section1 " << (*x2).size() << endl;
 					map<int, vector<int>>temp2 = *x2;
-					/*for (int i = 0; i < (*x2).size(); i++){
-						vector<int>t = temp2[i];
-						for (int k = 0; k < t.size(); k++){
-							cout << t[k];
-						}
-						cout << "" << endl;
-					}
-					cout << "x2[n+1] content" << endl;
-					cout << new_primier.size() << endl;*/
+					
 					int kkp = new_primier.size();
 					int count_nz = 0;
 					int *pp;
@@ -287,22 +252,11 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 
 					//cout << "x1[n+1] size at section1 " << (*x1)[n + 1].size() << endl;
 					map<int, vector<int>>temp1 = (*x1)[n + 1];
-					/*for (int i = 0; i < (*x1)[n + 1].size(); i++){
-						vector<int>t = temp1[i];
-						for (int k = 0; k < t.size(); k++){
-							cout << t[k];
-						}
-						cout << "" << endl;
-					}
-					cout << "x1[n+1] content" << endl;*/
+					
 					if (n + 1 == file_reclaim.total_blocks - 2){
 						signal = 1;
 					}
-				//	cout << "number" << n << endl;
-					//cout << "number, best,signal" << n<<"-" << b <<"-"<<"-" <<signal << endl;
-					//cout << "number" << n << endl;
-					//cout << "signal" << signal << endl;
-					//cout << "size of x1!!!!!!!!!!!!!" << (*x1).size() << endl;
+				
 					count = count + 1;
 					return lbf_recur(x1, x2, results, n + 1, b, signal,count,set);
 				}
@@ -312,30 +266,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 
 				if (n == file_reclaim.total_blocks - 2){
 					signal = 1;
-					//cout << "ready for end calculation<<endl;";
-					/*for (int i = 0; i < (*x1).size(); i++){
-						map<int, vector<int>>temp_map = (*x1)[i];
-						cout << i << ": ";
-						for (int k = 0; k < temp_map.size(); k++){
-							vector<int>temp_v = temp_map[k];
-							for (int m = 0; m < temp_v.size(); m++){
-								cout << temp_v[m];
-							}
-							cout << " ";
-						}
-						cout << "" << endl;
-					}
-
-					cout << "below is x2" << endl;
-					for (int k = 0; k < (*x2).size(); k++){
-						vector<int>temp_v = (*x2)[k];
-						cout << k << ": ";
-						for (int m = 0; m < temp_v.size(); m++){
-							cout << temp_v[m];
-						}
-						cout << " ";
-					}*/
-					//cout << "second number" << n << endl;
+					
 					map<int, vector<int>>size_c;
 					map<int, vector<int>>new_primier;
 					size_c = (*x2);
@@ -350,11 +281,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						vector<int>old_partial_r = size_c[k];
 						old_partial_l[n + 1] = 1;
 						old_partial_l[file_reclaim.total_blocks] = old_partial_l[file_reclaim.total_blocks] + 1;
-						/*cout << "old";
-						for (int m = 0; m < old_partial_l.size(); m++){
-						cout << old_partial_l[m];
-						}
-						cout << ""<<endl;*/
+						
 						if (old_partial_l[file_reclaim.total_blocks] <= file_reclaim.total_blocks / 3){
 							vector<int>new_partial_l = old_partial_l;
 							int costl = c_sample.cost_increase(new_partial_l, n + 1);
@@ -365,10 +292,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 								new_count = new_count + 1;
 								b = new_partial_l[file_reclaim.total_blocks + 3];
 							}
-							//cout << "" <<endl;
-							/*for (int m = 0; m < new_partial_l.size(); m++){
-							cout << new_partial_l[m];
-							}*/
+							
 						}
 
 
@@ -387,11 +311,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 								new_count = new_count + 1;
 								b = new_partial_m[file_reclaim.total_blocks + 3];
 							}
-							/*cout << "new";
-							for (int m = 0; m < new_partial_m.size(); m++){
-							cout << new_partial_m[m];
-							}
-							cout << "" << endl;*/
+							
 						}
 
 						old_partial_r[n + 1] = 3;
@@ -462,13 +382,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						return  lbf_recur(x1, x2, results, n, b, signal,count,set);
 					}
 					else{
-						/*if (){
-						map<int, map<int, vector<int>>>final_return;
-
-						return lbf_recur(final_return, x2, results, n, b, signal);
-						}
-						else{*/
-						//cout << "n before pick up " << n << endl;
+						
 						for (int i = n; i > 0; i--){
 							if ((*x1)[i].size() != 0){
 								n = i;
@@ -488,15 +402,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						}
 						int x2_count = 0;
 						map<int, vector<int>>temp11 = (*x1)[n];
-						/*cout << "below is temp11 for x2 where is wrong ; ";
-						for (int k = 0; k < temp11.size(); k++){
-							vector<int>temp_v = temp11[k];
-							cout << k << ": ";
-							for (int m = 0; m < temp_v.size(); m++){
-								cout << temp_v[m];
-							}
-							cout << " ";
-						}*/
+						
 						map<int, vector<int>>x2_temp;
 						for (int i = 0; i < (*x1)[n].size(); i++){
 							vector<int>t = temp11[i];
@@ -529,74 +435,30 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						for (int i = 0; i < size_c.size(); i++){
 							vector<int>().swap(size_c[i]);
 						}
-						//cout << "get a solution but x1[n] is drawn" << endl;
-						//cout << "size of x1!!!!!!!!!!!!!" << (*x1).size() << endl;
+						
 						count = count + 1;
 						return  lbf_recur(x1, x2, results, n, b, signal,count,set);
 
 					}
 
-
-					/*for (int i = n-1; i >= 0; i--){
-					if (x1[i].size() != 0){
-					n = i;
-					x2 = x1[n];
-					break;
-					}
-					}*/
 				}
 				else{
-					/*signal==1 going towards end*/
-					//cout << "number at the road" << n << endl;
-					/*map<int, vector<int>>temp = x1[7];
-					for (int i = 0; i < x1[7].size(); i++){
-					vector<int>t = temp[i];
-					for (int k = 0; k < t.size(); k++){
-					cout << t[k];
-					}
-
-					}*/
-					/*cout << "x1 for step 3 at input:" << endl;
-					for (int i = 0; i < (*x1).size(); i++){
-						map<int, vector<int>>temp_map = (*x1)[i];
-						cout << i << ": ";
-						for (int k = 0; k < temp_map.size(); k++){
-							vector<int>temp_v = temp_map[k];
-							for (int m = 0; m < temp_v.size(); m++){
-								cout << temp_v[m];
-							}
-							cout << " ";
-						}
-						cout << "" << endl;
-					}
-					cout << "below is x2" << endl;
-					for (int k = 0; k < (*x2).size(); k++){
-						vector<int>temp_v = (*x2)[k];
-						cout << k << ": ";
-						for (int m = 0; m < temp_v.size(); m++){
-							cout << temp_v[m];
-						}
-						cout << " ";
-					}*/
+					
 					map<int, vector<int>>size_c;
 					map<int, vector<int>>size_temp;
 					map<int, vector<int>>new_primier;
 					size_temp = (*x2);
 					vector<int> nz;
 					int nz_size = 0;
-					//cout << "x2 size" << x2.size() << endl;
-					//cout << "size_temp size" << size_temp.size() << endl;
+					
 					int sz = size_temp.size();
 					for (int i = 0; nz_size <sz; i++){
-						//cout << i;
-						//cout << "nzsize is " << nz_size << endl;
 						if (nz_size == size_temp.size()){
 							break;
 						}
 						if (size_temp[i].size() != 0){
 
 							nz.push_back(i);
-							//cout << i;
 							nz_size = nz_size + 1;
 
 						}
@@ -619,11 +481,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 
 						old_partial_l[n + 1] = 1;
 						old_partial_l[file_reclaim.total_blocks] = old_partial_l[file_reclaim.total_blocks] + 1;
-						/*cout << "old";
-						for (int m = 0; m < old_partial_l.size(); m++){
-						cout << old_partial_l[m];
-						}
-						cout << ""<<endl;*/
+						
 						if (old_partial_l[file_reclaim.total_blocks] <= file_reclaim.total_blocks / 3){
 							vector<int>new_partial_l = old_partial_l;
 							int costl = c_sample.cost_increase(new_partial_l, n + 1);
@@ -633,10 +491,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 								new_primier[new_count] = new_partial_l;
 								new_count = new_count + 1;
 							}
-							//cout << "" <<endl;
-							/*for (int m = 0; m < new_partial_l.size(); m++){
-							cout << new_partial_l[m];
-							}*/
+							
 						}
 
 
@@ -654,11 +509,6 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 								new_primier[new_count] = new_partial_m;
 								new_count = new_count + 1;
 							}
-							/*cout << "new";
-							for (int m = 0; m < new_partial_m.size(); m++){
-							cout << new_partial_m[m];
-							}
-							cout << "" << endl;*/
 						}
 
 						old_partial_r[n + 1] = 3;
@@ -680,16 +530,10 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						(*x1).erase(n);//no subbranchs can have a better solution
 						for (int i = n - 1; i >= 0; i--){
 							if ((*x1)[i].size() != 0){
-								//cout << (*x1)[i].size();
-								//cout << "i= " << i << endl;
 								n = i;
-								//x2 = x1[n];
-								//x1.erase(n);
 								break;
 							}
 						}
-						//cout << "x1 size after dead result" << (*x1).size() << endl;
-						//cout << (*x1)[2].size() << endl;
 
 						map<int, vector<int>>new_x2;
 						int new_x2_length = 0;
@@ -697,7 +541,7 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						int npsize = (*x1)[n].size();
 						for (int i = 0; i < npsize; i++){
 							vector<int>temp;
-							temp = (*x1)[n][i];//????????????
+							temp = (*x1)[n][i];
 							if (temp[file_reclaim.total_blocks + 3] < lb){
 								lb = temp[file_reclaim.total_blocks + 3];
 							}
@@ -721,8 +565,6 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						map<int, vector<int>>reclaim2;
 						//cout << "new primier size is " << kkp << endl;
 						for (int i = 0; count_nz< kkp; i++){
-							//vector<int>t = temp[i];
-							//cout << i;
 
 							if ((*x1)[n][i].size() != 0){
 								vector<int>t = (*x1)[n][i];
@@ -743,8 +585,6 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 						for (int i = 0; i < reclaim2.size(); i++){
 							vector<int>().swap(reclaim2[i]);
 						}
-						//cout << "revivie n= " << n << endl;
-						//cout << "size of x1!!!!!!!!!!!!!" << (*x1).size() << endl;
 						count = count + 1;
 						return  lbf_recur(x1, x2, results, n, b, signal,count,set);
 					}
@@ -795,40 +635,12 @@ r low_bound_first::lbf_recur(map<int, map<int, vector<int>>>*x1, map<int, vector
 							(*x1)[n + 1] = reclaim2;
 							//x1.erase(n);
 						}
-						//x1.erase(n);
-						//n = n + 1;
-						//x1[n] = new_primier;
-
-						//cout << "n= " << n << endl;
-						//cout << "step 3 has a primier " << endl;
-						/*for (int i = 0; i < (*x1).size(); i++){
-							map<int, vector<int>>temp_map = (*x1)[i];
-							cout << i << ": ";
-							for (int k = 0; k < temp_map.size(); k++){
-								vector<int>temp_v = temp_map[k];
-								for (int m = 0; m < temp_v.size(); m++){
-									cout << temp_v[m];
-								}
-								cout << " ";
-							}
-							cout << "" << endl;
-						}
-						cout << "below is x2" << endl;
-						for (int k = 0; k < (*x2).size(); k++){
-							vector<int>temp_v = (*x2)[k];
-							cout << k << ": ";
-							for (int m = 0; m < temp_v.size(); m++){
-								cout << temp_v[m];
-							}
-							cout << " ";
-						}*/
 						for (int i = 0; i < new_x2.size(); i++){
 							vector<int>().swap(new_x2[i]);
 						}
 						for (int i = 0; i < reclaim2.size(); i++){
 							vector<int>().swap(reclaim2[i]);
 						}
-						//cout << "size of x1!!!!!!!!!!!!!" << (*x1).size() << endl;
 						count = count + 1;
 
 						return  lbf_recur(x1, x2, results, n + 1, b, signal,count,set);

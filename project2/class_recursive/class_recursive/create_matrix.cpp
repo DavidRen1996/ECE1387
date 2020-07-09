@@ -98,11 +98,6 @@ vector<vector<double>> create_matrix::matrix_calculation(){//return Q
 	int n_size = netlist.size();
 	for (int i = 0; i < n_size; i++){//loop all blocks
 		vector<double>line_t = get_q(netlist[i]);//a line prepare to add to Q
-		/*for (int r = 0; r < line_t.size(); r++){
-
-			cout << "line" << line_t[r];
-		}*/
-		//cout << "line" << endl;;
 		q.push_back(line_t);
 	}
 
@@ -127,13 +122,6 @@ vector<double> create_matrix::get_q(int i){//i=0,1,.....
 		vector<int>p = ba.get_num(j_connect[x]);//j_connect[x]is the net number
 		int num = p.size() - 1;
 		q_sum = q_sum + w*num;
-		//cout << "qsum= " << q_sum << endl;
-		//line[i - 6] = w*num;//on diag set!
-		//vector<int>off_diag = get_connections(x);
-		//int o_diag = off_diag.size();
-		//for (int y = 0; y < o_diag; y++){
-
-		//}
 	}
 	line[i - nx - 1] = q_sum;//
 	// get off diag
@@ -147,19 +135,8 @@ vector<double> create_matrix::get_q(int i){//i=0,1,.....
 			vector<int>off_diag = get_connections(i - nx - 1, j_connect);
 
 			int o_diag = off_diag.size();
-			//cout << o_diag;
-
-			//for (int l = 0; l < o_diag; l++){
-				//cout << off_diag[l];
-			//}
-			//cout << "finish" << endl;
-			//cout << "connection number is = " << o_diag << endl;
 			for (int y = 0; y < o_diag; y++){
 				double w2 = gsum(i, off_diag[y]);
-				//cout << "w2" << w2 << endl;
-				//cout << off_diag[y];
-				//sum = sum + w1;
-				//cout << "sum" << sum << endl;
 				line[off_diag[y] - nx - 1] = -w2;
 				//cout << "finish a point" << endl;
 			
@@ -202,38 +179,7 @@ vector<int>create_matrix::get_connections(int i, vector<int>neti){// get connect
 			}
 		}
 	}
-	/*//get fixed connection
-	vector<double>f = fixed();
-	cout << f[4] << endl;
-	int f_size = f.size();
-	cout << "size = " << f_size << endl;
-	for (int x = 0; x < f_size; x++){
-	cout << "x=" << x << endl;
-	vector<int>f_rec = j_connection(f[x]);//get all net that connects to block j
-	int F = f_rec.size();
-	cout << F;
-	cout << "start" << endl;
-	for (int d = 0; d < F; d++){
-	cout << f_rec[d] << endl;
-	}
-
-	int set = 0;
-	for (int b = 0; b < F; b++){
-	for (int c = 0; c < i_size; c++){
-	if (f_rec[b] == neti[c]){//match connection
-	g_connection.push_back(f[x]);
-
-	set = 1;
-	break;
-	}
-	}
-
-	if (set == 1){
-	break;
-	}
-	}
-	}*/
-	//int con_size = g_connection.size();
+	
 	return g_connection;
 }
 double create_matrix::gsum(int x, int y){//get sum of off diag value for a block,x is the row , y is the column
@@ -252,29 +198,7 @@ double create_matrix::gsum(int x, int y){//get sum of off diag value for a block
 			}
 		}
 	}
-	/*vector<int>xx = bbc.j_connection(nget[x - ss - 1]);
-	vector<int>x_recv = get_connections(x - ss - 1,xx);//6,7....19
-	int x_size = x_recv.size();
-
-	for (int m = 1; m < s_recv.totoal_nets + 1; m++){
-		vector<int>j = ba.get_num(m);
-		for (int z = 0; z < j.size(); z++){
-			if (j[z] == y){//match
-				//cout << "match" << m << endl;
-				for (int k = 0; k < j.size(); k++){
-					if (j[k] == x){
-						//cout << "match again" << m << endl;
-						double w1 = ba.get_weight(m);//get net m's weight
-						s = s + w1;
-						//cout << "s=" << s << endl;
-						break;
-					}
-				}
-				break;
-			}
-		}
-	}*/
-	//cout << "total off diag value is = " << s << endl;
+	
 	return s;
 }
 vector<double> create_matrix::get_b(int x_y){
@@ -350,8 +274,6 @@ linear_parameter create_matrix::mat(vector<vector<double>>Atest, vector<double>B
 			}
 
 		}
-		//cout << "nz= " << nz << endl;
-		//cout << "finish a loop" << endl;
 		Ap_re.push_back(nz);//add the number of nz in a column
 	}
 	linear_parameter para_return;

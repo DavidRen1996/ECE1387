@@ -13,7 +13,7 @@ block::~block()
 }
 vector<int> block::get_net(){//get  all moveable blocks in the circuit
 	extern vec_rec rec_val;
-	vec_rec vans = rec_val;
+	vec_rec globalVector = rec_val;
 	vector<int>connection;
 	//vector<int>j_connection;
 	extern vector<double>fget;
@@ -21,32 +21,22 @@ vector<int> block::get_net(){//get  all moveable blocks in the circuit
 	int fix_size = f.size();
 	//cout << fix_size << endl;
 	int count = 0;
-	for (int x = 0; x <vans.total_numbers; x++){
+	for (int x = 0; x <globalVector.total_numbers; x++){
 
-		if (vans.a[x] == -1){
-			if (vans.a[x + 1] == -1){//end of moveable
+		if (globalVector.a[x] == -1){
+			if (globalVector.a[x + 1] == -1){//end of moveable
 				break;
 			}
 			else{
 				count = count + 1;//line + 1
 				if (count >= fix_size){
-					connection.push_back(vans.a[x + 1]);//store moveable block
-					/*int i = x + 3;
-					while (vans.a[i]!=-1){
-					j_connection.push_back(vans.a[i]);
-					i++;
-					}*/
+					connection.push_back(globalVector.a[x + 1]);//store moveable block
+					
 				}
 			}
 		}
 	}
-	/*for (int f = 0; f < connection.size(); f++){
-	cout << connection[f];
-	}
-	cout << "total finish"<<endl;
-	/*for (int y = 0; y < j_connection.size(); y++){
-	cout << j_connection[y];
-	}*/
+	
 
 	return connection;
 }
@@ -81,38 +71,6 @@ vector<int>block::get_connections(int i){// get connection between block i and t
 			}
 		}
 	}
-	/*//get fixed connection
-	vector<double>f = fixed();
-	cout << f[4] << endl;
-	int f_size = f.size();
-	cout << "size = " << f_size << endl;
-	for (int x = 0; x < f_size; x++){
-	cout << "x=" << x << endl;
-	vector<int>f_rec = j_connection(f[x]);//get all net that connects to block j
-	int F = f_rec.size();
-	cout << F;
-	cout << "start" << endl;
-	for (int d = 0; d < F; d++){
-	cout << f_rec[d] << endl;
-	}
-
-	int set = 0;
-	for (int b = 0; b < F; b++){
-	for (int c = 0; c < i_size; c++){
-	if (f_rec[b] == neti[c]){//match connection
-	g_connection.push_back(f[x]);
-
-	set = 1;
-	break;
-	}
-	}
-
-	if (set == 1){
-	break;
-	}
-	}
-	}*/
-	//int con_size = g_connection.size();
 	return g_connection;
 }
 
@@ -126,29 +84,6 @@ vector<int> block::j_connection(int j){//get all net that connects to block j
 	for (int k = 2; k < v_length; k++){
 		j1.push_back(ad[j - 1][k]);
 	}
-	/*for (int x = 0; x < v.total_numbers; x++){
-		if (j == 1){
-			for (int i = x + 2; v.a[i] != -1; i++){
-				j1.push_back(v.a[i]);
-				//cout << v.a[i];
-			}
-			break;
-		}
-		if (v.a[x] == -1){
-			if (v.a[x + 1] == j){
-				//cout << v.a[x+1];
-				//cout << "net start" << endl;
-				for (int i = x + 3; v.a[i] != -1; i++){
-					j1.push_back(v.a[i]);
-					//cout << v.a[i];
-				}
-				break;
-			}
-		}
-		else{
-			continue;
-		}
-	}*/
 
 	return j1;
 }
@@ -174,10 +109,10 @@ bound block::get_boundary(){
 			Y_min = g_r.fixed[i + 2];
 		}
 	}
-	bound vans;
-	vans.x_max = X_max;
-	vans.x_min = X_min;
-	vans.y_max = Y_max;
-	vans.y_min = Y_min;
-	return vans;
+	bound res_boundary;
+	res_boundary.x_max = X_max;
+	res_boundary.x_min = X_min;
+	res_boundary.y_max = Y_max;
+	res_boundary.y_min = Y_min;
+	return res_boundary;
 }
