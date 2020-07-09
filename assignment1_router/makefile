@@ -14,8 +14,8 @@ PLATFORM = X11
 #PLATFORM = WIN32
 #PLATFORM = NO_GRAPHICS
 
-HDR = graphics.h easygl_constants.h a_project.h a_test.h router.h
-SRC = graphics.cpp example.cpp router.cpp a_project.cpp a_test.cpp
+HDR = graphics.h easygl_constants.h pathRender.h a_test.h router.h
+SRC = graphics.cpp example.cpp router.cpp pahtRender.cpp a_test.cpp
 EXE = example
 BACKUP_FILENAME=`date "+backup-%Y%m%d-%H%M.zip"`
 FLAGS = -g -Wall -D$(PLATFORM)
@@ -26,8 +26,8 @@ ifeq ($(PLATFORM),X11)
    GRAPHICS_LIBS = -lX11
 endif
 
-$(EXE): graphics.o example.o router.o a_project.o a_test.o 
-	g++ $(FLAGS) graphics.o example.o router.o a_project.o a_test.o $(GRAPHICS_LIBS) -o $(EXE)
+$(EXE): graphics.o example.o router.o pahtRender.o a_test.o 
+	g++ $(FLAGS) graphics.o example.o router.o pahtRender.o a_test.o $(GRAPHICS_LIBS) -o $(EXE)
 
 graphics.o: graphics.cpp $(HDR)
 	g++ -c $(FLAGS) graphics.cpp
@@ -36,8 +36,8 @@ example.o: example.cpp $(HDR)
 	g++ -c $(FLAGS) example.cpp
 router.o: router.cpp $(HDR)
 	g++ -c $(FLAGS) router.cpp
-a_project.o:a_project.cpp $(HDR)
-	g++ -c $(FLAGS) a_project.cpp
+pahtRender.o:pahtRender.cpp $(HDR)
+	g++ -c $(FLAGS) pahtRender.cpp
 a_test.o:a_test.cpp $(HDR)
 	g++ -c $(FLAGS) a_test.cpp
 backup:
